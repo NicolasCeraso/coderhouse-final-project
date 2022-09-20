@@ -112,7 +112,7 @@ p {
     min-height: auto;
     background-attachment: local;
 	background-position: center center;
-    padding: 100px 50px 100px 50px;
+    padding-top: 250px;
     width: 100%;
     margin-top: 50px;
     color: #ffffff;
@@ -124,8 +124,8 @@ p {
     background-size: cover;
     min-height: auto;
     background-attachment: local;
-	background-position: center center;
-    padding: 100px 50px 100px 50px;
+	background-position: center center;    
+    padding-top: 250px;
     width: 100%;
     margin-top: 50px;
     color: #ffffff;
@@ -147,7 +147,7 @@ p {
 
 
 .inside-image-text-box {
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 
@@ -161,20 +161,20 @@ p {
 }
 
 .three-columns-photo {
-    width: 400px;
-    height: 225px;
+    width: 100%;
+    height: auto;
     margin-bottom: 25px;
 }
 
 .main-title-inside-picture {
     font-size: 22pt;
-    width: 75%;
+    width: 90%;
     text-align: left;
     margin-bottom: 25px;
 }
 
 .main-paragraph-inside-picture {
-    width: 75%;
+    width: 90%;
     text-align: left;
     margin-bottom: 35px;
 }
@@ -202,7 +202,7 @@ p {
 }
 
 .white-button:hover {
-    background-color: rgba(255, 255, 255, 0);;
+    background-color: rgba(255, 255, 255, 0);
     color: #ffffff;
     border: 2px solid #ffffff;
 }
@@ -216,17 +216,11 @@ p {
   }
   
  .blue-button:hover {
-    background-color: rgba(255, 255, 255, 0);;
+    background-color: rgba(255, 255, 255, 0);
     color: #085dac;
     border: 2px solid #085dac;
   }
  
-  /*
-  .centered-button {
-            
-}
-*/
-
 .main-title-under-picture {
     font-size: 22pt;
     width: 100%;
@@ -249,7 +243,7 @@ p {
     padding-left: 150px;
 }
 
-.grid-container {
+.index-grid-container {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -259,49 +253,49 @@ p {
 }
 
 .grid-item {
-    width: 100%;    
+    width: 100%;  
 }
 
-.first-item{
+.first-item {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 5;  
+    grid-row-end: 5;     
 }
 
-.image-item{
-    height: 100%;  
+.image-item {
+    height: 100%; 
 }
 
-.second-item{    
+.second-item {    
     grid-column-start: 4;
     grid-column-end: 8;
     grid-row-start: 1;
     grid-row-end: 2;  
 }
 
-.third-item{    
+.third-item {    
     grid-column-start: 4;
     grid-column-end: 8;
     grid-row-start: 2;
     grid-row-end: 3;  
 }
 
-.fourth-item{    
+.fourth-item {    
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 5;  
 }
 
-.fifth-item{    
+.fifth-item {    
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 5;  
 }
 
-.sixth-item{    
+.sixth-item {    
     grid-column-start: 6;
     grid-column-end: 7;
     grid-row-start: 3;
@@ -322,6 +316,112 @@ p {
 }
 
 /*PRODUSTOS SECCION INICIO*/
+
+.products-grid-container {
+    margin-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 3px;
+    column-gap: 2px;        
+}
+
+.thinfinity-product-background-image { 
+    background-image: url(productos/imagenes/thinfinity-logo.svg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;    
+    padding-left: 25px;
+    padding-right: 25px;   
+}
+
+.thinfinity-product-text {
+    padding-top: 250px;
+    padding-bottom: 50px;
+    background-color: rgba(31, 118, 178, 0); 
+    color:  rgba(255, 255, 255, 0);
+  }
+  
+ .thinfinity-product-text:hover {
+    background-color: rgba(31, 118, 178, 1);
+    color:  rgba(255, 255, 255, 1);
+  }
+
+
+.zscope-product-background-image { 
+    background-image: url(productos/imagenes/zscope-logo.svg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center center;
+    width: 100%;    
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.zscope-product-text {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(146, 129, 102, 0); 
+    color:  rgba(255, 255, 255, 0);
+  }
+  
+ .zscope-product-text:hover {
+    background-color: rgba(146, 129, 102, 1);
+    color:  rgba(255, 255, 255, 1);
+  }
+
+.tnbridge-product-background-image { 
+    background-image: url(productos/imagenes/tnbridge-logo.svg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center center;
+    width: 100%;       
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.tnbridge-product-text {
+    padding-top: 50px;
+    padding-bottom: 50px;    
+    background-color: rgba(225, 150, 52, 0); 
+    color:  rgba(255, 255, 255, 0);
+  }
+  
+ .tnbridge-product-text:hover {
+    background-color: rgba(225, 150, 52, 1);
+    color:  rgba(255, 255, 255, 1);
+  }
+
+.first-product-item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.second-product-item {    
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.third-product-item {    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6; 
+}
+
+.centered-text {
+    text-align: center;
+  }
+
 /*PRODUCTOS SECCION THINFINITY*/
 
 .cover-image {
@@ -344,6 +444,36 @@ p {
         grid-template-columns: 1fr 1fr;
         column-gap: 35px;        
     }
+    
+.zscope-image-item-1 {
+    background-image: url('productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+	background-position: center center;
+	width: 100%;
+    height: 400px;  
+}
+
+.zscope-image-item-2 {
+    background-image: url('productos/imagenes/persona-trabajando-con-emulador-de-terminal-de-escritorio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+	background-position: center center;
+	width: 100%;
+    height: 400px;  
+}
+
+.zscope-text-element {
+    margin-top: 200px;
+    margin-left: 75px;
+    margin-right: 75px;
+    color: #ffffff;
+}
+
+
+
     /*margin: 50px 100px 50px 100px;
     margin-left: 150px;
     margin-right: 150px;
@@ -401,11 +531,350 @@ p {
 
 /*MOBILE*/
 @media only screen and (max-width:450px) {
+
+    h1 {
+        font-size: 18pt;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 14pt;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 10pt;
+        text-align: center;
+    }
     
+/*MOBILE - INDEX SECCION INICIO*/    
+    .index-intro {
+        padding-top: 50px;
+        padding-left: 25px;
+        background-position: bottom center;
+    }
+
+    .index-main-list {   
+        font-weight: 200;        
+        padding-left: 25px;
+        text-align: left;   
+        width: 100%; 
+    }
+
+
+/*MOBILE - INDEX SECCION DESTACADOS THINFINITY*/
+
+    .section-title{
+        margin-left: 25px;
+        margin-right: 25px;  
+        text-align: center;
+        margin-top: 50px;    
+    }
+
+    .paragraph-align-center {
+        margin-bottom: 25px;
+    }
+
+    .main-products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .background-image-trw { 
+        background-size: cover;
+        min-height: auto;
+        padding: 25px;
+        width: 100%;
+        margin-top: 5px;
+        align-self: right;
+    }
+
+    .background-image-trd { 
+        background-size: cover;
+        min-height: auto;   
+        padding: 25px;
+        width: 100%;
+        margin-top: 5px;
+        align-self: right;
+    }
+
+    .inside-image-text-box {
+        width: 100%;
+        margin-left: 25px;
+        margin-right: 0px;
+    }
+
+    .main-title-inside-picture {
+        font-size: 14pt;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+        padding-top: 150px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-weight: 600;
+    }
+    
+    .main-paragraph-inside-picture {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-left: 25px;
+        font-weight: 300;
+    }
+    
+    .secondary-products-grid{
+        margin: 5px 10px 5px 10px;
+        display: grid; 
+        grid-template-columns: auto;
+        gap: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .button-container{
+        font-size: 12pt;
+        padding: 16px 32px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .main-title-under-picture {
+        font-size: 14pt;  
+        padding: 25px;
+    }
+
+/*MOBILE - SECCION NOSOTROS*/
+
+    .gray-container {
+        background-color: #e2e3e4;
+        padding-top: 50px;
+        padding-right: 25px;
+        padding-bottom: 50px;
+        padding-left: 25px;
+    }
+
+    .index-grid-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 25px;
+        column-gap: 0px;        
+    }
+
+    .grid-item {
+        width: 100%;  
+        text-align: center;  
+        padding: 5px;
+    }
+
+    .image-item {
+        width: 100%;
+        height: auto;  
+    }
+
+/*MOBILE - SECCION PIE*/
+
+    .footer {
+        padding: 25px;
+    }
+
+    .legal {
+        width: 100%;
+        align-self: center;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .footer-items-groups {
+        list-style: none;
+        display:block;
+    }   
+
+    .footer-menu-list {
+        display:block;  
+        padding-left: 25px;     
+    }
+
+    .footer-logo { 
+        padding-left: 50px;
+        padding-right: 70px;    
+    }
 }
 
 /*TABLET*/
 @media only screen and (min-width:451px) and (max-width:960px) {
+/*    
+    h1 {
+        font-size: 18pt;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 14pt;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 10pt;
+        text-align: center;
+    }
+    
+/*TABLET - INDEX SECCION INICIO*/   
+/* 
+    .index-intro {
+        padding-top: 100px;
+        padding-left: 25px;
+        background-position: center center;
+    }
+
+    .index-main-list {           
+        padding-left: 25px;
+        text-align: left;   
+        width: 100%; 
+    }
+
+
+/*TABLET - INDEX SECCION DESTACADOS THINFINITY*/
+/*
+    .section-title{
+        margin-left: 25px;
+        margin-right: 25px;  
+        text-align: center;
+        margin-top: 50px;    
+    }
+
+    .paragraph-align-center {
+        margin-bottom: 25px;
+    }
+
+    .main-products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .background-image-trw { 
+        background-size: cover;
+        min-height: auto;
+        padding: 25px;
+        width: 100%;
+        margin-top: 5px;
+        align-self: right;
+    }
+
+    .background-image-trd { 
+        background-size: cover;
+        min-height: auto;   
+        padding: 25px;
+        width: 100%;
+        margin-top: 5px;
+        align-self: right;
+    }
+
+    .inside-image-text-box {
+        width: 100%;
+        margin-left: 25px;
+        margin-right: 0px;
+    }
+
+    .main-title-inside-picture {
+        font-size: 14pt;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+        padding-top: 150px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-weight: 600;
+    }
+    
+    .main-paragraph-inside-picture {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-left: 25px;
+        font-weight: 300;
+    }
+    
+    .secondary-products-grid{
+        margin: 5px 10px 5px 10px;
+        display: grid; 
+        grid-template-columns: auto;
+        gap: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .button-container{
+        font-size: 12pt;
+        padding: 16px 32px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .main-title-under-picture {
+        font-size: 14pt;  
+        padding: 25px;
+    }
+
+/*TABLET - SECCION NOSOTROS*/
+/*
+    .gray-container {
+        background-color: #e2e3e4;
+        padding-top: 50px;
+        padding-right: 25px;
+        padding-bottom: 50px;
+        padding-left: 25px;
+    }
+
+    .index-grid-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 25px;
+        column-gap: 0px;        
+    }
+
+    .grid-item {
+        width: 100%;  
+        text-align: center;  
+        padding: 5px;
+    }
+
+    .image-item {
+        width: 100%;
+        height: auto;  
+    }
+
+/*TABLET - SECCION PIE*/
+/*
+    .footer {
+        padding: 25px;
+    }
+
+    .legal {
+        width: 100%;
+        align-self: center;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .footer-items-groups {
+        list-style: none;
+        display:block;
+    }   
+
+    .footer-menu-list {
+        display:block;  
+        padding-left: 25px;     
+    }
+
+    .footer-logo { 
+        padding-left: 50px;
+        padding-right: 70px;    
+    }
     
 }
 
