@@ -1,4 +1,4 @@
-/*RESETEO CSS*/
+/* RESETEO CSS */
 
 * {
     margin:0px;
@@ -6,7 +6,7 @@
     box-sizing: border-box;
     }
 
-/*FUENTES*/
+/* FUENTES */
 
 html {
     font-size: 62.5%;
@@ -14,7 +14,7 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-/*TITULARES Y TEXTOS*/
+/* TITULARES Y TEXTOS */
 
 h1 {
     color: #ffffff;
@@ -44,7 +44,7 @@ p {
     font-family: 'lato';
 }
 
-/*SECCION MENU*/
+/* SECCION MENU */
 
 .top-menu{
     font-size: 2rem;
@@ -74,7 +74,7 @@ p {
     text-decoration: none;    
 }
 
-/*INDEX SECCION INICIO*/
+/* INDEX SECCION INICIO */
 
 .index-intro {
     padding: 150px;
@@ -94,7 +94,7 @@ p {
     padding-left: 25px;    
 }
 
-/*INDEX SECCION PRODUCTOS*/
+/* INDEX SECCION PRODUCTOS */
 
 .section-title{
     margin-left: 10%;
@@ -179,7 +179,7 @@ p {
     margin-bottom: 35px;
 }
 
-/*estructura de botón*/
+/* estructura de botón */
 .button-container{
     font-family: 'lato';
     font-weight: 500;
@@ -194,7 +194,7 @@ p {
     cursor: pointer;       
 }
 
-/*botón blanco*/
+/* botón blanco */
 .white-button {
     background-color: #ffffff; 
     color: #000000; 
@@ -207,7 +207,7 @@ p {
     border: 2px solid #ffffff;
 }
 
-/*botón azul*/
+/* botón azul */
 .blue-button {
     background-color: #085dac; 
     color: #ffffff; 
@@ -233,7 +233,7 @@ p {
     padding: 25px;
 }
 
-/*INDEX SECCION NOSOTROS*/
+/* INDEX SECCION NOSOTROS */
 
 .gray-container {
     background-color: #e2e3e4;
@@ -315,7 +315,7 @@ p {
     margin-top: 20px;            
 }
 
-/*PRODUSTOS SECCION INICIO*/
+/* PRODUSTOS SECCION INICIO */
 
 .products-grid-container {
     margin-top: 50px;
@@ -422,7 +422,7 @@ p {
     text-align: center;
   }
 
-/*PRODUCTOS SECCION THINFINITY*/
+/* PRODUCTOS SECCION THINFINITY */
 
 .cover-image {
     padding: 150px;
@@ -436,7 +436,7 @@ p {
     color: #ffffff;                 
 }
 
-/*PRODUCTOS SECCION ZSCOPE*/
+/* PRODUCTOS SECCION ZSCOPE */
 
 .two-products-grid-container {
         width: 100%;
@@ -473,20 +473,14 @@ p {
 }
 
 
-
-    /*margin: 50px 100px 50px 100px;
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
-/*NOSOTROS SECCION INICIO*/
-/*NOSOTROS SECCION TRABAJO CONJUNTO*/
-/*CLIENTES SECCION INICIO*/
-/*CONTACTO SECCION DATOS*/
-/*CONTACTO SECCION FORMULARIO*/
+/* NOSOTROS SECCION INICIO */
+/* NOSOTROS SECCION TRABAJO CONJUNTO */
+/* CLIENTES SECCION INICIO */
+/* CONTACTO SECCION DATOS */
+/* CONTACTO SECCION FORMULARIO */
 
 
-/*SECCION PIE*/
+/* SECCION PIE */
 
 .footer {
     list-style-type: none;
@@ -547,7 +541,7 @@ p {
         text-align: center;
     }
     
-/*MOBILE - INDEX SECCION INICIO*/    
+/* MOBILE - INDEX SECCION INICIO */    
     .index-intro {
         padding-top: 50px;
         padding-left: 25px;
@@ -562,7 +556,7 @@ p {
     }
 
 
-/*MOBILE - INDEX SECCION DESTACADOS THINFINITY*/
+/* MOBILE - INDEX SECCION DESTACADOS THINFINITY */
 
     .section-title{
         margin-left: 25px;
@@ -643,7 +637,7 @@ p {
         padding: 25px;
     }
 
-/*MOBILE - SECCION NOSOTROS*/
+/* MOBILE - SECCION NOSOTROS */
 
     .gray-container {
         background-color: #e2e3e4;
@@ -673,7 +667,7 @@ p {
         height: auto;  
     }
 
-/*MOBILE - SECCION PIE*/
+/* MOBILE - SECCION PIE */
 
     .footer {
         padding: 25px;
@@ -703,9 +697,9 @@ p {
     }
 }
 
-/*TABLET*/
+/* TABLET */
 @media only screen and (min-width:451px) and (max-width:960px) {
-/*    
+  
     h1 {
         font-size: 18pt;
         text-align: center;
@@ -721,8 +715,8 @@ p {
         text-align: center;
     }
     
-/*TABLET - INDEX SECCION INICIO*/   
-/* 
+/* TABLET - INDEX SECCION INICIO */   
+
     .index-intro {
         padding-top: 100px;
         padding-left: 25px;
@@ -736,7 +730,7 @@ p {
     }
 
 
-/*TABLET - INDEX SECCION DESTACADOS THINFINITY*/
+/* TABLET - INDEX SECCION DESTACADOS THINFINITY */
 /*
     .section-title{
         margin-left: 25px;
@@ -817,8 +811,8 @@ p {
         padding: 25px;
     }
 
-/*TABLET - SECCION NOSOTROS*/
-/*
+/* TABLET - SECCION NOSOTROS */
+
     .gray-container {
         background-color: #e2e3e4;
         padding-top: 50px;
@@ -847,8 +841,8 @@ p {
         height: auto;  
     }
 
-/*TABLET - SECCION PIE*/
-/*
+/* TABLET - SECCION PIE */
+
     .footer {
         padding: 25px;
     }
@@ -878,7 +872,7 @@ p {
     
 }
 
-/*DESKTOP*/
+/* DESKTOP*/
 @media only screen and (min-width:961px){
     
 }
