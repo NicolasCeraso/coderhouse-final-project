@@ -4,64 +4,76 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- BOOTSTRAP -->
+<!--BOOTSTRAP-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-<!-- CSS -->
+        <!--CSS-->
         <link rel="stylesheet" href="style.css">
-<!-- ANIMACIONES --> 
+<!--ANIMACIONES--> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-<!-- TYPOGRAFIAS -->
-<!-- Monsterrat -->
+<!--TYPOGRAFIAS-->
+<!--Monsterrat-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-<!-- Lato -->
+<!--Lato-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-<!-- TITULO DE LA PAGINA -->
+<!--TITULO DE LA PAGINA-->
         <title>BALogicSA Inicio</title>
-<!-- FAVICON -->
+<!-- FAVICON-->
         <link rel="balogic icon" href="imagenes/balogic-logo.png" type="image/x-icon">
     </head>
-<!-- BODY -->
+<!--BODY-->
     <body>
-<!-- HEADER -->
+<!--HEADER-->
         <header class="top-menu"> 
-<!-- SECCION MENU -->
-            <section id="menu">   
-                <nav class="top-menu-list">
-                    <div>
-                        <img class="menu-logo" src="inicio/imagenes/balogic-logo.svg"  alt="BALogicSA logo">
-                    </div>
-                    <div>
-                        <h3>
-                            <a class="clean-text" href="productos.html"><strong>Productos</strong></a>
-                        </h3>               
-                    </div>
-                    <div>
-                        <h3>            
-                            <a class="clean-text" href="nosotros.html"><strong>Nosotros</strong></a>                   
-                        </h3>                       
-                    </div>
-                    <div>
-                        <h3>                  
-                            <a class="clean-text" href="clientes.html"><strong>Clientes</strong></a> 
-                        </h3>                        
-                    </div>
-                    <div>
-                        <h3>                   
-                            <a class="clean-text" href="contacto.html"><strong>Contacto</strong></a> 
-                        </h3>
-                    </div>
-                </nav>
-            </section>    
-        </header>
-<!-- MAIN -->
-        <main>
-<!-- SECCION INICIO -->
-            <section class="index-intro animate__animated animate__fadeIn">
+<!--SECCION MENU-->
+            <section class="menu-margin" id="menu">
                 <div>
+                    <nav class="navbar navbar-expand-lg navbar-dark flex-row">
+                        <div class="container-fluid">   
+                            <div class="logo-img-margin">
+                                <img class="menu-item" src="inicio/imagenes/balogic-logo.svg" alt="BALogicSA logo">
+                            </div>                 
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <div class="container-fluid">                                    
+                                    <ul class="navbar-nav container-fluid menu-container">
+                                        <li class="nav-item dropdown list-container">
+                                            <a class="nav-link active dropdown-toggle" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <strong>Productos</strong>
+                                            </a>
+                                            <ul class="dropdown-menu menu-item">
+                                                <li><h3><a class="dropdown-item list-group-item" href="productos.html#thinfinity">Thinfinity</a></h3></li>
+                                                <li><h3><a class="dropdown-item list-group-item" href="productos.html#zscope">z/Scope</a></h3></li>
+                                                <li><h3><a class="dropdown-item list-group-item" href="contacto.html">TNBridge</a></h3></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item list-container">
+                                            <a class="nav-link active" href="nosotros.html"><strong>Nosotros</strong></a>
+                                        </li>
+                                        <li class="nav-item list-container">
+                                            <a class="nav-link active" href="clientes.html"><strong>Clientes</strong></a>
+                                        </li>
+                                        <li class="nav-item list-container">
+                                            <a class="nav-link active" href="contacto.html"><strong>Contacto</strong></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+        </header>
+<!--MAIN-->
+        <main>
+<!--SECCION INICIO-->
+            <section class="index-intro animate__animated animate__fadeIn">
+                <div class="text-align">
                     <h1>Dé vuelo a sus aplicaciones</h1>
                     <h2>Entrega segura de aplicaciones web y de escritorio</h2>
                     <br>
@@ -74,11 +86,12 @@
                         </ul>
                     </h3>
                     <br>
-                    <span>
+                    <div class="intro-left-button">
                         <a class="button-container white-button" href="contacto.html">Contacto</a>
-                    </span>
+                    </div>
                 </div>
             </section>
+        </main>
 <!-- SECCION PRODUCTOS -->
             <section>
                 <div>
@@ -86,101 +99,115 @@
                     <br>
                     <p class="paragraph-align-center">Nuestros productos están diseñados para ampliar la vida y las capacidades de sus aplicaciones más valiosas, ya sea permitiendo convertir el software antiguo en un SaaS habilitado para la web o entregando sus espacios de trabajo digitales en cualquier lugar.</p>
                 </div>
-<!-- DESTACADOS THINFINTIY -->
-                <div>
-                    <div class="background-image-trw">
-                        <div class="inside-image-text-box">
-                            <h2 class="main-title-inside-picture">Habilite, en tan solo minutos, trabajo remoto e híbrido para su organización</h2>
-                            <p class="main-paragraph-inside-picture">Ofrezca aplicaciones web internas y de Windows, sin VPN ni VDIs. Comparta archivos y carpetas alojados en prem. de forma segura.</p>
-                            <span>
-                                <a class="button-container white-button" href="productos.html">Ver producto</a>
-                            </span>
-                        </div>                        
-                    </div>
-                    <div class="background-image-trd">
-                        <div class="inside-image-text-box">
-                            <h2  class="main-title-inside-picture">Acceda a sus aplicaciones de escritorio (Windows) desde cualquier lugar y dispositivo</h2>
-                            <p class="main-paragraph-inside-picture">El acceso remoto es ahora rápido y sencillo de implantar, sin dejar de cumplir las normas de seguridad más estrictas.</p>
-                            <span>
-                                <a class="button-container white-button" href="productos.html">Ver producto</a>
-                            </span>
+<!-- GRILLA PRIMARIA -->
+                    <div class="grid-thinfinity">
+                        <div class="trw-item">
+                            <div class="trw-bg-img">
+                                <div class="text-inside">
+                                    <h2 class="title-inside">Habilite, en tan solo minutos, trabajo remoto e híbrido para su organización</h2>
+                                    <br>
+                                    <p>Ofrezca aplicaciones web internas y de Windows, sin VPN ni VDIs. Comparta archivos y carpetas alojados en prem. de forma segura.</p>
+                                </div>
+                                <div class="left-button">
+                                    <a class="button-container white-button" href="productos.html">Ver producto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trd-item">
+                            <div class="trd-bg-img">                                                     
+                                <div class="text-inside">
+                                    <h2 class="title-inside">Acceda a sus aplicaciones de escritorio (Windows) desde cualquier lugar y dispositivo</h2>
+                                    <br>
+                                    <p>El acceso remoto es ahora rápido y sencillo de implantar, sin dejar de cumplir las normas de seguridad más estrictas.</p>
+                                </div>
+                                <div class="left-button">
+                                    <a class="button-container white-button" href="productos.html">Ver producto</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-<!-- PRODUCTOS SECUNDARIOS -->
-                <div class="secondary-products-grid">
-                    <div>
-                        <img class="three-columns-photo" src="inicio/imagenes/persona-subiendo-aplicaciones-a-la-web.jpg" alt="Persona operando aplicaciones desde un navegador">
-                        <h2 class="main-title-under-picture">Traslade apps legacy, de Windows a la web</h2>
-                        <p class="grid-paragraph">Tome cualquier aplicación de escritorio existente y publíquela como una solución web. Con sólo añadir una línea al código fuente, su aplicación ya estará lista para ser accedida desde cualquier navegador</p>
-                        <span>
-                            <a class="button-container blue-button" href="productos.html">Ver producto</a>
-                        </span>
+<!-- GRILLA SECUNDARIA -->
+                    <div class="secondary-products-grid">
+                        <div>
+                            <img class="three-col-img" src="inicio/imagenes/persona-subiendo-aplicaciones-a-la-web.jpg" alt="Persona operando aplicaciones desde un navegador">
+                            <h2 class="main-title-under-picture">Traslade apps legacy, de Windows a la web</h2>
+                            <p class="grid-paragraph">Tome cualquier aplicación de escritorio existente y publíquela como una solución web. Con sólo añadir una línea al código fuente, su aplicación ya estará lista para ser accedida desde cualquier navegador</p>
+                            <div class="centered-button">
+                                <a class="button-container blue-button" href="productos.html">Ver producto</a>
+                            </div>                                
+                        </div>
+                        <div>
+                            <img  class="three-col-img" src="inicio/imagenes/persona-compartiendo-pantallas.jpg" alt="Persona accediendo remotamente desde un navegador">
+                            <h2 class="main-title-under-picture">Acceso remoto desde un navegador</h2>
+                            <p class="grid-paragraph">Comparta su pantalla de forma remota con cualquier navegador HMTL5. Acceda a su computadora de escritorio (Windows) desde cualquier dispositivo, sin necesidad de instalar complementos, o extensiones.</p>
+                            <div class="centered-button">                                
+                                <a class="button-container blue-button" href="productos.html">Ver producto</a>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="three-col-img" src="inicio/imagenes/persona-emulando-terminales-desde-un-dispositivo-mobile.jpg" alt="Persona accediendo a un emulador de terminales">
+                            <h2 class="main-title-under-picture">Emulación de terminal (web y escritorio)</h2>
+                            <p class="grid-paragraph">Acceda a varias aplicaciones basadas en host, desde una única interfaz. Ofrezca integración y modernización de aplicaciones legacy, utilizando las Últimas tecnologías web disponibles en la actualidad.</p>
+                            <div class="centered-button">                                
+                                <a class="button-container blue-button" href="productos.html">Ver producto</a>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <img  class="three-columns-photo" src="inicio/imagenes/persona-compartiendo-pantallas.jpg" alt="Persona accediendo remotamente desde un navegador">
-                        <h2 class="main-title-under-picture">Acceso remoto desde un navegador</h2>
-                        <p class="grid-paragraph">Comparta su pantalla de forma remota con cualquier navegador HMTL5. Acceda a su computadora de escritorio (Windows) desde cualquier dispositivo, sin necesidad de instalar complementos, o extensiones.</p>
-                        <span>
-                            <a class="button-container blue-button" href="productos.html">Ver producto</a>
-                        </span>
-                    </div>
-                    <div>
-                        <img class="three-columns-photo" src="inicio/imagenes/persona-emulando-terminales-desde-un-dispositivo-mobile.jpg" alt="Persona accediendo a un emulador de terminales">
-                        <h2 class="main-title-under-picture">Emulación de terminal (web y escritorio)</h2>
-                        <p class="grid-paragraph">Acceda a varias aplicaciones basadas en host, desde una única interfaz. Ofrezca integración y modernización de aplicaciones legacy, utilizando las Últimas tecnologías web disponibles en la actualidad.</p>
-                        <span>
-                            <a class="button-container blue-button" href="productos.html">Ver producto</a>
-                        </span>
-                    </div>
-                </div>
-            </section>
+                </section>
 <!-- SECCION NOSOTROS -->
             <section class="gray-container">
-                <div class="index-grid-container">
-                    <div class= "first-item">
+                <div class="index-about-us-grid-container">
+                    <div class= "index-about-us-img-item">
                         <a href="nosotros.html">
-                            <img class= "grid-item" src="inicio/imagenes/equiop-de-balogic-trabajando.jpg" alt="Imagen grupal del equipo">
+                            <img class= "index-about-us-grid-item" src="inicio/imagenes/equiop-de-balogic-trabajando.jpg" alt="Imagen grupal del equipo">
                         </a>
                     </div>
-                    <div class="grid-item second-item">
-                        <h2 class="about-us-section-title">Acerca de BA Logic SA</h2>
+                    <div class="index-about-us-grid-item index-about-us-title-item">
+                        <h2 class="index-about-us-section-title">Acerca de BA Logic SA</h2>
                         <br>
                         <p>Ayudamos a las organizaciones a prolongar la vida y el valor de su software. Tanto si buscan mejorar y potenciar el trabajo a distancia como convertir sus aplicaciones heredadas críticas para el negocio en un moderno SaaS, nuestro software permite a los clientes centrarse en lo más importante: ampliar y hacer evolucionar su negocio.</p>
-                    </div>
-                    <div class="grid-item third-item">
-                        <span>
-                            <a class="button-container blue-button" href="contacto.html">Contacto</a>
-                        </span>
-                        <span>
-                            <a class="button-container blue-button" href="nosotros.html">Nosotros</a>
-                        </span>
-                    </div>                                
-                    <div class="grid-item fourth-item">
-                        <h3>Oficina</h3>
-                                        <ul class="grid-list">
-                                            <li><h4>Cómo llegar</h4></li>
-                                            <li><h4>Av. Congrerso 1685 - 3°</h4></li>
-                                            <li><h4>Buenos Aires</h4></li>
-                                            <li><h4>CP1428</h4></li>
-                                            <li><h4>Argentina</h4></li>
-                                        </ul>                                  
-                    </div>
-                    <div class="grid-item fifth-item">
-                        <h3>Teléfonos</h3>
-                        <ul class="grid-list">
-                            <li><h4>+54 (911) 2170-2175</h4></li>
-                            <li><h4>+54 (911) 2170-2175</h4></li>
-                        </ul>            
-                    </div>
-                    <div class="grid-item sixth-item">
-                        <h3>Redes</h3>
-                                    <h4 class="grid-list">Seguir</h4>
-                    </div>                                        
+                        <div>
+                            <div class="button-in-line">
+                                <a class="button-container blue-button" href="contacto.html">Contacto</a>
+                            </div>
+                            <div class="button-in-line">
+                                    <a class="button-container blue-button" href="nosotros.html">Nosotros</a>
+                            </div>
+                            <div class="index-about-us-li">
+                                <div>
+                                    <h3>Oficina</h3>
+                                    <ul class="index-about-us-grid-list">
+                                        <li><h4><strong>Cómo llegar</strong></h4></li>
+                                        <li><h4>Av. Congrerso 1685 - 3°</h4></li>
+                                        <li><h4>Buenos Aires</h4></li>
+                                        <li><h4>CP1428</h4></li>
+                                        <li><h4>Argentina</h4></li>
+                                    </ul>                                  
+                                </div>
+                                <div>
+                                    <h3>Teléfonos</h3>
+                                    <ul class="index-about-us-grid-list">
+                                        <li><h4><strong>Llamar</strong></h4></li>
+                                        <li><h4>+54 (911) 2170-2175</h4></li>
+                                        <li><h4>+54 (911) 2170-2175</h4></li>
+                                    </ul>            
+                                </div>
+                                <div>
+                                    <h3>Redes</h3>
+                                    <ul class="index-about-us-grid-list">
+                                        <li>
+                                            <h4><strong>Seguir</strong></h4>
+                                          </li>
+                                    </ul>                                                                                        
+                                </div>
+                            </div>     
+                        </div>
+                    </div>                                                                
+                                                            
                 </div>
             </section> 
         </main>
-<!-- SECCION FOOTER -->
+<!--SECCION FOOTER-->
         <footer class="footer">
             <section>
                 <nav class="footer-menu-list">
@@ -195,28 +222,44 @@
                                 <a class="clean-text" href="productos.html"><strong>Productos</strong></a>
                             </li>
                             <li>
-                                <a class="clean-text" href="productos.html">Thinfinity Remote Workspace</a>
+                                <h4>
+                                    <a class="clean-text" href="productos.html">Thinfinity Remote Workspace</a>
+                                </h4>
                             </li>
                             <li>
-                                <a class="clean-text" href="productos.html">Thifninity Remote Desktop</a>
+                                <h4>
+                                    <a class="clean-text" href="productos.html">Thifninity Remote Desktop</a>
+                                </h4>
                             </li>
                             <li>
-                                <a class="clean-text" href="productos.html">Thinfinity VirtualUi</a>
+                                <h4>
+                                    <a class="clean-text" href="productos.html">Thinfinity VirtualUi</a>
+                                </h4>
                             </li>    
                             <li>
-                                <a class="clean-text" href="productos.html">Thifinity VNC</a>
+                                <h4>
+                                    <a class="clean-text" href="productos.html">Thifinity VNC</a>
+                                </h4>
                             </li>
                             <li>
+                               <h4>
                                 <a class="clean-text" href="productos.html">z/Scope</a>
+                               </h4>
                             </li>
                             <li>
-                                <a class="clean-text" href="productos.html">z/Scope Desktop</a>
+                                <h4>
+                                    <a class="clean-text" href="productos.html">z/Scope Desktop</a>
+                                </h4>
                             </li>
                             <li>
-                                <a class="clean-text" href="productos.html">z/Scope Anywhere</a>
+                                <h4>
+                                    <a class="clean-text" href="productos.html">z/Scope Anywhere</a>
+                                </h4>
                             </li>
                             <li>
+                               <h4>
                                 <a class="clean-text" href="productos.html">TNBridge</a>
+                               </h4>
                             </li>
                         </ul>
                     </div>
@@ -226,13 +269,19 @@
                                 <a class="clean-text" href="nosotros.html"><strong>Nosotros</strong></a> 
                             </li>
                             <li>
-                                <a class="clean-text" href="nosotros.html">Acerca de nosotros</a>                             
+                               <h4>
+                                <a class="clean-text" href="nosotros.html">Acerca de nosotros</a> 
+                               </h4>                            
                             </li>
                             <li>
-                                <a class="clean-text" href="nosotros.html">Empleos</a>
+                                <h4>
+                                    <a class="clean-text" href="nosotros.html">Empleos</a>
+                                </h4>
                             </li>
                             <li>
-                                <a class="clean-text" href="nosotros.html">Asociarse</a>
+                                <h4>
+                                    <a class="clean-text" href="nosotros.html">Asociarse</a>
+                                </h4>
                             </li>
                         </ul>                       
                     </div>
@@ -242,7 +291,9 @@
                                 <a class="clean-text" href="clientes.html"><strong>Clientes</strong></a> 
                             </li>
                             <li>
-                                <a class="clean-text" href="clientes.html">Porfolio</a>
+                                <h4>
+                                    <a class="clean-text" href="clientes.html">Porfolio</a>
+                                </h4>
                             </li>
                         </ul>                        
                     </div>
@@ -252,16 +303,24 @@
                                 <a class="clean-text" href="contacto.html"><strong>Contacto</strong></a> 
                             </li>
                             <li>
-                                <a class="clean-text" href="contacto.html">e-mail</a>
+                                <h4>
+                                    <a class="clean-text" href="contacto.html">e-mail</a>
+                                </h4>
                             </li>
                             <li>
-                                <a class="clean-text" href="contacto.html">Dirección</a>
+                                <h4>
+                                    <a class="clean-text" href="contacto.html">Dirección</a>
+                                </h4>
                             </li>
                             <li>
-                                <a class="clean-text" href="contacto.html">Teléfonos</a>
+                                <h4>
+                                    <a class="clean-text" href="contacto.html">Teléfonos</a>
+                                </h4>
                             </li>
                             <li>
-                                <a class="clean-text" href="contacto.html">Redes</a>
+                                <h4>
+                                    <a class="clean-text" href="contacto.html">Redes</a>
+                                </h4>
                             </li>
                         </ul>
                     </div>
@@ -272,5 +331,4 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     </body>
 </html>
-
 

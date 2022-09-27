@@ -44,40 +44,38 @@ p {
     font-family: 'lato';
 }
 
-/* SECCION MENU */
+/* DESKTOP - SECCION MENU */
 
 .top-menu{
+    font-family: 'Montserrat';
     font-size: 2rem;
     background-color: black;    
-    padding-left: 50px;
-    padding-right: 50px;
     padding-top: 50px;
     padding-bottom: 50px; 
 }
 
-.menu-logo {
-    width: 150px;    
+.menu-item {
+    width: 150px; 
 }
 
-.top-menu-list {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    justify-content: space-around;
-    align-items: center;
+.logo-img-margin {
+    margin-right: 5%; 
 }
 
-.clean-text {
-    font-family: 'Montserrat';    
-    color: #ffffff;
-    text-decoration: none;    
+.menu-margin {
+    margin-left: 9%;
+    margin-right: 12%; 
 }
 
-/* INDEX SECCION INICIO */
+.list-container {
+    margin-right: 6%;
+    margin-left: 6%;
+}
+
+/* DESKTOP - INDEX - SECCION INICIO*/
 
 .index-intro {
-    padding: 150px;
+    
     background-image: url('inicio/imagenes/inicio-background-image.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,107 +92,32 @@ p {
     padding-left: 25px;    
 }
 
-/* INDEX SECCION PRODUCTOS */
-
-.section-title{
-    margin-left: 10%;
-    margin-right: 10%; 
-    font-weight: bold;
-    color: #085dac;  
-    text-align: center;
-    margin-top: 100px;    
+.text-align {   
+    padding: 10%;   
 }
 
-.background-image-trw { 
-    background-image: url(inicio/imagenes/persona-trabajando-en-forma-remota-desde-un-dispositivo-mobil.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: auto;
-    background-attachment: local;
-	background-position: center center;
-    padding-top: 250px;
-    width: 100%;
-    margin-top: 50px;
-    color: #ffffff;
-}
+/* estructura botón */
 
-.background-image-trd { 
-    background-image: url(inicio/imagenes/personas-trabajando-en-forma-remota.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: auto;
-    background-attachment: local;
-	background-position: center center;    
-    padding-top: 250px;
-    width: 100%;
-    margin-top: 50px;
-    color: #ffffff;
-}
-
-.paragraph-align-center {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-left: 20%;
-    margin-right: 20%;    
-    align-self: center;
-}
-
-.main-products-grid {
-    display: grid; 
-    grid-template-columns: auto auto;
-}
-
-
-.inside-image-text-box {
-    margin-left: 150px;
-}
-
-
-.secondary-products-grid{
-    margin: 50px 100px 50px 100px;
-    display: grid; 
-    grid-template-columns: auto auto auto;
-    gap: 25px;
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
-.three-columns-photo {
-    width: 100%;
-    height: auto;
-    margin-bottom: 25px;
-}
-
-.main-title-inside-picture {
-    font-size: 22pt;
-    width: 90%;
-    text-align: left;
-    margin-bottom: 25px;
-}
-
-.main-paragraph-inside-picture {
-    width: 90%;
-    text-align: left;
-    margin-bottom: 35px;
-}
-
-/* estructura de botón */
 .button-container{
     font-family: 'lato';
     font-weight: 500;
     font-size: 2rem;
-    padding: 16px 32px;
+    padding: 6px 32px;
     text-align: center;
     text-decoration: none;
     border-radius: 50px;
     display: inline-block;
-    margin: 35px 2px;
+    margin: 15px 2px;
     transition-duration: 0.4s;
     cursor: pointer;       
 }
 
+.intro-left-button {
+    padding-bottom: 50px;
+}
+
 /* botón blanco */
+
 .white-button {
     background-color: #ffffff; 
     color: #000000; 
@@ -207,7 +130,89 @@ p {
     border: 2px solid #ffffff;
 }
 
+/* DESKTOP - INDEX - SECCION PRODUCTOS */
+
+.section-title{
+    margin-left: 10%;
+    margin-right: 10%; 
+    font-weight: bold;
+    color: #085dac;  
+    text-align: center;
+    margin-top: 100px;    
+}
+
+.paragraph-align-center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;    
+    align-self: center;
+}
+
+/* grilla productos primaria */ 
+
+.grid-thinfinity {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 0px;   
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.trw-item {
+    width: 100%;  
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.trw-bg-img { 
+    background-image: url(inicio/imagenes/persona-trabajando-en-forma-remota-desde-un-dispositivo-mobil.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: right center;
+    width: 100%;
+    max-height: auto;
+    color: #ffffff;
+}
+    
+.trd-item {
+    width: 100%;  
+    grid-column-start: 2;
+    grid-column-end: 3;
+} 
+
+.trd-bg-img { 
+    background-image: url(inicio/imagenes/personas-trabajando-en-forma-remota.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: right center;    
+    width: 100%;
+    max-height: auto;
+    background-attachment: local;
+    color: #ffffff;
+}
+
+.text-inside{
+    padding-top: 250px;
+    padding-bottom: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+} 
+
+.title-inside {
+    font-size: 22pt;
+}
+
+.left-button {
+    padding-left: 15%;
+    padding-bottom: 50px;
+}
+
 /* botón azul */
+
 .blue-button {
     background-color: #085dac; 
     color: #ffffff; 
@@ -220,8 +225,13 @@ p {
     color: #085dac;
     border: 2px solid #085dac;
   }
- 
-.main-title-under-picture {
+
+  .centered-button { 
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-title-under-picture {
     font-size: 22pt;
     width: 100%;
     text-align: center;     
@@ -233,89 +243,90 @@ p {
     padding: 25px;
 }
 
-/* INDEX SECCION NOSOTROS */
+/* grilla productos secundaria */
+
+.secondary-products-grid{   
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 100px;
+}
+
+.three-col-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+/* DESKTOP - INDEX - SECCION NOSOTROS */
 
 .gray-container {
     background-color: #e2e3e4;
     padding-top: 100px;
-    padding-right: 150px;
+    padding-right: 10%;
     padding-bottom: 100px;
-    padding-left: 150px;
+    padding-left: 10%;
 }
 
-.index-grid-container {
+/* grilla */
+
+.index-about-us-grid-container {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     row-gap: 0px;
     column-gap: 35px;        
 }
 
-.grid-item {
-    width: 100%;  
-}
-
-.first-item {
+.index-about-us-img-item {
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 5;     
+       
 }
 
-.image-item {
-    height: 100%; 
-}
-
-.second-item {    
-    grid-column-start: 4;
-    grid-column-end: 8;
-    grid-row-start: 1;
-    grid-row-end: 2;  
-}
-
-.third-item {    
-    grid-column-start: 4;
-    grid-column-end: 8;
-    grid-row-start: 2;
-    grid-row-end: 3;  
-}
-
-.fourth-item {    
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 5;  
-}
-
-.fifth-item {    
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 3;
-    grid-row-end: 5;  
-}
-
-.sixth-item {    
-    grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 3;
-    grid-row-end: 5;  
-}
-
-.about-us-section-title {
+.index-about-us-section-title {
     width: 100%;
     font-family: 'Montserrat';
     font-weight: bold;
     color: #085dac;            
 }
 
+.index-about-us-grid-item {
+    width: 100%; 
+}
 
-.grid-list {
+.index-about-us-img-item {
+    height: 100%; 
+}
+
+.index-about-us-title-item {    
+    grid-column-start: 4;
+    grid-column-end: 8;
+}
+
+/* botones en línea */
+
+.button-in-line {
+    display: inline-block; 
+    margin-bottom: 20px;
+}
+
+/* items de lista */
+
+.index-about-us-li {    
+    display: flex;
+    justify-content: space-around;
+}
+
+.index-about-us-grid-list {
     list-style: none;
     margin-top: 20px;            
 }
 
-/* PRODUSTOS SECCION INICIO */
+/* PRODUCTOS SECCION INICIO */
 
 .products-grid-container {
     margin-top: 50px;
@@ -439,11 +450,11 @@ p {
 /* PRODUCTOS SECCION ZSCOPE */
 
 .two-products-grid-container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 35px;        
-    }
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 35px;        
+}
     
 .zscope-image-item-1 {
     background-image: url('productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg');
@@ -479,34 +490,17 @@ p {
 /* CONTACTO SECCION DATOS */
 /* CONTACTO SECCION FORMULARIO */
 
-
 /* SECCION PIE */
 
 .footer {
     list-style-type: none;
     font-size: 2rem;
     background-color: black;
-    padding: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-
-.legal {
-    color: #ffffff;
-    font-size: 1rem;
-    font-family: 'lato';
-    font-weight: 300;
-    text-align: left;
-    width: 150px;
-    margin-top: 10px;
-    line-height: 5px;
-}
-
-.footer-items-groups {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    font-size: 10pt;
-    line-height: 25px;
-}   
 
 .footer-menu-list {
     list-style: none;
@@ -523,12 +517,38 @@ p {
     align-items: center;
 }
 
-/*MOBILE*/
+.legal {
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'lato';
+    font-weight: 300;
+    text-align: left;
+    width: 150px;
+    margin-top: 15px;
+    line-height: 5px;
+}
+
+.footer-items-groups {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 10pt;
+    line-height: 25px;
+}   
+
+.clean-text {
+    font-family: 'Montserrat';    
+    color: #ffffff;
+    text-decoration: none;    
+}
+
+/* MOBILE */
 @media only screen and (max-width:450px) {
 
     h1 {
         font-size: 18pt;
         text-align: center;
+        margin-bottom: 15px;
     }
 
     h2 {
@@ -537,342 +557,318 @@ p {
     }
 
     h3 {
-        font-size: 10pt;
+        font-size: 12pt;
         text-align: center;
-    }
-    
-/* MOBILE - INDEX SECCION INICIO */    
-    .index-intro {
-        padding-top: 50px;
-        padding-left: 25px;
-        background-position: bottom center;
     }
 
     .index-main-list {   
-        font-weight: 200;        
-        padding-left: 25px;
-        text-align: left;   
-        width: 100%; 
+        text-align: left;
+        padding-left: 10%x;    
     }
 
-
-/* MOBILE - INDEX SECCION DESTACADOS THINFINITY */
-
-    .section-title{
-        margin-left: 25px;
-        margin-right: 25px;  
-        text-align: center;
-        margin-top: 50px;    
+    .text-align {   
+        padding-left: 10%;
+        padding-right: 10%;    
     }
 
-    .paragraph-align-center {
-        margin-bottom: 25px;
-    }
-
-    .main-products-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .background-image-trw { 
-        background-size: cover;
-        min-height: auto;
-        padding: 25px;
-        width: 100%;
-        margin-top: 5px;
-        align-self: right;
-    }
-
-    .background-image-trd { 
-        background-size: cover;
-        min-height: auto;   
-        padding: 25px;
-        width: 100%;
-        margin-top: 5px;
-        align-self: right;
-    }
-
-    .inside-image-text-box {
-        width: 100%;
-        margin-left: 25px;
-        margin-right: 0px;
-    }
-
-    .main-title-inside-picture {
-        font-size: 14pt;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 25px;
-        padding-top: 150px;
-        padding-left: 25px;
-        padding-right: 25px;
-        font-weight: 600;
-    }
-    
-    .main-paragraph-inside-picture {
-        width: 90%;
-        text-align: center;
-        margin-bottom: 10px;
-        padding-left: 25px;
-        font-weight: 300;
-    }
-    
-    .secondary-products-grid{
-        margin: 5px 10px 5px 10px;
-        display: grid; 
-        grid-template-columns: auto;
-        gap: 25px;
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-
+/* MOBILE - botón blanco */
     .button-container{
-        font-size: 12pt;
-        padding: 16px 32px;
-        margin-top: 5px;
+        font-size: 2rem;
+        padding: 6px 32px;
+        display: block;
+        margin-top: 15px;
         margin-bottom: 5px;
     }
 
+    .intro-left-button {
+        padding-left: 0%;        
+        display: flex;
+        justify-content: center;
+    }
+    
+/* MOBILE - grilla primaria */
+
+    .grid-thinfinity {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 10px;
+    }
+
+/* MOBILE - thinfinity remote workspace */    
+
+    .trw-item {
+        grid-column: span 1;
+    }
+
+/* MOBILE - thinfinity remote desktop */  
+
+    .trd-item {
+        grid-column: span 1;
+    }
+
+    .title-inside {
+        font-size: 18pt;        
+        text-align: center;
+    }
+
+    .left-button {
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+/* MOBILE - grilla secundaria */
+
+    .secondary-products-grid{   
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 10px;
+    }
+
+    .three-col-img {
+        grid-column: span 1;
+    }
+
     .main-title-under-picture {
-        font-size: 14pt;  
-        padding: 25px;
+        font-size: 18pt;    
     }
 
-/* MOBILE - SECCION NOSOTROS */
+/* MOBILE - INDEX SECCION NOSOTROS */
 
-    .gray-container {
-        background-color: #e2e3e4;
-        padding-top: 50px;
-        padding-right: 25px;
-        padding-bottom: 50px;
-        padding-left: 25px;
-    }
+/* MOBILE - grilla */
 
-    .index-grid-container {
+    .index-about-us-grid-container {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        row-gap: 25px;
-        column-gap: 0px;        
+        grid-template-rows:  1fr;         
+        text-align: center;      
     }
 
-    .grid-item {
-        width: 100%;  
-        text-align: center;  
-        padding: 5px;
+    .index-about-us-img-item {
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 
-    .image-item {
-        width: 100%;
-        height: auto;  
+    .index-about-us-section-title {         
+        font-size: 18pt; 
+        margin-top: 20px;
+        text-align: center; 
+    }
+    .index-about-us-img-item {
+        height: auto; 
     }
 
-/* MOBILE - SECCION PIE */
-
-    .footer {
-        padding: 25px;
+    .index-about-us-title-item {    
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 
-    .legal {
-        width: 100%;
-        align-self: center;
+/* MOBILE - botones en línea */
+
+    .button-in-line {              
+        display: inline-block; 
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+/* MOBILE - items de lista */
+
+    .index-about-us-grid-list {
+        margin-top: 20px;   
         text-align: center;
-        margin-top: 25px;
-        margin-bottom: 25px;
+        align-items: center;        
     }
 
-    .footer-items-groups {
-        list-style: none;
-        display:block;
+    .index-about-us-li {    
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+/* MOBILE - SECCION PIE */  
+
+    .footer {    
+        padding-left: 0%;
+        padding-right: 0%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
     }   
 
     .footer-menu-list {
-        display:block;  
-        padding-left: 25px;     
+        flex-direction: column;    
+    }
+    
+    .footer-logo {    
+        flex-direction: column;
+        margin-bottom: 20px;
     }
 
-    .footer-logo { 
-        padding-left: 50px;
-        padding-right: 70px;    
+    .legal {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
     }
+
+    .footer-items-groups {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }   
+
 }
 
 /* TABLET */
-@media only screen and (min-width:451px) and (max-width:960px) {
-  
+
+@media only screen and (min-width:450px) and (max-width:960px) {
+
     h1 {
-        font-size: 18pt;
-        text-align: center;
+        font-size: 3.5rem;
+        text-align: left;
+        margin-bottom: 15px;
     }
 
     h2 {
-        font-size: 14pt;
-        text-align: center;
+        font-size: 2.5rem;
+        text-align: left;
     }
 
     h3 {
-        font-size: 10pt;
-        text-align: center;
+        font-size: 16pt;
+        text-align: left;
     }
-    
-/* TABLET - INDEX SECCION INICIO */   
-
-    .index-intro {
-        padding-top: 100px;
-        padding-left: 25px;
-        background-position: center center;
-    }
+                   
+/* TABLET - INDEX SECCION INICIO*/
 
     .index-main-list {           
-        padding-left: 25px;
-        text-align: left;   
-        width: 100%; 
+        padding-left: 5%;    
     }
 
-
-/* TABLET - INDEX SECCION DESTACADOS THINFINITY */
-/*
-    .section-title{
-        margin-left: 25px;
-        margin-right: 25px;  
-        text-align: center;
-        margin-top: 50px;    
+    .text-align {   
+        padding-left: 10%;
+        padding-right: 10%;    
     }
 
-    .paragraph-align-center {
-        margin-bottom: 25px;
-    }
-
-    .main-products-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .background-image-trw { 
-        background-size: cover;
-        min-height: auto;
-        padding: 25px;
-        width: 100%;
-        margin-top: 5px;
-        align-self: right;
-    }
-
-    .background-image-trd { 
-        background-size: cover;
-        min-height: auto;   
-        padding: 25px;
-        width: 100%;
-        margin-top: 5px;
-        align-self: right;
-    }
-
-    .inside-image-text-box {
-        width: 100%;
-        margin-left: 25px;
-        margin-right: 0px;
-    }
-
-    .main-title-inside-picture {
-        font-size: 14pt;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 25px;
-        padding-top: 150px;
-        padding-left: 25px;
-        padding-right: 25px;
-        font-weight: 600;
-    }
-    
-    .main-paragraph-inside-picture {
-        width: 90%;
-        text-align: center;
-        margin-bottom: 10px;
-        padding-left: 25px;
-        font-weight: 300;
-    }
-    
-    .secondary-products-grid{
-        margin: 5px 10px 5px 10px;
-        display: grid; 
-        grid-template-columns: auto;
-        gap: 25px;
-        margin-left: 25px;
-        margin-right: 25px;
-    }
+/* TABLET- estructura de botón */
 
     .button-container{
-        font-size: 12pt;
-        padding: 16px 32px;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        font-family: 'lato';
+        font-weight: 500;
+        font-size: 2rem;
+        padding: 6px 32px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50px;
+        display: inline-block;
+        margin: 35px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;       
+    }
+
+    .intro-left-button {
+        padding-left: 0%;        
+        display: flex;
+        justify-content: center;
+    }
+
+/*  TABLET - INDEX SECCION PRODUCTOS */
+
+/* TABLET - grilla primaria */
+
+    .grid-thinfinity {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 10px;
+    }
+
+    .trw-item {
+        grid-column: span 1;
+    }
+
+    .trd-item {
+        grid-column: span 1;
+    }
+
+    .title-inside {
+        font-size: 18pt;        
+        text-align: center;
+    }
+
+    .text-inside{
+        padding-top: 200px;
+        text-align: center;
+    } 
+
+    .left-button {
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+/* TABLET - grilla secundaria */
+
+    .secondary-products-grid{   
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 10px;
+    }
+
+    .three-col-img {
+        grid-column: span 1;
     }
 
     .main-title-under-picture {
-        font-size: 14pt;  
-        padding: 25px;
+        font-size: 18pt;    
     }
 
-/* TABLET - SECCION NOSOTROS */
+/* TABLET - INDEX SECCION NOSOTROS */
 
-    .gray-container {
-        background-color: #e2e3e4;
-        padding-top: 50px;
-        padding-right: 25px;
-        padding-bottom: 50px;
-        padding-left: 25px;
-    }
+/* TABLET - grilla nosotros */
 
-    .index-grid-container {
+    .index-about-us-grid-container {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        row-gap: 25px;
-        column-gap: 0px;        
+        row-gap: 0px;
+        column-gap: 35px;   
+        text-align: center;      
     }
 
-    .grid-item {
-        width: 100%;  
-        text-align: center;  
-        padding: 5px;
+    .index-about-us-img-item {
+        grid-column-start: 1;
+        grid-column-end: 6; 
     }
 
-    .image-item {
-        width: 100%;
-        height: auto;  
+    .index-about-us-section-title {         
+        font-size: 22pt; 
+        margin-top: 20px;
+        text-align: center; 
+    }
+    .index-about-us-img-item {
+        height: auto; 
     }
 
-/* TABLET - SECCION PIE */
-
-    .footer {
-        padding: 25px;
+    .index-about-us-title-item {    
+        grid-column-start: 1;
+        grid-column-end: 6;
     }
 
-    .legal {
-        width: 100%;
-        align-self: center;
-        text-align: center;
-        margin-top: 25px;
-        margin-bottom: 25px;
+/* TABLET - botones en línea */
+
+    .button-in-line {        
+        display: inline-block;
     }
 
-    .footer-items-groups {
-        list-style: none;
-        display:block;
-    }   
+/* TABLET - items de lista */
 
-    .footer-menu-list {
-        display:block;  
-        padding-left: 25px;     
+    .index-about-us-grid-list {
+        margin-top: 20px;   
+        text-align: left;
+        align-items: center;         
     }
 
-    .footer-logo { 
-        padding-left: 50px;
-        padding-right: 70px;    
-    }
-    
-}
-
-/* DESKTOP*/
-@media only screen and (min-width:961px){
-    
 }
