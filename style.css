@@ -341,6 +341,12 @@ p {
     column-gap: 2px;        
 }
 
+.centered-text {
+    text-align: center;
+  }
+
+/* contenido thinfinity */ 
+
 .thinfinity-product-background-image { 
     background-image: url(productos/imagenes/thinfinity-logo.svg); 
     background-repeat: no-repeat;
@@ -362,7 +368,15 @@ p {
     background-color: rgba(31, 118, 178, 1);
     color:  rgba(255, 255, 255, 1);
   }
+  
+.first-product-item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
 
+/* contenido zscope */
 
 .zscope-product-background-image { 
     background-image: url(productos/imagenes/zscope-logo.svg); 
@@ -386,6 +400,15 @@ p {
     color:  rgba(255, 255, 255, 1);
   }
 
+.second-product-item {    
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+/* contenido tnbridge */
+
 .tnbridge-product-background-image { 
     background-image: url(productos/imagenes/tnbridge-logo.svg); 
     background-repeat: no-repeat;
@@ -408,30 +431,12 @@ p {
     color:  rgba(255, 255, 255, 1);
   }
 
-.first-product-item {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 6;
-}
-
-.second-product-item {    
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 4;
-}
-
 .third-product-item {    
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 6; 
 }
-
-.centered-text {
-    text-align: center;
-  }
 
 /* DESKTOP - PRODUCTOS - SECCION THINFINITY */
 
@@ -604,6 +609,8 @@ p {
         justify-content: center;
     }
     
+/* MOBILE - INDEX - SECCION PRODUCTOS */
+
 /* MOBILE - grilla primaria */
 
     .grid-thinfinity {
@@ -626,6 +633,11 @@ p {
 
     .title-inside {
         font-size: 18pt;        
+        text-align: center;
+    }
+    
+    .text-inside{
+        padding-top: 200px;
         text-align: center;
     }
 
@@ -651,7 +663,7 @@ p {
         font-size: 18pt;    
     }
 
-/* MOBILE - INDEX SECCION NOSOTROS */
+/* MOBILE - INDEX - SECCION NOSOTROS */
 
 /* MOBILE - grilla */
 
@@ -704,6 +716,116 @@ p {
         margin-top: 30px;
     }
 
+/* MOBILE - PRODUCTOS - SECCION INICIO */
+
+    .products-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 3px;
+        column-gap: 2px;        
+    } 
+
+/* contenido thinfinity */
+
+    .thinfinity-product-text {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    .first-product-item {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+/* contenido zscope */
+
+    .zscope-product-text {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    .second-product-item {    
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+/* contenido tnbridge */    
+
+    .tnbridge-product-text {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    .third-product-item {    
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4; 
+    }
+    
+/* MOBILE - PRODUCTOS - SECCION THINFINITY */
+   
+.cover-img {
+    padding-top: 50px;  
+    max-height: ; 
+} 
+.product-title {
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+}
+
+.text-inside-main-img{
+    width: 100%;
+    text-align: center;
+} 
+
+.box-text-inside {
+    width: 100%;
+    text-align: center;
+}
+
+/* MOBILE - PRODUCTOS - SECCION ZSCOPE */
+
+.two-products-grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 35px;        
+}
+    
+.zscope-img-item-1 {
+background-image: url('productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 450px;
+background-position: center center;
+width: 100%;
+height: 400px;  
+}
+
+.zscope-img-item-2 {
+background-image: url('productos/imagenes/persona-trabajando-con-emulador-de-terminal-de-escritorio.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 450px;
+background-position: center center;
+width: 100%;
+height: 400px;  
+}
+
+.zscope-text-element {
+margin-top: 200px;
+margin-left: 75px;
+margin-right: 75px;
+color: #ffffff;
+}
+
 /* MOBILE - SECCION PIE */  
 
     .footer {    
@@ -736,8 +858,6 @@ p {
         flex-direction: column;
         justify-content: center;
     }   
-
-}
 
 /* TABLET */
 
@@ -896,23 +1016,15 @@ p {
         grid-template-rows: 1fr 1fr 1fr;
         row-gap: 3px;
         column-gap: 2px;        
-    }
+    } 
+
+/* contenido thinfinity */
 
     .thinfinity-product-text {
         padding-top: 0px;
         padding-bottom: 50px;
     }
 
-    .zscope-product-text {
-        padding-top: 0px;
-        padding-bottom: 50px;
-    }
-
-    .tnbridge-product-text {
-        padding-top: 0px;
-        padding-bottom: 50px;
-    }
-    
     .first-product-item {
         grid-column-start: 1;
         grid-column-end: 2;
@@ -920,18 +1032,32 @@ p {
         grid-row-end: 2;
     }
 
+/* contenido zscope */
+
+    .zscope-product-text {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
     .second-product-item {    
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
+/* contenido tnbridge */    
+
+    .tnbridge-product-text {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+    
     .third-product-item {    
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 5;
-        grid-row-end: 6; 
+        grid-row-start: 3;
+        grid-row-end: 4; 
     }
 
 /* TABLET - PRODUCTOS - SECCION THINFINITY */
@@ -955,17 +1081,17 @@ p {
         width: 100%;
         text-align: center;
     }
-
     
-/* DESKTOP - PRODUCTOS - SECCION ZSCOPE */
+/* TABLET - PRODUCTOS - SECCION ZSCOPE */
 
-.two-products-grid-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 35px;        
-}
-    
+    .two-products-grid-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 35px;        
+    }
+        
 .zscope-img-item-1 {
     background-image: url('productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg');
     background-repeat: no-repeat;
