@@ -326,7 +326,7 @@ p {
     margin-top: 20px;            
 }
 
-/* DESKTOP - PRODUCTOS SECCION INICIO */
+/* DESKTOP - PRODUCTOS - SECCION INICIO */
 
 .products-grid-container {
     margin-top: 50px;
@@ -433,21 +433,39 @@ p {
     text-align: center;
   }
 
-/* PRODUCTOS SECCION THINFINITY */
+/* DESKTOP - PRODUCTOS - SECCION THINFINITY */
 
-.cover-image {
-    padding: 150px;
+.cover-img {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+    min-height: auto;
     background-image: url('productos/imagenes/persona-ingresando-a-recursos-en-forma-remota.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: auto;
-    background-attachment: fixed;
 	background-position: center center;
 	width: 100%;
-    color: #ffffff;                 
+    color: #ffffff;       
 }
 
-/* PRODUCTOS SECCION ZSCOPE */
+.box-text-inside {
+    width: 60%;
+}
+
+.product-title {
+    font-weight: 400;
+}
+
+.three-col-grid-container {
+    margin-top: 50px;
+}
+
+.paragraph-block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* DESKTOP - PRODUCTOS - SECCION ZSCOPE */
 
 .two-products-grid-container {
     width: 100%;
@@ -456,7 +474,7 @@ p {
     column-gap: 35px;        
 }
     
-.zscope-image-item-1 {
+.zscope-img-item-1 {
     background-image: url('productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -466,7 +484,7 @@ p {
     height: 400px;  
 }
 
-.zscope-image-item-2 {
+.zscope-img-item-2 {
     background-image: url('productos/imagenes/persona-trabajando-con-emulador-de-terminal-de-escritorio.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -870,5 +888,110 @@ p {
         text-align: left;
         align-items: center;         
     }
+
+/* TABLET - PRODUCTOS - SECCION INICIO */   
+
+    .products-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 3px;
+        column-gap: 2px;        
+    }
+
+    .thinfinity-product-text {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    .zscope-product-text {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    .tnbridge-product-text {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+    
+    .first-product-item {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .second-product-item {    
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .third-product-item {    
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6; 
+    }
+
+/* TABLET - PRODUCTOS - SECCION THINFINITY */
+   
+    .cover-img {
+        padding-top: 50px;  
+        max-height: ; 
+    } 
+    .product-title {
+        font-weight: 400;
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-inside-main-img{
+        width: 100%;
+        text-align: center;
+    } 
+
+    .box-text-inside {
+        width: 100%;
+        text-align: center;
+    }
+
+    
+/* DESKTOP - PRODUCTOS - SECCION ZSCOPE */
+
+.two-products-grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 35px;        
+}
+    
+.zscope-img-item-1 {
+    background-image: url('productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+	background-position: center center;
+	width: 100%;
+    height: 400px;  
+}
+
+.zscope-img-item-2 {
+    background-image: url('productos/imagenes/persona-trabajando-con-emulador-de-terminal-de-escritorio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+	background-position: center center;
+	width: 100%;
+    height: 400px;  
+}
+
+.zscope-text-element {
+    margin-top: 200px;
+    margin-left: 75px;
+    margin-right: 75px;
+    color: #ffffff;
+}
+
 
 }
