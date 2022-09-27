@@ -326,12 +326,12 @@ p {
     margin-top: 20px;            
 }
 
-/* PRODUCTOS SECCION INICIO */
+/* DESKTOP - PRODUCTOS SECCION INICIO */
 
 .products-grid-container {
     margin-top: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
     margin-bottom: 150px;
     width: 100%;
     display: grid;
