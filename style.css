@@ -234,13 +234,13 @@ p {
   .main-title-under-picture {
     font-size: 22pt;
     width: 100%;
-    text-align: center;     
+    text-align: center;  
+    padding-bottom: 15px;   
 }
 
 .grid-paragraph {
     text-align: center;
-    align-items: center;
-    padding: 25px;
+    padding-bottom: 15px;
 }
 
 /* grilla productos secundaria */
@@ -252,6 +252,7 @@ p {
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 100px;
+    align-content: center;
 }
 
 .three-col-img {
@@ -657,10 +658,15 @@ p {
 
     .three-col-img {
         grid-column: span 1;
+        margin-top: 25px;
     }
 
     .main-title-under-picture {
         font-size: 18pt;    
+    }
+
+    .grid-paragraph {
+        padding-top: 10px;
     }
 
 /* MOBILE - INDEX - SECCION NOSOTROS */
@@ -857,7 +863,8 @@ color: #ffffff;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }   
+    }
+}   
 
 /* TABLET */
 
@@ -956,6 +963,7 @@ color: #ffffff;
 
     .three-col-img {
         grid-column: span 1;
+        margin-top: 25px;
     }
 
     .main-title-under-picture {
@@ -1121,3 +1129,4 @@ color: #ffffff;
 
 
 }
+
