@@ -229,6 +229,8 @@ p {
   .centered-button { 
     display: flex;
     justify-content: center;
+    margin-bottom: 10%;
+    margin-top: 20px;
   }
 
   .main-title-under-picture {
@@ -338,8 +340,8 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 3px;
-    column-gap: 2px;        
+    row-gap: 2px;
+    column-gap: 4px;        
 }
 
 .centered-text {
@@ -347,7 +349,7 @@ p {
   }
 
 /* contenido thinfinity */ 
-
+/*
 .thinfinity-product-background-image { 
     background-image: url(productos/imagenes/thinfinity-logo.svg); 
     background-repeat: no-repeat;
@@ -357,7 +359,108 @@ p {
     padding-left: 25px;
     padding-right: 25px;   
 }
+/* TEST */ 
+/* grid-thinfinity-product */
+.thinfinity-product {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-color: #007dc1;
+    background-image: url(productos/imagenes/isologo-thinfinity.svg); background-repeat: no-repeat;
+    background-size:30%;
+    background-position: center center;
+}
 
+.thinfinity-text-block {    
+    background-color: rgba(0, 125, 193, 0); 
+    color:  rgba(255, 255, 255, 0);
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-top: 45%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 11%;
+  }
+  
+ .thinfinity-text-block:hover {
+    background-color: rgba(0, 125, 193, 1);
+    color:  rgba(255, 255, 255, 1);
+  }
+  
+/* grid-zscope-product */
+.zscope-product {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: #928166;
+    background-image: url(productos/imagenes/isologo-zscope.svg); background-repeat: no-repeat;
+    background-size:25%;
+    background-position: center center;
+}
+
+.zscope-text-block {    
+    background-color: rgba(146, 129, 102, 0); 
+    color:  rgba(255, 255, 255, 0);
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-top: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+  }
+  
+ .zscope-text-block:hover {
+    background-color: rgba(146, 129, 102, 1);
+    color:  rgba(255, 255, 255, 1);
+  }
+
+/* grid-tnbridge-product */
+.tnbridge-product {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: #e19634;
+    background-image: url(productos/imagenes/isologo-tnbridge.svg); background-repeat: no-repeat;
+    background-size:35%;
+    background-position: center center;
+}
+
+.tnbridge-text-block {    
+    background-color: rgba(225, 150, 52, 0); 
+    color:  rgba(255, 255, 255, 0);
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-top: 15%;
+    padding-left: 10%;
+    padding-right: 10%;    
+    padding-bottom: 15%;
+  }
+  
+ .tnbridge-text-block:hover {
+    background-color: rgba(225, 150, 52, 1);
+    color:  rgba(255, 255, 255, 1);
+  }
+
+  .in-grid-button{
+    font-family: 'lato';
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 6px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;       
+}
+
+/*  FIN TEST *//*
 .thinfinity-product-text {
     padding-top: 250px;
     padding-bottom: 50px;
@@ -375,9 +478,10 @@ p {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 6;
+    background-color: #007dc1;
 }
 
-/* contenido zscope */
+/* contenido zscope *//*
 
 .zscope-product-background-image { 
     background-image: url(productos/imagenes/zscope-logo.svg); 
@@ -408,7 +512,7 @@ p {
     grid-row-end: 4;
 }
 
-/* contenido tnbridge */
+/* contenido tnbridge *//*
 
 .tnbridge-product-background-image { 
     background-image: url(productos/imagenes/tnbridge-logo.svg); 
@@ -726,11 +830,57 @@ p {
     .products-grid-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 3px;
-        column-gap: 2px;        
+        row-gap: 3px;        
     } 
 
-/* contenido thinfinity */
+/* grid-thinfinity-product */
+    .thinfinity-product {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-size:40%;
+    }
+
+    .thinfinity-text-block {  
+        padding-top: 15%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+     
+/* grid-zscope-product */
+    .zscope-product {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-size: 40%;
+    }
+
+    .zscope-text-block {   
+        padding-top: 15%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+/* grid-tnbridge-product */
+    .tnbridge-product {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-size: 60%;
+    }
+
+    .tnbridge-text-block {    
+        padding-top: 35%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+ 
+
+/* contenido thinfinity *//*
 
     .thinfinity-product-text {
         padding-top: 0px;
@@ -744,7 +894,7 @@ p {
         grid-row-end: 2;
     }
 
-/* contenido zscope */
+/* contenido zscope *//*
 
     .zscope-product-text {
         padding-top: 0px;
@@ -758,7 +908,7 @@ p {
         grid-row-end: 3;
     }
 
-/* contenido tnbridge */    
+/* contenido tnbridge */    /*
 
     .tnbridge-product-text {
         padding-top: 0px;
@@ -775,8 +925,7 @@ p {
 /* MOBILE - PRODUCTOS - SECCION THINFINITY */
    
     .cover-img {
-        padding-top: 50px;  
-        max-height: ; 
+        padding-top: 50px; 
     } 
 
     .product-title {
@@ -1016,16 +1165,59 @@ p {
     }
 
 /* TABLET - PRODUCTOS - SECCION INICIO */   
-
+  
     .products-grid-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 3px;
-        column-gap: 2px;        
+        row-gap: 3px;        
     } 
 
-/* contenido thinfinity */
+/* grid-thinfinity-product */
+    .thinfinity-product {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-size:25%;
+    }
 
+    .thinfinity-text-block {  
+        padding-top: 30%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+     
+/* grid-zscope-product */
+    .zscope-product {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-size: 25%;
+    }
+
+    .zscope-text-block {   
+        padding-top: 30%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+/* grid-tnbridge-product */
+    .tnbridge-product {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-size: 40%;
+    }
+
+    .tnbridge-text-block {    
+        padding-top: 35%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+/* contenido thinfinity */
+/*
     .thinfinity-product-text {
         padding-top: 0px;
         padding-bottom: 50px;
@@ -1039,7 +1231,7 @@ p {
     }
 
 /* contenido zscope */
-
+/*
     .zscope-product-text {
         padding-top: 0px;
         padding-bottom: 50px;
@@ -1053,7 +1245,7 @@ p {
     }
 
 /* contenido tnbridge */    
-
+/*
     .tnbridge-product-text {
         padding-top: 0px;
         padding-bottom: 50px;
@@ -1069,8 +1261,7 @@ p {
 /* TABLET - PRODUCTOS - SECCION THINFINITY */
    
     .cover-img {
-        padding-top: 50px;  
-        max-height: ; 
+        padding-top: 50px; 
     } 
     .product-title {
         font-weight: 400;
