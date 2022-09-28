@@ -300,6 +300,7 @@ p {
 
 .index-about-us-grid-item {
     width: 100%; 
+    height: auto;
 }
 
 .index-about-us-img-item {
@@ -522,12 +523,43 @@ p {
     text-align: left;
 }
 
-/* NOSOTROS SECCION INICIO */
+/* DESKTOP - NOSOTROS - SECCION INICIO */
+
+.about-us-grid-container {
+    width: 100%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 0px;
+    column-gap: 35px;        
+}
 
 .about-us-img-item {
     grid-column-start: 1;
     grid-column-end: 4;       
 }
+
+.about-us-paragraph {
+    padding-right: 20%;       
+}
+
+/* DESKTOP - NOSOTROS - TRABAJO CONJUNTO */
+
+.about-us-segment {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+    padding-bottom: 100px;       
+}
+
+.about-us-li {
+    font-size: 12pt;   
+    font-weight: 600;    
+    padding-left: 5%;
+}
+
+
 
 /* NOSOTROS SECCION TRABAJO CONJUNTO */
 /* CLIENTES SECCION INICIO */
@@ -856,6 +888,16 @@ p {
         text-align: center;
     }
 
+/* MOBILE - NOSOTROS - SECCION INICIO */
+
+    .about-us-grid-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  1fr;         
+        text-align: center;      
+    }
+
 /* MOBILE - SECCION PIE */  
 
     .footer {    
@@ -1135,29 +1177,41 @@ p {
         row-gap: 35px;        
     }
         
-.zscope-img-anywhere {
-    background-image: url('productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 450px;
-	background-position: center center;
-	width: 100%;
-    }
+    .zscope-img-anywhere {
+        background-image: url('productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 450px;
+        background-position: center center;
+        width: 100%;
+        }
 
-.zscope-img-desktop {
-    background-image: url('productos/imagenes/persona-trabajando-con-emulador-de-terminal-de-escritorio.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 450px;
-	background-position: center center;
-	width: 100%; 
-    }
+    .zscope-img-desktop {
+        background-image: url('productos/imagenes/persona-trabajando-con-emulador-de-terminal-de-escritorio.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 450px;
+        background-position: center center;
+        width: 100%; 
+        }
 
-.zscope-text-element {
-    margin-top: 200px;
-    margin-left: 75px;
-    margin-right: 75px;
-    color: #ffffff;
+    .zscope-text-element {
+        margin-top: 200px;
+        margin-left: 75px;
+        margin-right: 75px;
+        color: #ffffff;
+        }
+
+/* TABLET - NOSOTROS - SECCION INICIO */
+
+    .index-about-us-grid-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 0px;
+        column-gap: 35px;   
+        text-align: center;      
     }
 
 }
