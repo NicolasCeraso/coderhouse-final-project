@@ -480,33 +480,32 @@ p {
     column-gap: 35px;        
 }
     
-.zscope-img-item-1 {
+.zscope-img-anywhere {
     background-image: url('productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 450px;
+    min-height: auto;
 	background-position: center center;
 	width: 100%;
     height: 400px;  
 }
 
-.zscope-img-item-2 {
+.zscope-img-desktop {
     background-image: url('productos/imagenes/persona-trabajando-con-emulador-de-terminal-de-escritorio.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 450px;
+    min-height: auto;
 	background-position: center center;
 	width: 100%;
-    height: 400px;  
 }
 
 .zscope-text-element {
-    margin-top: 200px;
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-top: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
     color: #ffffff;
+    text-align: left;
 }
-
 
 /* NOSOTROS SECCION INICIO */
 /* NOSOTROS SECCION TRABAJO CONJUNTO */
@@ -775,62 +774,61 @@ p {
     
 /* MOBILE - PRODUCTOS - SECCION THINFINITY */
    
-.cover-img {
-    padding-top: 50px;  
-    max-height: ; 
-} 
-.product-title {
-    font-weight: 400;
-    width: 100%;
-    text-align: center;
-}
+    .cover-img {
+        padding-top: 50px;  
+        max-height: ; 
+    } 
 
-.text-inside-main-img{
-    width: 100%;
-    text-align: center;
-} 
+    .product-title {
+        font-weight: 400;
+        width: 100%;
+        text-align: center;
+    }
 
-.box-text-inside {
-    width: 100%;
-    text-align: center;
-}
+    .text-inside-main-img{
+        width: 100%;
+        text-align: center;
+    } 
+
+    .box-text-inside {
+        width: 100%;
+        text-align: center;
+    }
 
 /* MOBILE - PRODUCTOS - SECCION ZSCOPE */
 
-.two-products-grid-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    row-gap: 35px;        
-}
+    .two-products-grid-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 35px;        
+    }
     
-.zscope-img-item-1 {
-background-image: url('productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-min-height: 450px;
-background-position: center center;
-width: 100%;
-height: 400px;  
-}
+    .zscope-img-anywhere {
+        background-image: url('productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: auto;
+        background-position: center center;
+        width: 100%;
+    }
 
-.zscope-img-item-2 {
-background-image: url('productos/imagenes/persona-trabajando-con-emulador-de-terminal-de-escritorio.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-min-height: 450px;
-background-position: center center;
-width: 100%;
-height: 400px;  
-}
+    .zscope-img-desktop {
+        background-image: url('productos/imagenes/persona-trabajando-con-emulador-de-terminal-de-escritorio.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: auto;
+        background-position: center center;
+        width: 100%;
+    }
 
-.zscope-text-element {
-margin-top: 200px;
-margin-left: 75px;
-margin-right: 75px;
-color: #ffffff;
-}
+    .zscope-text-element {
+        margin-top: 150px;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+    }
 
 /* MOBILE - SECCION PIE */  
 
@@ -1100,7 +1098,7 @@ color: #ffffff;
         row-gap: 35px;        
     }
         
-.zscope-img-item-1 {
+.zscope-img-anywhere {
     background-image: url('productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -1110,7 +1108,7 @@ color: #ffffff;
     height: 400px;  
 }
 
-.zscope-img-item-2 {
+.zscope-img-desktop {
     background-image: url('productos/imagenes/persona-trabajando-con-emulador-de-terminal-de-escritorio.jpg');
     background-repeat: no-repeat;
     background-size: cover;
