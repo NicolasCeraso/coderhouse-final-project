@@ -714,9 +714,8 @@ p {
 /* MOBILE - botones en línea */
 
     .button-in-line {              
-        display: block; 
-        margin-bottom: 5px;
-        margin-top: 5px;
+        display: flex;
+        justify-content: center;
     }
 
 /* MOBILE - items de lista */
