@@ -252,7 +252,7 @@ p {
 .secondary-products-grid{   
     display: grid; 
     grid-template-columns: auto auto auto;
-    gap: 25px;
+    column-gap: 25px;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 100px;
@@ -533,11 +533,6 @@ p {
     grid-template-rows: 1fr;
     row-gap: 0px;
     column-gap: 35px;        
-}
-
-.about-us-img-item {
-    grid-column-start: 1;
-    grid-column-end: 4;       
 }
 
 .about-us-paragraph {
@@ -930,6 +925,44 @@ p {
         flex-direction: column;
         justify-content: center;
     }
+
+/* MOBILE - NOSOTROS - SECCION INICIO */
+
+    .about-us-grid-container {
+        width: 100%;
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 0px;
+        column-gap: 35px;        
+    }
+
+    .about-us-paragraph {
+        padding-right: 10%; 
+        padding-left: 10%;      
+    }
+
+/* MOBILE - NOSOTROS - TRABAJO CONJUNTO */
+
+    .about-us-segment {
+        padding-top: 50px;
+        padding-bottom: 50px;       
+    }
+
+    .about-us-li {    
+        padding-left: 0%;
+        text-align: left;
+    }
+
+    .about-us-secondary-title {  
+        font-size: 18pt; 
+        padding-bottom: 20px;    
+    }
+
+    .about-us-text-block { 
+        text-align: center;
+    }
 }   
 
 /* TABLET */
@@ -982,7 +1015,7 @@ p {
     .intro-left-button {
         padding-left: 0%;        
         display: flex;
-        justify-content: center;
+        justify-content: left;
     }
 
     .index-left-button {
@@ -1154,17 +1187,12 @@ p {
     .product-title {
         font-weight: 400;
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
-    .text-inside-main-img{
-        width: 100%;
-        text-align: center;
-    } 
-
     .box-text-inside {
-        width: 100%;
-        text-align: center;
+        width: 70%;
+        text-align: left;
     }
     
 /* TABLET - PRODUCTOS - SECCION ZSCOPE */
@@ -1212,6 +1240,45 @@ p {
         row-gap: 0px;
         column-gap: 35px;   
         text-align: center;      
+    }
+
+/* TABLET - NOSOTROS - SECCION INICIO */
+
+    .about-us-grid-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 0px;
+        column-gap: 35px;   
+        text-align: center;      
+    }
+
+    .about-us-paragraph {
+        padding-right: 10%; 
+        padding-left: 10%;   
+        text-align: center;   
+    }
+
+/* TABLET - NOSOTROS - TRABAJO CONJUNTO */
+
+    .about-us-segment {
+        padding-top: 50px;
+        padding-bottom: 50px;       
+    }
+
+    .about-us-li {    
+        padding-left: 0%;
+        text-align: left;
+    }
+
+    .about-us-secondary-title {  
+        font-size: 22pt; 
+        padding-bottom: 20px;    
+    }
+
+    .about-us-text-block { 
+        text-align: center;
     }
 
 }
