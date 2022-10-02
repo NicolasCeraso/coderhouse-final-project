@@ -366,7 +366,8 @@ p {
     grid-row-start: 1;
     grid-row-end: 6;
     background-color: #007dc1;
-    background-image: url(productos/imagenes/isologo-thinfinity.svg); background-repeat: no-repeat;
+    background-image: url(productos/imagenes/isologo-thinfinity.svg); 
+    background-repeat: no-repeat;
     background-size: 25%;
     background-position: center center;
 }
@@ -426,7 +427,8 @@ p {
     grid-row-start: 5;
     grid-row-end: 6;
     background-color: #e19634;
-    background-image: url(productos/imagenes/isologo-tnbridge.svg); background-repeat: no-repeat;
+    background-image: url(productos/imagenes/isologo-tnbridge.svg); 
+    background-repeat: no-repeat;
     background-size:35%;
     background-position: center center;
 }
@@ -562,8 +564,120 @@ p {
 
 
 
-/* NOSOTROS SECCION TRABAJO CONJUNTO */
-/* CLIENTES SECCION INICIO */
+/* DESKTOP - CLIENTES - SECCION INICIO */
+
+/* grilla */
+
+.clients-grid-container {
+    margin-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 35px;         
+}
+
+/* shell */
+
+.clients-grid-shell {
+    grid-column-start: 1;
+    grid-column-end: 2;   
+}
+
+.shell-logo {
+    width: 100%;    
+}
+
+/* visa */
+
+.clients-grid-visa {
+    grid-column-start: 2;
+    grid-column-end: 3;   
+}
+
+.visa-logo {
+    width: 100%;    
+}
+
+/* fujifilm */
+
+.clients-grid-fujifilm {
+    grid-column-start: 3;
+    grid-column-end: 4;  
+}
+
+.fujifilm-logo {
+    width: 100%;    
+}
+
+/* ibm */
+
+.clients-grid-ibm {
+    grid-column-start: 4;
+    grid-column-end: 5;   
+}
+
+.ibm-logo {
+    width: 100%;    
+}
+
+/* paypal */
+
+.clients-grid-paypal {
+    grid-column-start: 5;
+    grid-column-end: 6;  
+}
+
+.paypal-logo {
+    width: 100%;    
+}
+
+/* maestro */
+
+.clients-grid-maestro {
+    grid-column-start: 6;
+    grid-column-end: 7;   
+}
+
+.maestro-logo {
+    width: 100%;    
+}
+
+/* botones */
+
+.two-buttons-grid-container {
+    margin-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 35px;         
+}
+
+.two-buttons-grid-b1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.two-buttons-grid-b2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+
+
 /* CONTACTO SECCION DATOS */
 /* CONTACTO SECCION FORMULARIO */
 
@@ -935,6 +1049,105 @@ p {
         text-align: center;
     }
 
+/* MOBILE - CLIENTES - SECCION INICIO */
+
+/* grilla */
+
+.clients-grid-container {
+    margin-top: 25px;   
+    margin-bottom: 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 35px; 
+    row-gap: 35px;        
+}
+
+/* shell */
+
+.clients-grid-shell {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;  
+}
+
+/* visa */
+
+.clients-grid-visa {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;  
+}
+
+/* fujifilm */
+
+.clients-grid-fujifilm {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+}
+
+/* ibm */
+
+.clients-grid-ibm {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+}
+
+/* paypal */
+
+.clients-grid-paypal {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;   
+}
+
+/* maestro */
+
+.clients-grid-maestro {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;   
+}
+
+/* botones */
+
+.two-buttons-grid-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 35px;      
+}
+
+.two-buttons-grid-b1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.two-buttons-grid-b2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
 /* MOBILE - SECCION PIE */  
 
     .footer {    
@@ -1285,6 +1498,84 @@ p {
         padding-bottom: 20px;    
     }
 
+
+/* TABLET - CLIENTES - SECCION INICIO */
+
+/* grilla */
+
+    .clients-grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 35px;         
+    }
+
+/* shell */
+
+    .clients-grid-shell {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;   
+    }
+
+/* visa */
+
+    .clients-grid-visa {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;    
+    }
+
+/* fujifilm */
+
+    .clients-grid-fujifilm {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;   
+    }
+
+/* ibm */
+
+    .clients-grid-ibm {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;   
+    }
+
+/* paypal */
+
+    .clients-grid-paypal {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;   
+    }
+
+/* maestro */
+
+    .clients-grid-maestro {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;   
+    }
+
+/* botones */
+
+    .two-buttons-grid-container {
+        margin-top: 50px;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-bottom: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 35px;         
+    }
    
 
 }

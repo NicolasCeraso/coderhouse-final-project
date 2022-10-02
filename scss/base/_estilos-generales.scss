@@ -1,0 +1,50 @@
+/* @import */
+@import 'components/header';
+@import 'base/estilos-generales';
+
+
+/* RESETEO CSS */
+
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    }
+
+/* FUENTES */
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* TITULARES Y TEXTOS */
+
+h1 {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: 'Montserrat';
+    font-weight: 200;
+}
+ 
+h3 {
+    font-size: 2rem;
+    font-family: 'lato';
+}
+
+h4 {
+    font-size: 12px;
+    font-family: 'lato';
+}
+
+p {
+    font-size: 12pt;
+    font-family: 'lato';
+}
