@@ -1,0 +1,201 @@
+/* SECCION FOOTER */
+
+
+.footer {
+    list-style-type: none;
+    font-size: 2rem;
+    background-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+
+    @media only screen and (max-width:450px) { 
+        padding-left: 0%;
+        padding-right: 0%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center; 
+    }
+
+    .footer-menu-list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        justify-content: space-around; 
+
+        @media only screen and (max-width:450px) { 
+            flex-direction: column; 
+        }    
+
+        &.footer-logo {    
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center; 
+
+            @media only screen and (max-width:450px) { 
+                flex-direction: column;
+                margin-bottom: 20px; 
+            }  
+        }
+
+        & .footer-items-groups {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            font-size: 10pt;
+            line-height: 25px; 
+
+            @media only screen and (max-width:450px) { 
+                display: flex;
+                flex-direction: column;
+                justify-content: center; 
+            }  
+
+            &.clean-text {
+                font-family: 'Montserrat';    
+                color: #ffffff;
+                text-decoration: none;    
+            }
+        } 
+        
+        &.legal {
+            color: #ffffff;
+            font-size: 1rem;
+            font-family: 'lato';
+            font-weight: 300;
+            text-align: left;
+            width: 150px;
+            margin-top: 15px;
+            line-height: 5px; 
+
+            @media only screen and (max-width:450px) { 
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-bottom: 20px; 
+            }
+        }   
+    }   
+}
+/*      <footer class="footer">
+            <section>
+                <nav class="footer-menu-list">
+                    <div>
+                        <a href="#menu"><img class="footer-logo" src="inicio/imagenes/balogic-logo.svg"  alt="BALogicSA logo"></a>
+                        <p class="legal">2007-2022© BA Logic S.A.</p>
+                        <p class="legal">Todos los derechos reservados.</p>
+                    </div>
+                    <div>
+                        <ul class="footer-items-groups">
+                            <li>
+                                <a class="clean-text" href="productos.html"><strong>Productos</strong></a>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="productos.html#thinfinity">Thinfinity Remote Workspace</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="productos.html#thinfinity">Thifninity Remote Desktop</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="productos.html#thinfinity">Thinfinity VirtualUi</a>
+                                </h4>
+                            </li>    
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="productos.html#thinfinity">Thifinity VNC</a>
+                                </h4>
+                            </li>
+                            <li>
+                               <h4>
+                                <a class="clean-text" href="productos.html#zscope">z/Scope</a>
+                               </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="productos.html#zscope">z/Scope Desktop</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="productos.html#zscope">z/Scope Anywhere</a>
+                                </h4>
+                            </li>
+                            <li>
+                               <h4>
+                                <a class="clean-text" href="contacto.html">TNBridge</a>
+                               </h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footer-items-groups">
+                            <li>
+                                <a class="clean-text" href="nosotros.html"><strong>Nosotros</strong></a> 
+                            </li>
+                            <li>
+                               <h4>
+                                <a class="clean-text" href="nosotros.html">Acerca de nosotros</a> 
+                               </h4>                            
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="nosotros.html#empleos">Empleos</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="nosotros.html#asociarse">Asociarse</a>
+                                </h4>
+                            </li>
+                        </ul>                       
+                    </div>
+                    <div>
+                        <ul class="footer-items-groups">
+                            <li>
+                                <a class="clean-text" href="clientes.html"><strong>Clientes</strong></a> 
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="clientes.html">Porfolio</a>
+                                </h4>
+                            </li>
+                        </ul>                        
+                    </div>
+                    <div>
+                        <ul class="footer-items-groups">
+                            <li>
+                                <a class="clean-text" href="contacto.html"><strong>Contacto</strong></a> 
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="contacto.html">e-mail</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="contacto.html">Dirección</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="contacto.html">Teléfonos</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="contacto.html">Redes</a>
+                                </h4>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>*/

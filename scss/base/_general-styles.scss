@@ -1,0 +1,193 @@
+// /* @import */
+// @import 'components/header.scss';
+// @import 'base/estilos-generales.scss';
+
+/* RESETEO CSS */
+
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/* FUENTES */
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* TITULARES Y TEXTOS */
+
+h1 {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 6rem;
+    /* mobile */
+    @media only screen and (max-width:450px) {
+        font-size: 18pt;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    /* tablet */
+    @media only screen and (min-width:450px) and (max-width:960px) {
+        font-size: 3.5rem;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    /* mobile */
+    @media only screen and (max-width:450px) {
+        font-size: 14pt;
+        text-align: center;
+    }
+    /* tablet */
+    @media only screen and (min-width:450px) and (max-width:960px) {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+}
+ 
+h3 {
+    font-size: 2rem;
+    font-family: 'lato';
+    /* mobile */
+    @media only screen and (max-width:450px) {
+        font-size: 12pt;
+        text-align: center;
+    }
+    /* tablet */
+    @media only screen and (min-width:450px) and (max-width:960px) {
+        font-size: 16pt;
+        text-align: left;
+    }
+}
+
+h4 {
+    font-size: 12px;
+    font-family: 'lato';
+}
+
+p {
+    font-size: 12pt;
+    font-family: 'lato';
+}
+
+
+/* BOTONES */
+
+/* estructura botón */
+
+.button-container{
+    font-family: 'lato';
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 6px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 15px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;   
+
+    @media only screen and (max-width:450px) {
+        font-size: 2rem;
+        padding: 6px 32px;
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }        
+    /* tablet */
+    @media only screen and (min-width:450px) and (max-width:960px) { 
+        font-family: 'lato';
+        font-weight: 500;
+        font-size: 2rem;
+        padding: 6px 32px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50px;
+        display: inline-block;
+        margin: 35px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    &.intro-left-button {
+        padding-bottom: 50px;
+
+        @media only screen and (max-width:450px) {
+            padding-left: 0%;        
+            display: flex;
+            justify-content: center;
+        }         
+        /* tablet */
+        @media only screen and (min-width:450px) and (max-width:960px) { 
+            padding-left: 0%;        
+            display: flex;
+            justify-content: left;
+        }
+    }
+
+    &.centered-button { 
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10%;
+        margin-top: 20px;
+    }
+    
+    &.button-in-line {
+        display: inline-block; 
+        margin-bottom: 20px;
+        margin: 15px 2px;
+
+        @media only screen and (max-width:450px) {
+            display: flex;
+            justify-content: center;
+        }         
+        /* tablet */
+        @media only screen and (min-width:450px) and (max-width:960px) { 
+            display: flex;
+            justify-content: center;
+        } 
+    }
+
+/* BOTON BLANCO */
+
+    &.white-button {
+        background-color: #ffffff; 
+        color: #000000; 
+        border: 2px solid #ffffff;
+            
+        &:hover {
+            background-color: rgba(255, 255, 255, 0);
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        } 
+    }
+        
+/* BOTON AZUL */
+
+    &.blue-button {
+        background-color: #085dac; 
+        color: #ffffff; 
+        border: 2px solid #085dac;
+            
+        &:hover {
+            background-color: rgba(255, 255, 255, 0);
+            color: #085dac;
+            border: 2px solid #085dac;
+        }
+    }
+
+}
+
+
+

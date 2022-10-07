@@ -1,87 +1,64 @@
 /* HEADER */
-        .top-menu {
-            font-family: 'Montserrat';
-            font-size: 2rem;
-            background-color: black;    
-            padding-top: 50px;
-            padding-bottom: 50px;
+.top-menu{
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    background-color: black;    
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
 /* SECCION MENU */
-            .menu-margin{
-                margin-left: 9%;
-                margin-right: 12%; 
-                div{
-                    nav{
-                        div{   
-                            .logo-img-margin{
-                                margin-right: 5%; 
-                                .menu-item{
-                                    width: 150px; 
-                                }
-                            }                 
-                            button{
-                                span{
-                                }span
-                            }button
-                            div{
-                                div{                                    
-                                    ul{
-                                        .list-container{
-                                            margin-right: 6%;
-                                            margin-left: 6%;
-                                            a{
-                                                strong{
-                                                }strong
-                                            }a
-                                            .menu-item{
-                                                li{
-                                                    h3{
-                                                        a{
-                                                        }a
-                                                    }h3
-                                                }li
-                                                li{
-                                                    h3{
-                                                        a{
-                                                        }a
-                                                    }h3
-                                                }li
-                                                li{
-                                                    h3{
-                                                        a{
-                                                        }a
-                                                    }h3
-                                                }li
-                                                li{
-                                                    h3{
-                                                        a{
-                                                        }a
-                                                    }h3
-                                                }li
-                                            }ul
-                                        }li
-                                        .list-container{
-                                            a{
-                                                strong{
-                                                }strong
-                                            }a
-                                        }
-                                        .list-container{
-                                            a{
-                                                strong{
-                                                }strong
-                                            }a
-                                        }
-                                        .list-container{
-                                            a{
-                                                strong{
-                                                }strong
-                                            }a
-                                        }
-                                    }ul
-                                }div
-                            }div
-                        }div
-                    }nav
-                }div
-            }
+.menu-margin {
+    margin-left: 9%;
+    margin-right: 12%; 
+        .logo-img-margin {
+            margin-right: 5%; 
+                .menu-item {
+                    width: 150px; 
+                }
         }
+        .list-container {
+            margin-right: 6%;
+            margin-left: 6%;
+        }
+}
+           /* <section class="menu-margin" id="menu">
+                <div>
+                    <nav class="navbar navbar-expand-lg navbar-dark flex-row">
+                        <div class="container-fluid">   
+                            <div class="logo-img-margin">
+                                <img class="menu-item" src="inicio/imagenes/balogic-logo.svg" alt="BALogicSA logo">
+                            </div>                 
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <div class="container-fluid">                                    
+                                    <ul class="navbar-nav container-fluid menu-container">
+                                        <li class="nav-item dropdown list-container">
+                                            <a class="nav-link active dropdown-toggle" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <strong>Productos</strong>
+                                            </a>
+                                            <ul class="dropdown-menu menu-item">
+                                                <li><h3><a class="dropdown-item list-group-item" href="productos.html">Ver todo</a></h3></li>
+                                                <li><h3><a class="dropdown-item list-group-item" href="productos.html#thinfinity">Thinfinity</a></h3></li>
+                                                <li><h3><a class="dropdown-item list-group-item" href="productos.html#zscope">z/Scope</a></h3></li>
+                                                <li><h3><a class="dropdown-item list-group-item" href="contacto.html">TNBridge</a></h3></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item list-container">
+                                            <a class="nav-link active" href="nosotros.html"><strong>Nosotros</strong></a>
+                                        </li>
+                                        <li class="nav-item list-container">
+                                            <a class="nav-link active" href="clientes.html"><strong>Clientes</strong></a>
+                                        </li>
+                                        <li class="nav-item list-container">
+                                            <a class="nav-link active" href="contacto.html"><strong>Contacto</strong></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+        </header>*/

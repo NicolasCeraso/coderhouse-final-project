@@ -74,8 +74,7 @@ p {
 
 /* DESKTOP - INDEX - SECCION INICIO*/
 
-.index-intro {
-    
+.index-intro {    
     background-image: url('inicio/imagenes/inicio-background-image.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -562,8 +561,6 @@ p {
     padding-left: 5%;
 }
 
-
-
 /* DESKTOP - CLIENTES - SECCION INICIO */
 
 /* grilla */
@@ -676,10 +673,79 @@ p {
     justify-content: start;
 }
 
+/* DESKTOP - CONTACTO */
 
+/* grilla */
 
-/* CONTACTO SECCION DATOS */
-/* CONTACTO SECCION FORMULARIO */
+.contact-grid-container {
+    margin-top: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 35px; 
+    row-gap: 0px; 
+    border: solid 2px #085dac;       
+}
+
+/* teléfonos */
+
+.contact-phone {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;  
+    border: solid 2px #085dac; 
+    width: 100%;
+    height: fit-content;
+}
+
+/* mapa */
+
+.contact-map {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;   
+    border: solid 2px #085dac;
+    height: fit-content;
+}
+
+/* dirección */
+
+.contact-address {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;   
+    border: solid 2px #085dac;  
+    height: fit-content;
+}
+
+/* mensaje */
+
+.contact-message {
+    grid-column-start: 1;
+    grid-column-end: 4; 
+    grid-row-start: 3;
+    grid-row-end: 4;   
+    border: solid 2px #085dac;
+    height: fit-content;
+}
+
+/* formulario */
+
+.contact-form {
+    grid-column-start: 4;
+    grid-column-end: 8;  
+    grid-row-start: 1;
+    grid-row-end: 6;   
+    border: solid 2px #085dac; 
+    height: fit-content;
+}
 
 /* SECCION PIE */
 
@@ -754,7 +820,7 @@ p {
 
     .index-main-list {   
         text-align: left;
-        padding-left: 10%x;    
+        padding-left: 10%;    
     }
 
     .text-align {   
@@ -857,6 +923,7 @@ p {
     .index-about-us-img-item {
         grid-column-start: 1;
         grid-column-end: 2;
+        height: auto; 
     }
 
     .index-about-us-section-title {         
@@ -864,10 +931,7 @@ p {
         margin-top: 20px;
         text-align: center; 
     }
-    .index-about-us-img-item {
-        height: auto; 
-    }
-
+    
     .index-about-us-title-item {    
         grid-column-start: 1;
         grid-column-end: 2;
@@ -882,7 +946,7 @@ p {
 
 /* MOBILE - items de lista */
 
-    .index-about-us-grid-list {
+    .index-about-us-grid-li {
         margin-top: 20px;   
         text-align: center;
         align-items: center;        

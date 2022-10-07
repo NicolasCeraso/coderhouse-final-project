@@ -1,3 +1,37 @@
 /* @import */
-@import 'components/header';
-@import 'base/estilos-generales'
+
+/* BASE */
+
+/* GENERAL */
+@import 'base/general-styles.scss';
+/* VARIABLES */
+@import 'base/variables.scss';
+/* LISTS */
+@import 'base/lists.scss';
+/* MAPS */
+@import 'base/maps.scss';
+/* EXTENDS */
+@import 'base/extends.scss';
+/* MIXIN */
+@import 'base/mixin.scss';
+/* CONDITIONALS */
+@import 'base/conditionals.scss';
+
+
+
+/* COMPONENTS */
+
+/* INDEX */
+@import 'components/index.scss';
+/* PRODUCTOS */
+@import 'components/productos.scss';
+/* NOSOTROS */
+@import 'components/nosotros.scss';
+/* CLIENTES */
+@import 'components/clientes.scss';
+/* CONTACTO */
+@import 'components/contacto.scss';
+/* HEADER */
+@import 'components/header.scss';
+/* FOOTER */
+@import 'components/footer.scss';

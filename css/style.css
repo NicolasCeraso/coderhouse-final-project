@@ -1,18 +1,1039 @@
-/* Error: expected "{".
- *    ,
- * 23 |                                 }span
- *    |                                      ^
- *    '
- *   scss\components\_header.scss 23:38  @import
- *   scss\style.scss 2:9                 root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 23 \2502                                  }span\d\a    \2502                                       ^\a    \2575 \a   scss\\components\\_header.scss 23:38  @import\a   scss\\style.scss 2:9                 root stylesheet';
+@charset "UTF-8";
+/* @import */
+/* BASE */
+/* GENERAL */ /* RESETEO CSS */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
+
+/* FUENTES */
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* TITULARES Y TEXTOS */
+h1 {
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 6rem;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 18pt;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  h1 {
+    font-size: 3.5rem;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: "Montserrat";
+  font-weight: 200;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  h2 {
+    font-size: 14pt;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  h2 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "lato";
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  h3 {
+    font-size: 12pt;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  h3 {
+    font-size: 16pt;
+    text-align: left;
+  }
+}
+
+h4 {
+  font-size: 12px;
+  font-family: "lato";
+}
+
+p {
+  font-size: 12pt;
+  font-family: "lato";
+}
+
+/* BOTONES */
+/* estructura botón */
+.button-container {
+  font-family: "lato";
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 6px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 15px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  /* tablet */
+  /* BOTON BLANCO */
+  /* BOTON AZUL */
+}
+@media only screen and (max-width: 450px) {
+  .button-container {
+    font-size: 2rem;
+    padding: 6px 32px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .button-container {
+    font-family: "lato";
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 6px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 35px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+}
+.button-container.intro-left-button {
+  padding-bottom: 50px;
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .button-container.intro-left-button {
+    padding-left: 0%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .button-container.intro-left-button {
+    padding-left: 0%;
+    display: flex;
+    justify-content: left;
+  }
+}
+.button-container.centered-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+  margin-top: 20px;
+}
+.button-container.button-in-line {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin: 15px 2px;
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .button-container.button-in-line {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .button-container.button-in-line {
+    display: flex;
+    justify-content: center;
+  }
+}
+.button-container.white-button {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+}
+.button-container.white-button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+.button-container.blue-button {
+  background-color: #085dac;
+  color: #ffffff;
+  border: 2px solid #085dac;
+}
+.button-container.blue-button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #085dac;
+  border: 2px solid #085dac;
+}
+
+/* VARIABLES */
+/* LISTS */
+/* MAPS */
+/* EXTENDS */
+/* MIXIN */
+/* CONDITIONALS */
+/* COMPONENTS */
+/* INDEX */
+/* MAIN */
+/* SECCION INICIO */
+.index-intro {
+  background-image: url("inicio/imagenes/inicio-background-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: auto;
+  background-attachment: fixed;
+  background-position: center center;
+  width: 100%;
+  color: #ffffff;
+}
+.index-intro.text-align {
+  padding: 10%;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .index-intro.text-align {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .index-intro.text-align {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+.index-intro.index-main-list {
+  font-weight: 200;
+  font-family: "lato";
+  padding-left: 25px;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .index-intro.index-main-list {
+    text-align: left;
+    padding-left: 10%;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .index-intro.index-main-list {
+    padding-left: 5%;
+  }
+}
+.index-intro.index-left-button {
+  padding-bottom: 50px;
+  padding-left: 20%;
+}
+
+/*
+            <section class="index-intro animate__animated animate__fadeIn">
+                <div class="text-align">
+                    <h1>Dé vuelo a sus aplicaciones</h1>
+                    <h2>Entrega segura de aplicaciones web y de escritorio</h2>
+                    <br>
+                    <h3 class="index-main-list">
+                        <ul>
+                            <li>Trabaje en forma híbrida y remota</li>
+                            <li>Gestione la habiliatación web de aplicaciones heredadas</li>
+                            <li>Cree su propio SaaS</li>
+                            <li>Elimine VPN riesgosas</li>
+                        </ul>
+                    </h3>
+                    <br>
+                    <div class="intro-left-button">
+                        <a class="button-container white-button" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </section>
+        */
+/* SECCION PRODUCTOS */
+.section-title {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-weight: bold;
+  color: #085dac;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.paragraph-align-center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  align-self: center;
+}
+
+/*  <section>
+               <div>
+                   <h2 class="section-title">Simplifique la entrega de aplicaciones y escritorios</h2>
+                   <br>
+                   <p class="paragraph-align-center">Nuestros productos están diseñados para ampliar la vida y las capacidades de sus aplicaciones más valiosas, ya sea permitiendo convertir el software antiguo en un SaaS habilitado para la web o entregando sus espacios de trabajo digitales en cualquier lugar.</p>
+               </div>*/
+/* PRODUCTOS GRILLA PRIMARIA */
+.grid-thinfinity {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 0px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* mobile */
+  /* tablet */
+  /* ¿¿¿FUERA DE USO??? */
+  /*
+      .left-button {
+          padding-bottom: 50px;
+      }
+    */
+}
+@media only screen and (max-width: 450px) {
+  .grid-thinfinity {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 10px;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .grid-thinfinity {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+  }
+}
+.grid-thinfinity.trw-item {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .grid-thinfinity.trw-item {
+    grid-column: span 1;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .grid-thinfinity.trw-item {
+    grid-column: span 1;
+  }
+}
+.grid-thinfinity.trw-item .trw-bg-img {
+  background-image: url(inicio/imagenes/persona-trabajando-en-forma-remota-desde-un-dispositivo-mobil.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  width: 100%;
+  max-height: auto;
+  color: #ffffff;
+}
+.grid-thinfinity.trd-item {
+  width: 100%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .grid-thinfinity.trd-item {
+    grid-column: span 1;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .grid-thinfinity.trd-item {
+    grid-column: span 1;
+  }
+}
+.grid-thinfinity.trd-item .trd-bg-img {
+  background-image: url(inicio/imagenes/personas-trabajando-en-forma-remota.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  width: 100%;
+  max-height: auto;
+  color: #ffffff;
+}
+.grid-thinfinity.trd-item .trd-bg-img .index-main-products-button {
+  padding-bottom: 50px;
+  padding-left: 20%;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .grid-thinfinity.trd-item .trd-bg-img .index-main-products-button {
+    padding-left: 0%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .grid-thinfinity.trd-item .trd-bg-img .index-main-products-button {
+    padding-left: 0%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.grid-thinfinity.text-inside {
+  padding-top: 250px;
+  padding-bottom: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .grid-thinfinity.text-inside {
+    padding-top: 200px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .grid-thinfinity.text-inside {
+    padding-top: 200px;
+    text-align: center;
+  }
+}
+.grid-thinfinity.title-inside {
+  font-size: 20pt;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .grid-thinfinity.title-inside {
+    font-size: 18pt;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .grid-thinfinity.title-inside {
+    font-size: 18pt;
+    text-align: center;
+  }
+}
+
+/* <div class="grid-thinfinity">
+     <div class="trw-item">
+         <div class="trw-bg-img">
+             <div class="text-inside">
+                 <h2 class="title-inside">Habilite, en tan solo minutos, trabajo remoto e híbrido para su organización</h2>
+                 <br>
+                 <p>Ofrezca aplicaciones intranet y de Windows, sin VPN ni VDIs. Comparta archivos y carpetas alojados en prem. de forma segura.</p>
+             </div>
+             <div data-aos="flip-down" class="index-main-products-button">
+                 <a class="button-container white-button" href="productos.html">Ver producto</a>
+             </div>
+         </div>
+     </div>
+     <div class="trd-item">
+         <div class="trd-bg-img">                                                     
+             <div class="text-inside">
+                 <h2 class="title-inside">Acceda a sus aplicaciones de escritorio (Windows) desde cualquier lugar y dispositivo</h2>
+                 <br>
+                 <p>El acceso remoto es ahora rápido y sencillo de implantar, sin dejar de cumplir las normas de seguridad más estrictas.</p>
+             </div>
+             <div data-aos="flip-down" class="index-main-products-button">
+                 <a class="button-container white-button" href="productos.html">Ver producto</a>
+             </div>
+         </div>
+     </div>
+ </div>*/
+/* PRODUCTOS GRILLA SECUNDARIA */
+.secondary-products-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 100px;
+  align-content: center;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .secondary-products-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .secondary-products-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+  }
+}
+.secondary-products-grid.three-col-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .secondary-products-grid.three-col-img {
+    grid-column: span 1;
+    margin-top: 25px;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .secondary-products-grid.three-col-img {
+    grid-column: span 1;
+    margin-top: 25px;
+  }
+}
+.secondary-products-grid.main-title-under-picture {
+  font-size: 22pt;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 15px;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .secondary-products-grid.main-title-under-picture {
+    font-size: 18pt;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .secondary-products-grid.main-title-under-picture {
+    font-size: 18pt;
+  }
+}
+.secondary-products-grid.grid-paragraph {
+  text-align: center;
+  padding-bottom: 15px;
+  /* mobile */
+}
+@media only screen and (max-width: 450px) {
+  .secondary-products-grid.grid-paragraph {
+    padding-top: 10px;
+  }
+}
+
+/* <div class="secondary-products-grid">
+                        <div>
+                            <img class="three-col-img" src="inicio/imagenes/persona-subiendo-aplicaciones-a-la-web.jpg" alt="Persona operando aplicaciones desde un navegador">
+                            <h2 class="main-title-under-picture">Traslade apps legacy, de Windows a la web</h2>
+                            <p class="grid-paragraph">Tome cualquier aplicación de escritorio existente y publíquela como una solución web. Con sólo añadir una línea al código fuente, su aplicación ya estará lista para ser accedida desde cualquier navegador</p>
+                            <div data-aos="flip-down" class="centered-button">
+                                <a class="button-container blue-button" href="productos.html">Ver producto</a>
+                            </div>                                
+                        </div>
+                        <div>
+                            <img  class="three-col-img" src="inicio/imagenes/persona-compartiendo-pantallas.jpg" alt="Persona accediendo remotamente desde un navegador">
+                            <h2 class="main-title-under-picture">Acceso remoto desde un navegador</h2>
+                            <p class="grid-paragraph">Comparta su pantalla de forma remota con cualquier navegador HMTL5. Acceda a su computadora de escritorio (Windows) desde cualquier dispositivo, sin necesidad de instalar complementos, o extensiones.</p>
+                            <div data-aos="flip-down" class="centered-button">                                
+                                <a class="button-container blue-button" href="productos.html">Ver producto</a>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="three-col-img" src="inicio/imagenes/persona-emulando-terminales-desde-un-dispositivo-mobile.jpg" alt="Persona accediendo a un emulador de terminales">
+                            <h2 class="main-title-under-picture">Emulación de terminal (web y escritorio)</h2>
+                            <p class="grid-paragraph">Acceda a varias aplicaciones basadas en host, desde una única interfaz. Ofrezca integración y modernización de aplicaciones legacy, utilizando las Últimas tecnologías web disponibles en la actualidad.</p>
+                            <div data-aos="flip-down" class="centered-button">                                
+                                <a class="button-container blue-button" href="productos.html">Ver producto</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>*/
+/* SECCION NOSOTROS */
+.gray-container {
+  background-color: #e2e3e4;
+  padding-top: 100px;
+  padding-right: 10%;
+  padding-bottom: 100px;
+  padding-left: 10%;
+  /* GRILLA NOSOTROS */
+}
+.gray-container.index-about-us-grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 0px;
+  column-gap: 35px;
+  /* mobile */
+  /* tablet */
+  /* LISTA */
+}
+@media only screen and (max-width: 450px) {
+  .gray-container.index-about-us-grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .gray-container.index-about-us-grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 0px;
+    column-gap: 35px;
+    text-align: center;
+  }
+}
+.gray-container.index-about-us-grid-container.index-about-us-img-item {
+  height: 100%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .gray-container.index-about-us-grid-container.index-about-us-img-item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .gray-container.index-about-us-grid-container.index-about-us-img-item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: auto;
+  }
+}
+.gray-container.index-about-us-grid-container.index-about-us-img-item.index-about-us-grid-item {
+  width: 100%;
+  height: auto;
+}
+.gray-container.index-about-us-grid-container.index-about-us-img-item.index-about-us-section-title {
+  width: 100%;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #085dac;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .gray-container.index-about-us-grid-container.index-about-us-img-item.index-about-us-section-title {
+    font-size: 18pt;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .gray-container.index-about-us-grid-container.index-about-us-img-item.index-about-us-section-title {
+    font-size: 18pt;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+.gray-container.index-about-us-grid-container.index-about-us-title-item {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .gray-container.index-about-us-grid-container.index-about-us-title-item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .gray-container.index-about-us-grid-container.index-about-us-title-item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+.gray-container.index-about-us-grid-container.index-about-us-li {
+  display: flex;
+  justify-content: space-around;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .gray-container.index-about-us-grid-container.index-about-us-li {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .gray-container.index-about-us-grid-container.index-about-us-li {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+}
+.gray-container.index-about-us-grid-container .index-about-us-grid-li {
+  list-style: none;
+  margin-top: 20px;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .gray-container.index-about-us-grid-container .index-about-us-grid-li {
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .gray-container.index-about-us-grid-container .index-about-us-grid-li {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+/*            <section class="gray-container">
+                <div class="index-about-us-grid-container">
+                    <div class= "index-about-us-img-item">
+                        <a href="nosotros.html">
+                            <img class= "index-about-us-grid-item" src="inicio/imagenes/equiop-de-balogic-trabajando.jpg" alt="Imagen grupal del equipo">
+                        </a>
+                    </div>
+                    <div class="index-about-us-grid-item index-about-us-title-item">
+                        <h2 class="index-about-us-section-title">Acerca de BA Logic SA</h2>
+                        <br>
+                        <p>Ayudamos a las organizaciones a prolongar la vida y el valor de su software. Tanto si buscan mejorar y potenciar el trabajo a distancia como convertir sus aplicaciones heredadas críticas para el negocio en un moderno SaaS, nuestro software permite a los clientes centrarse en lo más importante: ampliar y hacer evolucionar su negocio.</p>
+                        <div>
+                            <div data-aos="flip-down" class="button-in-line">
+                                <a class="button-container blue-button" href="contacto.html">Contacto</a>
+                            </div>
+                            <div data-aos="flip-down" class="button-in-line">
+                                    <a class="button-container blue-button" href="nosotros.html">Nosotros</a>
+                            </div>
+                            <div class="index-about-us-li">
+                                <div>
+                                    <h3>Oficina</h3>
+                                    <ul class="index-about-us-grid-list">
+                                        <li><h4><strong>Cómo llegar</strong></h4></li>
+                                        <li><h4>Av. Congrerso 1685 - 3°</h4></li>
+                                        <li><h4>Buenos Aires</h4></li>
+                                        <li><h4>CP1428</h4></li>
+                                        <li><h4>Argentina</h4></li>
+                                    </ul>                                  
+                                </div>
+                                <div>
+                                    <h3>Teléfonos</h3>
+                                    <ul class="index-about-us-grid-list">
+                                        <li><h4><strong>Llamar</strong></h4></li>
+                                        <li><h4>+54 (911) 2170-2175</h4></li>
+                                        <li><h4>+54 (911) 2170-2175</h4></li>
+                                    </ul>            
+                                </div>
+                                <div>
+                                    <h3>Redes</h3>
+                                    <ul class="index-about-us-grid-list">
+                                        <li>
+                                            <h4><strong>Seguir</strong></h4>
+                                          </li>
+                                    </ul>                    
+                                </div>
+                            </div>     
+                        </div>
+                    </div>                                  
+                </div>
+            </section> */
+/* PRODUCTOS */
+/* NOSOTROS */
+/* CLIENTES */
+/* CONTACTO */
+/* HEADER */
+/* HEADER */
+.top-menu {
+  font-family: "Montserrat";
+  font-size: 2rem;
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* SECCION MENU */
+.menu-margin {
+  margin-left: 9%;
+  margin-right: 12%;
+}
+.menu-margin .logo-img-margin {
+  margin-right: 5%;
+}
+.menu-margin .logo-img-margin .menu-item {
+  width: 150px;
+}
+.menu-margin .list-container {
+  margin-right: 6%;
+  margin-left: 6%;
+}
+
+/* <section class="menu-margin" id="menu">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark flex-row">
+                <div class="container-fluid">   
+                    <div class="logo-img-margin">
+                        <img class="menu-item" src="inicio/imagenes/balogic-logo.svg" alt="BALogicSA logo">
+                    </div>                 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <div class="container-fluid">                                    
+                            <ul class="navbar-nav container-fluid menu-container">
+                                <li class="nav-item dropdown list-container">
+                                    <a class="nav-link active dropdown-toggle" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <strong>Productos</strong>
+                                    </a>
+                                    <ul class="dropdown-menu menu-item">
+                                        <li><h3><a class="dropdown-item list-group-item" href="productos.html">Ver todo</a></h3></li>
+                                        <li><h3><a class="dropdown-item list-group-item" href="productos.html#thinfinity">Thinfinity</a></h3></li>
+                                        <li><h3><a class="dropdown-item list-group-item" href="productos.html#zscope">z/Scope</a></h3></li>
+                                        <li><h3><a class="dropdown-item list-group-item" href="contacto.html">TNBridge</a></h3></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item list-container">
+                                    <a class="nav-link active" href="nosotros.html"><strong>Nosotros</strong></a>
+                                </li>
+                                <li class="nav-item list-container">
+                                    <a class="nav-link active" href="clientes.html"><strong>Clientes</strong></a>
+                                </li>
+                                <li class="nav-item list-container">
+                                    <a class="nav-link active" href="contacto.html"><strong>Contacto</strong></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+</header>*/
+/* FOOTER */
+/* SECCION FOOTER */
+.footer {
+  list-style-type: none;
+  font-size: 2rem;
+  background-color: black;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 450px) {
+  .footer {
+    padding-left: 0%;
+    padding-right: 0%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+  }
+}
+.footer .footer-menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 450px) {
+  .footer .footer-menu-list {
+    flex-direction: column;
+  }
+}
+.footer .footer-menu-list.footer-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media only screen and (max-width: 450px) {
+  .footer .footer-menu-list.footer-logo {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+.footer .footer-menu-list .footer-items-groups {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 10pt;
+  line-height: 25px;
+}
+@media only screen and (max-width: 450px) {
+  .footer .footer-menu-list .footer-items-groups {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.footer .footer-menu-list .footer-items-groups.clean-text {
+  font-family: "Montserrat";
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer .footer-menu-list.legal {
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "lato";
+  font-weight: 300;
+  text-align: left;
+  width: 150px;
+  margin-top: 15px;
+  line-height: 5px;
+}
+@media only screen and (max-width: 450px) {
+  .footer .footer-menu-list.legal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/*      <footer class="footer">
+            <section>
+                <nav class="footer-menu-list">
+                    <div>
+                        <a href="#menu"><img class="footer-logo" src="inicio/imagenes/balogic-logo.svg"  alt="BALogicSA logo"></a>
+                        <p class="legal">2007-2022© BA Logic S.A.</p>
+                        <p class="legal">Todos los derechos reservados.</p>
+                    </div>
+                    <div>
+                        <ul class="footer-items-groups">
+                            <li>
+                                <a class="clean-text" href="productos.html"><strong>Productos</strong></a>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="productos.html#thinfinity">Thinfinity Remote Workspace</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="productos.html#thinfinity">Thifninity Remote Desktop</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="productos.html#thinfinity">Thinfinity VirtualUi</a>
+                                </h4>
+                            </li>    
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="productos.html#thinfinity">Thifinity VNC</a>
+                                </h4>
+                            </li>
+                            <li>
+                               <h4>
+                                <a class="clean-text" href="productos.html#zscope">z/Scope</a>
+                               </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="productos.html#zscope">z/Scope Desktop</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="productos.html#zscope">z/Scope Anywhere</a>
+                                </h4>
+                            </li>
+                            <li>
+                               <h4>
+                                <a class="clean-text" href="contacto.html">TNBridge</a>
+                               </h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footer-items-groups">
+                            <li>
+                                <a class="clean-text" href="nosotros.html"><strong>Nosotros</strong></a> 
+                            </li>
+                            <li>
+                               <h4>
+                                <a class="clean-text" href="nosotros.html">Acerca de nosotros</a> 
+                               </h4>                            
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="nosotros.html#empleos">Empleos</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="nosotros.html#asociarse">Asociarse</a>
+                                </h4>
+                            </li>
+                        </ul>                       
+                    </div>
+                    <div>
+                        <ul class="footer-items-groups">
+                            <li>
+                                <a class="clean-text" href="clientes.html"><strong>Clientes</strong></a> 
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="clientes.html">Porfolio</a>
+                                </h4>
+                            </li>
+                        </ul>                        
+                    </div>
+                    <div>
+                        <ul class="footer-items-groups">
+                            <li>
+                                <a class="clean-text" href="contacto.html"><strong>Contacto</strong></a> 
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="contacto.html">e-mail</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="contacto.html">Dirección</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="contacto.html">Teléfonos</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a class="clean-text" href="contacto.html">Redes</a>
+                                </h4>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>*/
+
+/*# sourceMappingURL=style.css.map */
