@@ -67,7 +67,7 @@ p {
     margin-right: 12%; 
 }
 
-.list-container {
+.li-container {
     margin-right: 6%;
     margin-left: 6%;
 }
@@ -1039,35 +1039,11 @@ p {
 /* MOBILE - PRODUCTOS - SECCION ZSCOPE */
 
     .two-products-grid-container {
-        width: 100%;
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        row-gap: 35px;        
-    }
-    
-    .zscope-img-anywhere {
-        background-image: url('productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: auto;
-        background-position: center center;
-        width: 100%;
-    }
-
-    .zscope-img-desktop {
-        background-image: url('productos/imagenes/persona-trabajando-con-emulador-de-terminal-de-escritorio.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: auto;
-        background-position: center center;
-        width: 100%;
     }
 
     .zscope-text-element {
-        margin-top: 150px;
-        margin-left: 10%;
-        margin-right: 10%;
         text-align: center;
     }
 

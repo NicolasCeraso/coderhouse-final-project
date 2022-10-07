@@ -172,6 +172,18 @@ p {
     justify-content: center;
   }
 }
+.button-container .in-grid-button {
+  font-family: "lato";
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 6px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 .button-container.white-button {
   background-color: #ffffff;
   color: #000000;
@@ -628,6 +640,264 @@ p {
 }
 
 /* PRODUCTOS */
+/* DESKTOP - PRODUCTOS - SECCION INICIO */
+/* grilla/menú de productos */
+.products-grid-container {
+  margin-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 150px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 2px;
+  column-gap: 4px;
+  /* mobile */
+  /* grilla/menú de thinfinity */
+  /* PRODUCTOS ZSCOPE */
+  /* grilla/menú de zscope */
+  /* grilla/menú de tnbridge */
+}
+@media only screen and (max-width: 450px) {
+  .products-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 3px;
+  }
+}
+.products-grid-container .centered-text {
+  text-align: center;
+}
+.products-grid-container .thinfinity-product {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  background-color: #007dc1;
+  background-image: url(../productos/imagenes/isologo-thinfinity.svg);
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: center center;
+  /* mobile */
+}
+@media only screen and (max-width: 450px) {
+  .products-grid-container .thinfinity-product {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-size: 40%;
+  }
+}
+.products-grid-container .thinfinity-product .thinfinity-text-block {
+  background-color: rgba(0, 125, 193, 0);
+  color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 45%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 16%;
+  /* mobile */
+}
+@media only screen and (max-width: 450px) {
+  .products-grid-container .thinfinity-product .thinfinity-text-block {
+    padding-top: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+.products-grid-container .thinfinity-product .thinfinity-text-block:hover {
+  background-color: rgb(0, 125, 193);
+  color: rgb(255, 255, 255);
+}
+.products-grid-container .zscope-product {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: #928166;
+  background-image: url(../productos/imagenes/isologo-zscope.svg);
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: center center;
+  /* mobile */
+}
+@media only screen and (max-width: 450px) {
+  .products-grid-container .zscope-product {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-size: 40%;
+  }
+}
+.products-grid-container .zscope-product .zscope-text-block {
+  background-color: rgba(146, 129, 102, 0);
+  color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 25%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  /* mobile */
+}
+@media only screen and (max-width: 450px) {
+  .products-grid-container .zscope-product .zscope-text-block {
+    padding-top: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+.products-grid-container .zscope-product .zscope-text-block:hover {
+  background-color: rgb(146, 129, 102);
+  color: rgb(255, 255, 255);
+}
+.products-grid-container .tnbridge-product {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  background-color: #e19634;
+  background-image: url(../productos/imagenes/isologo-tnbridge.svg);
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: center center;
+  /* mobile */
+}
+@media only screen and (max-width: 450px) {
+  .products-grid-container .tnbridge-product {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-size: 60%;
+  }
+}
+.products-grid-container .tnbridge-product .tnbridge-text-block {
+  background-color: rgba(225, 150, 52, 0);
+  color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  /* mobile */
+}
+@media only screen and (max-width: 450px) {
+  .products-grid-container .tnbridge-product .tnbridge-text-block {
+    padding-top: 35%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+.products-grid-container .tnbridge-product .tnbridge-text-block:hover {
+  background-color: rgb(225, 150, 52);
+  color: rgb(255, 255, 255);
+}
+
+/* DESKTOP - PRODUCTOS - SECCION THINFINITY */
+.cover-img {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 100px;
+  min-height: auto;
+  background-image: url("../productos/imagenes/persona-ingresando-a-recursos-en-forma-remota.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  color: #ffffff;
+  /* mobile */
+}
+@media only screen and (max-width: 450px) {
+  .cover-img {
+    padding-top: 50px;
+  }
+}
+.cover-img .box-text-inside {
+  width: 60%;
+  /* mobile */
+}
+@media only screen and (max-width: 450px) {
+  .cover-img .box-text-inside {
+    width: 100%;
+    text-align: center;
+  }
+}
+.cover-img .box-text-inside .product-title {
+  font-weight: 400;
+  /* mobile */
+}
+@media only screen and (max-width: 450px) {
+  .cover-img .box-text-inside .product-title {
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+  }
+}
+.cover-img .paragraph-block {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*tal vez hay que mover y re anidar esta clase porque comparte clases de index*/
+.three-col-grid-container {
+  margin-top: 50px;
+}
+
+/*
+
+/* DESKTOP - PRODUCTOS - SECCION ZSCOPE */
+.two-products-grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 35px;
+  /* mobile */
+}
+@media only screen and (max-width: 450px) {
+  .two-products-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+.two-products-grid-container .zscope-img-anywhere {
+  background-image: url("../productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: auto;
+  background-position: center center;
+  width: 100%;
+}
+.two-products-grid-container .zscope-img-desktop {
+  background-image: url("../productos/imagenes/persona-trabajando-con-emulador-de-terminal-de-escritorio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: auto;
+  background-position: center center;
+  width: 100%;
+}
+.two-products-grid-container .zscope-text-element {
+  margin-top: 150px;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #ffffff;
+  text-align: left;
+  /* mobile */
+}
+@media only screen and (max-width: 450px) {
+  .two-products-grid-container .zscope-text-element {
+    text-align: center;
+  }
+}
+
 /* NOSOTROS */
 /* CLIENTES */
 /* DESKTOP - CLIENTES - SECCION INICIO */
@@ -900,52 +1170,11 @@ p {
 .menu-margin .logo-img-margin .menu-item {
   width: 150px;
 }
-.menu-margin .list-container {
+.menu-margin .li-container {
   margin-right: 6%;
   margin-left: 6%;
 }
 
-/* <section class="menu-margin" id="menu">
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-dark flex-row">
-                <div class="container-fluid">   
-                    <div class="logo-img-margin">
-                        <img class="menu-item" src="inicio/imagenes/balogic-logo.svg" alt="BALogicSA logo">
-                    </div>                 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <div class="container-fluid">                                    
-                            <ul class="navbar-nav container-fluid menu-container">
-                                <li class="nav-item dropdown list-container">
-                                    <a class="nav-link active dropdown-toggle" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <strong>Productos</strong>
-                                    </a>
-                                    <ul class="dropdown-menu menu-item">
-                                        <li><h3><a class="dropdown-item list-group-item" href="productos.html">Ver todo</a></h3></li>
-                                        <li><h3><a class="dropdown-item list-group-item" href="productos.html#thinfinity">Thinfinity</a></h3></li>
-                                        <li><h3><a class="dropdown-item list-group-item" href="productos.html#zscope">z/Scope</a></h3></li>
-                                        <li><h3><a class="dropdown-item list-group-item" href="contacto.html">TNBridge</a></h3></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item list-container">
-                                    <a class="nav-link active" href="nosotros.html"><strong>Nosotros</strong></a>
-                                </li>
-                                <li class="nav-item list-container">
-                                    <a class="nav-link active" href="clientes.html"><strong>Clientes</strong></a>
-                                </li>
-                                <li class="nav-item list-container">
-                                    <a class="nav-link active" href="contacto.html"><strong>Contacto</strong></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </section>
-</header>*/
 /* FOOTER */
 /* SECCION FOOTER */
 .footer {
