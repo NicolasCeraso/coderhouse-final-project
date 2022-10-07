@@ -120,7 +120,7 @@ p {
         cursor: pointer;
     }
 
-    &.intro-left-button {
+    .intro-left-button {
         padding-bottom: 50px;
 
         @media only screen and (max-width:450px) {
@@ -136,14 +136,14 @@ p {
         }
     }
 
-    &.centered-button { 
+    .centered-button { 
         display: flex;
         justify-content: center;
         margin-bottom: 10%;
         margin-top: 20px;
     }
     
-    &.button-in-line {
+    .button-in-line {
         display: inline-block; 
         margin-bottom: 20px;
         margin: 15px 2px;
