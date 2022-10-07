@@ -654,12 +654,20 @@ p {
   row-gap: 2px;
   column-gap: 4px;
   /* mobile */
+  /* tablet */
   /* grilla/menú de thinfinity */
   /* PRODUCTOS ZSCOPE */
   /* grilla/menú de zscope */
   /* grilla/menú de tnbridge */
 }
 @media only screen and (max-width: 450px) {
+  .products-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 3px;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
   .products-grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -680,6 +688,7 @@ p {
   background-size: 25%;
   background-position: center center;
   /* mobile */
+  /* tablet */
 }
 @media only screen and (max-width: 450px) {
   .products-grid-container .thinfinity-product {
@@ -688,6 +697,15 @@ p {
     grid-row-start: 1;
     grid-row-end: 2;
     background-size: 40%;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .products-grid-container .thinfinity-product {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-size: 25%;
   }
 }
 .products-grid-container .thinfinity-product .thinfinity-text-block {
@@ -701,10 +719,18 @@ p {
   padding-right: 10%;
   padding-bottom: 16%;
   /* mobile */
+  /* tablet */
 }
 @media only screen and (max-width: 450px) {
   .products-grid-container .thinfinity-product .thinfinity-text-block {
     padding-top: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .products-grid-container .thinfinity-product .thinfinity-text-block {
+    padding-top: 30%;
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -724,6 +750,7 @@ p {
   background-size: 25%;
   background-position: center center;
   /* mobile */
+  /* tablet */
 }
 @media only screen and (max-width: 450px) {
   .products-grid-container .zscope-product {
@@ -732,6 +759,15 @@ p {
     grid-row-start: 2;
     grid-row-end: 3;
     background-size: 40%;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .products-grid-container .zscope-product {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-size: 25%;
   }
 }
 .products-grid-container .zscope-product .zscope-text-block {
@@ -745,10 +781,18 @@ p {
   padding-right: 10%;
   padding-bottom: 5%;
   /* mobile */
+  /* tablet */
 }
 @media only screen and (max-width: 450px) {
   .products-grid-container .zscope-product .zscope-text-block {
     padding-top: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .products-grid-container .zscope-product .zscope-text-block {
+    padding-top: 35%;
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -768,6 +812,7 @@ p {
   background-size: 35%;
   background-position: center center;
   /* mobile */
+  /* tablet */
 }
 @media only screen and (max-width: 450px) {
   .products-grid-container .tnbridge-product {
@@ -776,6 +821,15 @@ p {
     grid-row-start: 3;
     grid-row-end: 4;
     background-size: 60%;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .products-grid-container .tnbridge-product {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-size: 40%;
   }
 }
 .products-grid-container .tnbridge-product .tnbridge-text-block {
@@ -789,8 +843,16 @@ p {
   padding-right: 10%;
   padding-bottom: 5%;
   /* mobile */
+  /* tablet */
 }
 @media only screen and (max-width: 450px) {
+  .products-grid-container .tnbridge-product .tnbridge-text-block {
+    padding-top: 35%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
   .products-grid-container .tnbridge-product .tnbridge-text-block {
     padding-top: 35%;
     padding-left: 10%;
@@ -815,8 +877,14 @@ p {
   width: 100%;
   color: #ffffff;
   /* mobile */
+  /* tablet */
 }
 @media only screen and (max-width: 450px) {
+  .cover-img {
+    padding-top: 50px;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
   .cover-img {
     padding-top: 50px;
   }
@@ -824,6 +892,7 @@ p {
 .cover-img .box-text-inside {
   width: 60%;
   /* mobile */
+  /* tablet */
 }
 @media only screen and (max-width: 450px) {
   .cover-img .box-text-inside {
@@ -831,15 +900,29 @@ p {
     text-align: center;
   }
 }
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .cover-img .box-text-inside {
+    width: 70%;
+    text-align: left;
+  }
+}
 .cover-img .box-text-inside .product-title {
   font-weight: 400;
   /* mobile */
+  /* tablet */
 }
 @media only screen and (max-width: 450px) {
   .cover-img .box-text-inside .product-title {
     font-weight: 400;
     width: 100%;
     text-align: center;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .cover-img .box-text-inside .product-title {
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
   }
 }
 .cover-img .paragraph-block {
@@ -861,11 +944,19 @@ p {
   grid-template-columns: 1fr 1fr;
   column-gap: 35px;
   /* mobile */
+  /* tablet */
 }
 @media only screen and (max-width: 450px) {
   .two-products-grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .two-products-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 35px;
   }
 }
 .two-products-grid-container .zscope-img-anywhere {
@@ -875,6 +966,12 @@ p {
   min-height: auto;
   background-position: center center;
   width: 100%;
+  /* tablet */
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .two-products-grid-container .zscope-img-anywhere {
+    min-height: 450px;
+  }
 }
 .two-products-grid-container .zscope-img-desktop {
   background-image: url("../productos/imagenes/persona-trabajando-con-emulador-de-terminal-de-escritorio.jpg");
@@ -883,6 +980,12 @@ p {
   min-height: auto;
   background-position: center center;
   width: 100%;
+  /* tablet */
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .two-products-grid-container .zscope-img-desktop {
+    min-height: 450px;
+  }
 }
 .two-products-grid-container .zscope-text-element {
   margin-top: 150px;
@@ -891,14 +994,139 @@ p {
   color: #ffffff;
   text-align: left;
   /* mobile */
+  /* tablet */
 }
 @media only screen and (max-width: 450px) {
   .two-products-grid-container .zscope-text-element {
     text-align: center;
   }
 }
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .two-products-grid-container .zscope-text-element {
+    margin-top: 200px;
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+}
 
 /* NOSOTROS */
+/* DESKTOP - NOSOTROS - SECCION INICIO */
+.about-us-grid-container {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 0px;
+  column-gap: 35px;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .about-us-grid-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .about-us-grid-container {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+  }
+}
+.about-us-grid-container .about-us-paragraph {
+  padding-right: 20%;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .about-us-grid-container .about-us-paragraph {
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .about-us-grid-container .about-us-paragraph {
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: center;
+  }
+}
+
+/* DESKTOP - NOSOTROS - TRABAJO CONJUNTO */
+.about-us-segment {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* mobile */
+  /* tablet */
+  /* mobile */
+  /* tablet */
+  /* mobile */
+}
+@media only screen and (max-width: 450px) {
+  .about-us-segment {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .about-us-segment {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.about-us-segment .about-us-li {
+  font-size: 12pt;
+  font-weight: 600;
+  padding-left: 5%;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .about-us-segment .about-us-li {
+    padding-left: 0%;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .about-us-segment .about-us-li {
+    padding-left: 0%;
+    text-align: left;
+  }
+}
+.about-us-segment .about-us-secondary-title {
+  color: #000000;
+}
+@media only screen and (max-width: 450px) {
+  .about-us-segment {
+    font-size: 18pt;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .about-us-segment {
+    font-size: 22pt;
+    padding-bottom: 20px;
+  }
+}
+.about-us-segment .about-us-text-block {
+  color: #000000;
+}
+@media only screen and (max-width: 450px) {
+  .about-us-segment {
+    text-align: center;
+  }
+}
+
 /* CLIENTES */
 /* DESKTOP - CLIENTES - SECCION INICIO */
 .clients-grid-container {

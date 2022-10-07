@@ -18,6 +18,12 @@
         grid-template-rows: 1fr 1fr 1fr;
         row-gap: 3px; 
     }
+    /* tablet */
+    @media only screen and (min-width:450px) and (max-width:960px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 3px; 
+    }
 
     .centered-text {
         text-align: center;
@@ -42,6 +48,14 @@
             grid-row-end: 2;
             background-size:40%; 
         }
+        /* tablet */
+        @media only screen and (min-width:450px) and (max-width:960px) {
+            grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-size:25%;
+        }
 
         .thinfinity-text-block {    
             background-color: rgba(0, 125, 193, 0); 
@@ -58,6 +72,12 @@
                 padding-top: 25%;
                 padding-left: 10%;
                 padding-right: 10%; 
+            }
+            /* tablet */
+            @media only screen and (min-width:450px) and (max-width:960px) {
+                padding-top: 30%;
+                padding-left: 10%;
+                padding-right: 10%;
             }
 
             &:hover {
@@ -88,6 +108,14 @@
             grid-row-end: 3;
             background-size: 40%; 
         }
+        /* tablet */
+        @media only screen and (min-width:450px) and (max-width:960px) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-size: 25%;
+        }
 
         .zscope-text-block {    
             background-color: rgba(146, 129, 102, 0); 
@@ -102,6 +130,12 @@
             /* mobile */   
             @media only screen and (max-width:450px) {
                 padding-top: 25%;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            /* tablet */
+            @media only screen and (min-width:450px) and (max-width:960px) {
+                padding-top: 35%;
                 padding-left: 10%;
                 padding-right: 10%;
             }
@@ -133,6 +167,14 @@
             grid-row-end: 4;
             background-size: 60%;
         }
+        /* tablet */
+        @media only screen and (min-width:450px) and (max-width:960px) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-size: 40%;
+        }
 
         .tnbridge-text-block {    
             background-color: rgba(225, 150, 52, 0); 
@@ -146,6 +188,12 @@
             padding-bottom: 5%; 
             /* mobile */   
             @media only screen and (max-width:450px) {
+                padding-top: 35%;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            /* tablet */
+            @media only screen and (min-width:450px) and (max-width:960px) {
                 padding-top: 35%;
                 padding-left: 10%;
                 padding-right: 10%;
@@ -176,6 +224,10 @@
         @media only screen and (max-width:450px) {
             padding-top: 50px; 
         }
+        /* tablet */
+        @media only screen and (min-width:450px) and (max-width:960px) {
+            padding-top: 50px;
+        }
         
         .box-text-inside {
             width: 60%;  
@@ -183,6 +235,11 @@
             @media only screen and (max-width:450px) {
                 width: 100%;
                 text-align: center;
+            }
+            /* tablet */
+            @media only screen and (min-width:450px) and (max-width:960px) {
+                width: 70%;
+                text-align: left;
             }
 
             .product-title {
@@ -192,6 +249,12 @@
                     font-weight: 400;
                     width: 100%;
                     text-align: center;
+                }
+                /* tablet */
+                @media only screen and (min-width:450px) and (max-width:960px) {
+                    font-weight: 400;
+                    width: 100%;
+                    text-align: left
                 }
             }
         }
@@ -219,6 +282,12 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
+    /* tablet */
+    @media only screen and (min-width:450px) and (max-width:960px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 35px;
+    }
     
     .zscope-img-anywhere {
         background-image: url('../productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg');
@@ -227,6 +296,10 @@
         min-height: auto;
         background-position: center center;
         width: 100%;
+        /* tablet */
+        @media only screen and (min-width:450px) and (max-width:960px) {
+            min-height: 450px;
+        }
     }
 
     .zscope-img-desktop {
@@ -236,6 +309,10 @@
         min-height: auto;
         background-position: center center;
         width: 100%;
+        /* tablet */
+        @media only screen and (min-width:450px) and (max-width:960px) {
+            min-height: 450px;
+        }
     }
 
     .zscope-text-element {
@@ -247,6 +324,12 @@
         /* mobile */   
         @media only screen and (max-width:450px) {
             text-align: center;
+        }
+        /* tablet */
+        @media only screen and (min-width:450px) and (max-width:960px) {
+            margin-top: 200px;
+            margin-left: 75px;
+            margin-right: 75px;
         }
     }
 }

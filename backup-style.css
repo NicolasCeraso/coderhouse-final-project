@@ -1050,14 +1050,10 @@ p {
 /* MOBILE - NOSOTROS - SECCION INICIO */
 
     .about-us-grid-container {
-        width: 100%;
         margin-top: 50px;
         margin-bottom: 50px;
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        row-gap: 0px;
-        column-gap: 35px;        
     }
 
     .about-us-paragraph {
@@ -1455,36 +1451,23 @@ p {
 /* TABLET - PRODUCTOS - SECCION ZSCOPE */
 
     .two-products-grid-container {
-        width: 100%;
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         row-gap: 35px;        
     }
         
-    .zscope-img-anywhere {
-        background-image: url('productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+    .zscope-img-anywhere {        
         min-height: 450px;
-        background-position: center center;
-        width: 100%;
         }
 
     .zscope-img-desktop {
-        background-image: url('productos/imagenes/persona-trabajando-con-emulador-de-terminal-de-escritorio.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
         min-height: 450px;
-        background-position: center center;
-        width: 100%; 
         }
 
     .zscope-text-element {
         margin-top: 200px;
         margin-left: 75px;
         margin-right: 75px;
-        color: #ffffff;
         }
 
 /* TABLET - NOSOTROS - SECCION INICIO */
@@ -1504,12 +1487,8 @@ p {
     .about-us-grid-container {
         margin-top: 0px;
         margin-bottom: 50px;
-        width: 100%;
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        row-gap: 0px;
-        column-gap: 35px;   
         text-align: center;      
     }
 
