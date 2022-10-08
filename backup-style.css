@@ -735,6 +735,11 @@ p {
     height: fit-content;
 }
 
+.little-li {
+    font-size: 12pt;
+    font-weight: 300;
+}
+
 /* mensaje */
 
 .contact-message {
