@@ -1,0 +1,287 @@
+/* RESETEO CSS */
+
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    }
+
+/* FUENTES */
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* TITULARES Y TEXTOS */
+
+h1 {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: 'Montserrat';
+    font-weight: 200;
+}
+ 
+h3 {
+    font-size: 2rem;
+    font-family: 'lato';
+}
+
+h4 {
+    font-size: 12px;
+    font-family: 'lato';
+}
+
+p {
+    font-size: 12pt;
+    font-family: 'lato';
+}
+
+/* DESKTOP - SECCION MENU */
+
+.top-menu{
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    background-color: black;    
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+
+.menu-item {
+    width: 150px; 
+}
+
+.logo-img-margin {
+    margin-right: 5%; 
+}
+
+.menu-margin {
+    margin-left: 9%;
+    margin-right: 12%; 
+}
+
+.li-container {
+    margin-right: 6%;
+    margin-left: 6%;
+}
+
+
+
+/* grilla/menú de productos */
+
+.contact-main-grid {
+    margin-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 35px;
+    border: solid 2px #085dac; 
+    }
+
+    .contact-info-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 5px;
+        border: solid 2px #085dac; 
+        }
+
+        .contact-form-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            border: solid 2px #085dac; 
+            }
+
+/* grilla/menú de thinfinity */
+
+.contact-phone {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: fit-content;
+    border: solid 2px #085dac; 
+}
+
+/* grilla/menú de zscope */
+
+.contact-map {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: fit-content;
+    border: solid 2px #085dac; 
+}
+
+
+/* grilla/menú de tnbridge */
+
+.contact-address {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: fit-content;
+    border: solid 2px #085dac; 
+}
+
+
+/* grilla/menú de thinfinity */
+
+.contact-message {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: fit-content;
+    border: solid 2px #085dac; 
+}
+
+/* grilla/menú de zscope */
+
+.contact-form {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;    
+    height: fit-content;
+    border: solid 2px #085dac;
+}
+/* MOBILE */
+@media only screen and (max-width:450px) {
+            
+    .contact-main-grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 0px;
+            }
+
+            .contact-info-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                }
+
+                .contact-form-grid {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    }
+
+        /* grilla/menú de thinfinity */
+
+        .contact-phone {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        /* grilla/menú de zscope */
+
+        .contact-map {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+
+        /* grilla/menú de tnbridge */
+
+        .contact-address {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+
+        /* grilla/menú de thinfinity */
+
+        .contact-message {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        /* grilla/menú de zscope */
+
+        .contact-form {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        }
+        
+/* TABLET */
+
+@media only screen and (min-width:450px) and (max-width:960px) {
+    .contact-main-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 0px;
+        }
+
+        .contact-info-grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+
+            .contact-form-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                }
+
+    /* grilla/menú de thinfinity */
+
+    .contact-phone {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    /* grilla/menú de zscope */
+
+    .contact-map {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+
+    /* grilla/menú de tnbridge */
+
+    .contact-address {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+
+    /* grilla/menú de thinfinity */
+
+    .contact-message {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    /* grilla/menú de zscope */
+
+    .contact-form {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
