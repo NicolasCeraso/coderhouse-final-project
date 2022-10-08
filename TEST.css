@@ -1,0 +1,383 @@
+/* RESETEO CSS */
+
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    }
+
+/* FUENTES */
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* TITULARES Y TEXTOS */
+
+h1 {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: 'Montserrat';
+    font-weight: 200;
+}
+ 
+h3 {
+    font-size: 2rem;
+    font-family: 'lato';
+}
+
+h4 {
+    font-size: 12px;
+    font-family: 'lato';
+}
+
+p {
+    font-size: 12pt;
+    font-family: 'lato';
+}
+
+/* DESKTOP - SECCION MENU */
+
+.top-menu{
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    background-color: black;    
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+
+.menu-item {
+    width: 150px; 
+}
+
+.logo-img-margin {
+    margin-right: 5%; 
+}
+
+.menu-margin {
+    margin-left: 9%;
+    margin-right: 12%; 
+}
+
+.li-container {
+    margin-right: 6%;
+    margin-left: 6%;
+}
+
+/* DESKTOP - INDEX - SECCION INICIO*/
+
+.index-intro {    
+    background-image: url('inicio/imagenes/inicio-background-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto;
+    background-attachment: fixed;
+	background-position: center center;
+	width: 100%;
+    color: #ffffff;    
+}
+
+.index-main-list {   
+    font-weight: 200;
+    font-family: 'lato';
+    padding-left: 25px;    
+}
+
+.text-align {   
+    padding: 10%;   
+}
+
+/* estructura botón */
+
+.button-container{
+    font-family: 'lato';
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 6px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 15px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;       
+}
+
+.intro-left-button {
+    padding-bottom: 50px;
+}
+
+/* botón blanco */
+
+.white-button {
+    background-color: #ffffff; 
+    color: #000000; 
+    border: 2px solid #ffffff;
+}
+
+.white-button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/* DESKTOP - INDEX - SECCION PRODUCTOS */
+
+.section-title{
+    margin-left: 10%;
+    margin-right: 10%; 
+    font-weight: bold;
+    color: #085dac;  
+    text-align: center;
+    margin-top: 100px;    
+}
+
+.paragraph-align-center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;    
+    align-self: center;
+}
+
+/* grilla productos primaria */ 
+
+.grid-thinfinity {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 0px;   
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.trw-item {
+    width: 100%;  
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.trw-bg-img { 
+    background-image: url(inicio/imagenes/persona-trabajando-en-forma-remota-desde-un-dispositivo-mobil.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: right center;
+    width: 100%;
+    max-height: auto;
+    color: #ffffff;
+}
+    
+.trd-item {
+    width: 100%;  
+    grid-column-start: 2;
+    grid-column-end: 3;
+} 
+
+.trd-bg-img { 
+    background-image: url(inicio/imagenes/personas-trabajando-en-forma-remota.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: right center;    
+    width: 100%;
+    max-height: auto;
+    color: #ffffff;
+}
+
+.text-inside{
+    padding-top: 250px;
+    padding-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+} 
+
+.title-inside {
+    font-size: 20pt;
+}
+
+.left-button {
+    padding-bottom: 50px;
+}
+
+.index-left-button {
+    padding-bottom: 50px;
+    padding-left: 20%;
+}
+
+.index-main-products-button {
+    padding-bottom: 50px;
+    padding-left: 20%;
+}
+
+/* botón azul */
+
+.blue-button {
+    background-color: #085dac; 
+    color: #ffffff; 
+    border: 2px solid #085dac;
+  }
+  
+ .blue-button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #085dac;
+    border: 2px solid #085dac;
+  }
+
+  .centered-button { 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    margin-top: 20px;
+  }
+
+  .main-title-under-picture {
+    font-size: 22pt;
+    width: 100%;
+    text-align: center;  
+    padding-bottom: 15px;   
+}
+
+.grid-paragraph {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+/* grilla productos secundaria */
+
+.secondary-products-grid{   
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    column-gap: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 100px;
+    align-content: center;
+}
+
+.three-col-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+
+/*-------------------------------------------------*/
+
+.two-col-full-grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 0px;   
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: fit-content;
+    border: 2px solid #ffffff;
+}
+
+.trw-full-grid{
+    background-image: url(./inicio/imagenes/persona-trabajando-en-forma-remota-desde-un-dispositivo-mobil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    max-height: 600px;
+    border: 2px solid #ffffff;
+            
+}
+
+.trd-full-grid{
+    background-image: url(./inicio/imagenes/personas-trabajando-en-forma-remota.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    max-height: 600px;
+    border: 2px solid #ffffff;
+}
+
+.inside-text-box{
+    color: #ffffff;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 30%;
+    padding-bottom: 10%;
+
+}
+
+.reduced-title{
+    font-size: 20pt;
+}
+
+/*-------------------------------------------------*/
+
+/* MOBILE */
+@media only screen and (max-width:450px) {
+
+.two-col-full-grid-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 35px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.trw-full-grid{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.trd-full-grid{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+}
+
+.reduced-title{
+    font-size: 16pt;
+}
+
+/*-------------------------------------------------*/
+
+/* TABLET */
+@media only screen and (min-width:450px) and (max-width:960px) {
+
+    .two-col-full-grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 35px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .trw-full-grid{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .trd-full-grid{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    }
+    
+    .reduced-title{
+        font-size: 20pt;
+    }

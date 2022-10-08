@@ -285,7 +285,7 @@ p {
 }
 
 /* PRODUCTOS GRILLA PRIMARIA */
-.grid-thinfinity {
+.two-col-full-grid-container {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -293,130 +293,98 @@ p {
   column-gap: 0px;
   margin-top: 50px;
   margin-bottom: 50px;
+  height: fit-content;
   /* mobile */
   /* tablet */
 }
 @media only screen and (max-width: 450px) {
-  .grid-thinfinity {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    row-gap: 10px;
-  }
-}
-@media only screen and (min-width: 450px) and (max-width: 960px) {
-  .grid-thinfinity {
+  .two-col-full-grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 10px;
-  }
-}
-.grid-thinfinity .trw-item {
-  width: 100%;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  /* mobile */
-  /* tablet */
-}
-@media only screen and (max-width: 450px) {
-  .grid-thinfinity .trw-item {
-    grid-column: span 1;
+    row-gap: 35px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 @media only screen and (min-width: 450px) and (max-width: 960px) {
-  .grid-thinfinity .trw-item {
-    grid-column: span 1;
+  .two-col-full-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 35px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
-.grid-thinfinity .trw-item .trw-bg-img {
+.two-col-full-grid-container .trw-full-grid {
   background-image: url(../inicio/imagenes/persona-trabajando-en-forma-remota-desde-un-dispositivo-mobil.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
-  width: 100%;
-  max-height: auto;
-  color: #ffffff;
-}
-.grid-thinfinity .trd-item {
-  width: 100%;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  max-height: 600px;
   /* mobile */
   /* tablet */
 }
 @media only screen and (max-width: 450px) {
-  .grid-thinfinity .trd-item {
-    grid-column: span 1;
+  .two-col-full-grid-container .trw-full-grid {
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 }
 @media only screen and (min-width: 450px) and (max-width: 960px) {
-  .grid-thinfinity .trd-item {
-    grid-column: span 1;
+  .two-col-full-grid-container .trw-full-grid {
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 }
-.grid-thinfinity .trd-item .trd-bg-img {
-  background-image: url(..//inicio/imagenes/personas-trabajando-en-forma-remota.jpg);
+.two-col-full-grid-container .trd-full-grid {
+  background-image: url(../inicio/imagenes/personas-trabajando-en-forma-remota.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
-  width: 100%;
-  max-height: auto;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  max-height: 600px;
+  /* mobile */
+  /* tablet */
+}
+@media only screen and (max-width: 450px) {
+  .two-col-full-grid-container .trd-full-grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .two-col-full-grid-container .trd-full-grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+.two-col-full-grid-container .inside-text-box {
   color: #ffffff;
-}
-.grid-thinfinity .trd-item .trd-bg-img .index-main-products-button {
-  padding-bottom: 50px;
   padding-left: 20%;
-  /* mobile */
-  /* tablet */
+  padding-right: 20%;
+  padding-top: 30%;
+  padding-bottom: 10%;
 }
-@media only screen and (max-width: 450px) {
-  .grid-thinfinity .trd-item .trd-bg-img .index-main-products-button {
-    padding-left: 0%;
-    display: flex;
-    justify-content: center;
-  }
-}
-@media only screen and (min-width: 450px) and (max-width: 960px) {
-  .grid-thinfinity .trd-item .trd-bg-img .index-main-products-button {
-    padding-left: 0%;
-    display: flex;
-    justify-content: center;
-  }
-}
-.grid-thinfinity .text-inside {
-  padding-top: 250px;
-  padding-bottom: 20px;
-  margin-left: 20%;
-  margin-right: 20%;
-  /* mobile */
-  /* tablet */
-}
-@media only screen and (max-width: 450px) {
-  .grid-thinfinity .text-inside {
-    padding-top: 200px;
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 450px) and (max-width: 960px) {
-  .grid-thinfinity .text-inside {
-    padding-top: 200px;
-    text-align: center;
-  }
-}
-.grid-thinfinity .title-inside {
+.two-col-full-grid-container .reduced-title {
   font-size: 20pt;
   /* mobile */
   /* tablet */
 }
 @media only screen and (max-width: 450px) {
-  .grid-thinfinity .title-inside {
-    font-size: 18pt;
-    text-align: center;
+  .two-col-full-grid-container .reduced-title {
+    font-size: 16pt;
   }
 }
 @media only screen and (min-width: 450px) and (max-width: 960px) {
-  .grid-thinfinity .title-inside {
-    font-size: 18pt;
-    text-align: center;
+  .two-col-full-grid-container .reduced-title {
+    font-size: 20pt;
   }
 }
 
