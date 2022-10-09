@@ -145,6 +145,14 @@
         padding-right: 20%;
         padding-top: 30%;
         padding-bottom: 10%;
+        /* mobile */
+        @media only screen and (max-width:450px) {
+            text-align: center;
+        }
+        /* tablet */
+        @media only screen and (min-width:450px) and (max-width:960px) { 
+            text-align: center;
+        }
     }
     
     .reduced-title{
@@ -152,10 +160,12 @@
         /* mobile */
         @media only screen and (max-width:450px) {
             font-size: 16pt;
+            text-align: center;
         }
         /* tablet */
         @media only screen and (min-width:450px) and (max-width:960px) { 
             font-size: 20pt;
+            text-align: center;
         }
     }    
 } 

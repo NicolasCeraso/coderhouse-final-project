@@ -151,7 +151,8 @@ p {
 
 /* grilla productos primaria */ 
 
-.grid-thinfinity {
+
+.two-col-full-grid-container{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -159,48 +160,38 @@ p {
     column-gap: 0px;   
     margin-top: 50px;
     margin-bottom: 50px;
+    height: fit-content;
 }
 
-.trw-item {
-    width: 100%;  
+.trw-full-grid{
+    background-image: url(../inicio/imagenes/persona-trabajando-en-forma-remota-desde-un-dispositivo-mobil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
     grid-column-start: 1;
     grid-column-end: 2;
+    max-height: 600px;
 }
 
-.trw-bg-img { 
-    background-image: url(inicio/imagenes/persona-trabajando-en-forma-remota-desde-un-dispositivo-mobil.jpg); 
+.trd-full-grid{
+    background-image: url(../inicio/imagenes/personas-trabajando-en-forma-remota.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-	background-position: right center;
-    width: 100%;
-    max-height: auto;
-    color: #ffffff;
-}
-    
-.trd-item {
-    width: 100%;  
+    background-position: right center;
     grid-column-start: 2;
     grid-column-end: 3;
-} 
-
-.trd-bg-img { 
-    background-image: url(inicio/imagenes/personas-trabajando-en-forma-remota.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;
-	background-position: right center;    
-    width: 100%;
-    max-height: auto;
-    color: #ffffff;
+    max-height: 600px;
 }
 
-.text-inside{
-    padding-top: 250px;
-    padding-bottom: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
-} 
+.inside-text-box{
+    color: #ffffff;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 30%;
+    padding-bottom: 10%;
+}
 
-.title-inside {
+.reduced-title{
     font-size: 20pt;
 }
 
@@ -584,8 +575,6 @@ p {
     grid-column-end: 2;   
 }
 
-
-
 /* visa */
 
 .clients-grid-visa {
@@ -866,38 +855,33 @@ p {
 
 /* MOBILE - grilla primaria */
 
-    .grid-thinfinity {
+    .two-col-full-grid-container{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        row-gap: 10px;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 35px;
+            margin-top: 50px;
+            margin-bottom: 50px;
     }
 
-/* MOBILE - thinfinity remote workspace */    
-
-    .trw-item {
-        grid-column: span 1;
+    .trw-full-grid{
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
 
-/* MOBILE - thinfinity remote desktop */  
-
-    .trd-item {
-        grid-column: span 1;
+    .trd-full-grid{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
-    .title-inside {
-        font-size: 18pt;        
+    .reduced-title{
+        font-size: 16pt;
         text-align: center;
-    }
-    
-    .text-inside{
-        padding-top: 200px;
-        text-align: center;
-    }
+    }        
 
-    .left-button {
-        padding-left: 0px;
-        display: flex;
-        justify-content: center;
+    .inside-text-box{
+        text-align: center;
     }
 
 /* MOBILE - grilla secundaria */
@@ -1352,40 +1336,33 @@ p {
 
 /* TABLET - grilla primaria */
 
-    .grid-thinfinity {
+    .two-col-full-grid-container{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        row-gap: 10px;
+        row-gap: 35px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
-    .trw-item {
-        grid-column: span 1;
+    .trw-full-grid{
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
 
-    .trd-item {
-        grid-column: span 1;
+    .trd-full-grid{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
-
-    .title-inside {
-        font-size: 18pt;        
+        
+    .reduced-title{
+        font-size: 20pt;
         text-align: center;
     }
 
-    .text-inside{
-        padding-top: 200px;
+    .inside-text-box{
         text-align: center;
-    } 
-
-    .left-button {
-        padding-left: 0px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .index-main-products-button {
-        padding-left: 0%;        
-        display: flex;
-        justify-content: center;
     }
 
 /* TABLET - grilla secundaria */
