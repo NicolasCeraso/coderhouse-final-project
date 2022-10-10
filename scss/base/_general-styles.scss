@@ -1,37 +1,32 @@
-// /* @import */
-// @import 'components/header.scss';
-// @import 'base/estilos-generales.scss';
+/* @import */
 
-/* RESETEO CSS */
-
+/* RESETEO CSS --------------------------------------------------------------------*/
 * {
     margin:0px;
     padding:0px;
     box-sizing: border-box;
 }
-
-/* FUENTES */
-
+/* --------------------------------------------------------------------------------*/
+/* FUENTES ------------------------------------------------------------------------*/
 html {
     font-size: 62.5%;
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
-
-/* TITULARES Y TEXTOS */
-
+/* --------------------------------------------------------------------------------*/
+/* TITULARES Y TEXTOS -------------------------------------------------------------*/
 h1 {
     color: #ffffff;
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 6rem;
-    /* mobile */
+    /* mobile --------------------------------------------------------------------*/
     @media only screen and (max-width:450px) {
         font-size: 18pt;
         text-align: center;
         margin-bottom: 15px;
     }
-    /* tablet */
+    /* tablet --------------------------------------------------------------------*/
     @media only screen and (min-width:450px) and (max-width:960px) {
         font-size: 3.5rem;
         text-align: left;
@@ -43,12 +38,12 @@ h2 {
     font-size: 4rem;
     font-family: 'Montserrat';
     font-weight: 200;
-    /* mobile */
+    /* mobile --------------------------------------------------------------------*/
     @media only screen and (max-width:450px) {
         font-size: 14pt;
         text-align: center;
     }
-    /* tablet */
+    /* tablet --------------------------------------------------------------------*/
     @media only screen and (min-width:450px) and (max-width:960px) {
         font-size: 2.5rem;
         text-align: left;
@@ -58,12 +53,12 @@ h2 {
 h3 {
     font-size: 2rem;
     font-family: 'lato';
-    /* mobile */
+    /* mobile --------------------------------------------------------------------*/
     @media only screen and (max-width:450px) {
         font-size: 12pt;
         text-align: center;
     }
-    /* tablet */
+    /* tablet -------------------------------------------------------------------*/
     @media only screen and (min-width:450px) and (max-width:960px) {
         font-size: 16pt;
         text-align: left;
@@ -79,12 +74,9 @@ p {
     font-size: 12pt;
     font-family: 'lato';
 }
-
-
-/* BOTONES */
-
-/* estructura botón */
-
+/* --------------------------------------------------------------------------------*/
+/* BOTONES ------------------------------------------------------------------------*/
+/* ESTRUCTURA PRINCIPAL -----------------------------------------------------------*/
 .button-container{
     font-family: 'lato';
     font-weight: 500;
@@ -97,7 +89,7 @@ p {
     margin: 15px 2px;
     transition-duration: 0.4s;
     cursor: pointer;   
-
+    /* mobile ---------------------------------------------------------------------*/
     @media only screen and (max-width:450px) {
         font-size: 2rem;
         padding: 6px 32px;
@@ -105,7 +97,7 @@ p {
         margin-top: 15px;
         margin-bottom: 5px;
     }        
-    /* tablet */
+    /* tablet ---------------------------------------------------------------------*/
     @media only screen and (min-width:450px) and (max-width:960px) { 
         font-family: 'lato';
         font-weight: 500;
@@ -119,25 +111,54 @@ p {
         transition-duration: 0.4s;
         cursor: pointer;
     }
+/* --------------------------------------------------------------------------------*/
+/* BOTON BLANCO -------------------------------------------------------------------*/
 
+    &.white-button {
+        background-color: #ffffff; 
+        color: #000000; 
+        border: 2px solid #ffffff;
+            
+        &:hover {
+            background-color: rgba(255, 255, 255, 0);
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        } 
+    }
+/* --------------------------------------------------------------------------------*/   
+/* BOTON AZUL ---------------------------------------------------------------------*/
+
+    &.blue-button {
+        background-color: #085dac; 
+        color: #ffffff; 
+        border: 2px solid #085dac;
+            
+        &:hover {
+            background-color: rgba(255, 255, 255, 0);
+            color: #085dac;
+            border: 2px solid #085dac;
+        }
+    }
+}
+/* --------------------------------------------------------------------------------*/ 
+/* ALINEACIONES -------------------------------------------------------------------*/       
     .intro-left-button {
         padding-bottom: 50px;
-
+        /* mobile -----------------------------------------------------------------*/
         @media only screen and (max-width:450px) {
             padding-left: 0%;        
             display: flex;
             justify-content: center;
         }         
-        /* tablet */
+        /* tablet -----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) { 
             padding-left: 0%;        
             display: flex;
             justify-content: left;
         }
     }
-
+/* --------------------------------------------------------------------------------*/
     .centered-button { 
-        display: flex;
         justify-content: center;
         margin-bottom: 10%;
         margin-top: 20px;
@@ -147,18 +168,18 @@ p {
         display: inline-block; 
         margin-bottom: 20px;
         margin: 15px 2px;
-
+        /* mobile ----------------------------------------------------------------*/
         @media only screen and (max-width:450px) {
             display: flex;
             justify-content: center;
         }         
-        /* tablet */
+        /* tablet ----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) { 
             display: flex;
             justify-content: center;
         } 
     }
-
+/* --------------------------------------------------------------------------------*/
     .in-grid-button{
         font-family: 'lato';
         font-weight: 500;
@@ -172,35 +193,6 @@ p {
         cursor: pointer;       
     }
 
-/* BOTON BLANCO */
-
-    &.white-button {
-        background-color: #ffffff; 
-        color: #000000; 
-        border: 2px solid #ffffff;
-            
-        &:hover {
-            background-color: rgba(255, 255, 255, 0);
-            color: #ffffff;
-            border: 2px solid #ffffff;
-        } 
-    }
-        
-/* BOTON AZUL */
-
-    &.blue-button {
-        background-color: #085dac; 
-        color: #ffffff; 
-        border: 2px solid #085dac;
-            
-        &:hover {
-            background-color: rgba(255, 255, 255, 0);
-            color: #085dac;
-            border: 2px solid #085dac;
-        }
-    }
-
-}
 
 
 

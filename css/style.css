@@ -1,28 +1,32 @@
 @charset "UTF-8";
 /* @import */
 /* BASE */
-/* GENERAL */ /* RESETEO CSS */
+/* GENERAL */
+/* @import */
+/* RESETEO CSS --------------------------------------------------------------------*/
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-/* FUENTES */
+/* --------------------------------------------------------------------------------*/
+/* FUENTES ------------------------------------------------------------------------*/
 html {
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
   font-family: "Montserrat", sans-serif;
 }
 
-/* TITULARES Y TEXTOS */
+/* --------------------------------------------------------------------------------*/
+/* TITULARES Y TEXTOS -------------------------------------------------------------*/
 h1 {
   color: #ffffff;
   font-family: "Montserrat";
   font-weight: bold;
   font-size: 6rem;
-  /* mobile */
-  /* tablet */
+  /* mobile --------------------------------------------------------------------*/
+  /* tablet --------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   h1 {
@@ -43,8 +47,8 @@ h2 {
   font-size: 4rem;
   font-family: "Montserrat";
   font-weight: 200;
-  /* mobile */
-  /* tablet */
+  /* mobile --------------------------------------------------------------------*/
+  /* tablet --------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   h2 {
@@ -62,8 +66,8 @@ h2 {
 h3 {
   font-size: 2rem;
   font-family: "lato";
-  /* mobile */
-  /* tablet */
+  /* mobile --------------------------------------------------------------------*/
+  /* tablet -------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   h3 {
@@ -88,8 +92,9 @@ p {
   font-family: "lato";
 }
 
-/* BOTONES */
-/* estructura botón */
+/* --------------------------------------------------------------------------------*/
+/* BOTONES ------------------------------------------------------------------------*/
+/* ESTRUCTURA PRINCIPAL -----------------------------------------------------------*/
 .button-container {
   font-family: "lato";
   font-weight: 500;
@@ -102,9 +107,12 @@ p {
   margin: 15px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  /* tablet */
-  /* BOTON BLANCO */
-  /* BOTON AZUL */
+  /* mobile ---------------------------------------------------------------------*/
+  /* tablet ---------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* BOTON BLANCO -------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* BOTON AZUL ---------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .button-container {
@@ -130,60 +138,6 @@ p {
     cursor: pointer;
   }
 }
-.button-container .intro-left-button {
-  padding-bottom: 50px;
-  /* tablet */
-}
-@media only screen and (max-width: 450px) {
-  .button-container .intro-left-button {
-    padding-left: 0%;
-    display: flex;
-    justify-content: center;
-  }
-}
-@media only screen and (min-width: 450px) and (max-width: 960px) {
-  .button-container .intro-left-button {
-    padding-left: 0%;
-    display: flex;
-    justify-content: left;
-  }
-}
-.button-container .centered-button {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10%;
-  margin-top: 20px;
-}
-.button-container .button-in-line {
-  display: inline-block;
-  margin-bottom: 20px;
-  margin: 15px 2px;
-  /* tablet */
-}
-@media only screen and (max-width: 450px) {
-  .button-container .button-in-line {
-    display: flex;
-    justify-content: center;
-  }
-}
-@media only screen and (min-width: 450px) and (max-width: 960px) {
-  .button-container .button-in-line {
-    display: flex;
-    justify-content: center;
-  }
-}
-.button-container .in-grid-button {
-  font-family: "lato";
-  font-weight: 500;
-  font-size: 2rem;
-  padding: 6px 32px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50px;
-  display: inline-block;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
 .button-container.white-button {
   background-color: #ffffff;
   color: #000000;
@@ -203,6 +157,69 @@ p {
   background-color: rgba(255, 255, 255, 0);
   color: #085dac;
   border: 2px solid #085dac;
+}
+
+/* --------------------------------------------------------------------------------*/
+/* ALINEACIONES -------------------------------------------------------------------*/
+.intro-left-button {
+  padding-bottom: 50px;
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
+}
+@media only screen and (max-width: 450px) {
+  .intro-left-button {
+    padding-left: 0%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .intro-left-button {
+    padding-left: 0%;
+    display: flex;
+    justify-content: left;
+  }
+}
+
+/* --------------------------------------------------------------------------------*/
+.centered-button {
+  justify-content: center;
+  margin-bottom: 10%;
+  margin-top: 20px;
+}
+
+.button-in-line {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin: 15px 2px;
+  /* mobile ----------------------------------------------------------------*/
+  /* tablet ----------------------------------------------------------------*/
+}
+@media only screen and (max-width: 450px) {
+  .button-in-line {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .button-in-line {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* --------------------------------------------------------------------------------*/
+.in-grid-button {
+  font-family: "lato";
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 6px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 /* VARIABLES */
@@ -992,15 +1009,17 @@ p {
 }
 
 /* NOSOTROS */
-/* DESKTOP - NOSOTROS - SECCION INICIO */
+/* DESKTOP - NOSOTROS - SECCION INICIO --------------------------------------------*/
 .about-us-intro-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   column-gap: 35px;
   margin-top: 150px;
-  /* mobile */
-  /* tablet */
+  /* mobile ---------------------------------------------------------------------*/
+  /* tablet ---------------------------------------------------------------------*/
+  /* ----------------------------------------------------------------------------*/
+  /* ----------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .about-us-intro-grid-container {
@@ -1024,8 +1043,9 @@ p {
   grid-row-start: 1;
   grid-row-end: 2;
   height: 100%;
-  /* mobile */
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
+  /*-------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .about-us-intro-grid-container .about-us-img-container {
@@ -1047,7 +1067,7 @@ p {
   width: 100%;
   height: auto;
   /* mobile */
-  /* tablet */
+  /* tablet -------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .about-us-intro-grid-container .about-us-img-container .about-us-img {
@@ -1064,8 +1084,9 @@ p {
 .about-us-intro-grid-container .about-us-intro-padding {
   padding-right: 20%;
   height: auto;
-  /* mobile */
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
+  /*-------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .about-us-intro-grid-container .about-us-intro-padding {
@@ -1085,8 +1106,9 @@ p {
   grid-row-start: 1;
   grid-row-end: 2;
   height: auto;
-  /* mobile */
-  /* tablet */
+  /* mobile -------------------------------------------------------------*/
+  /* tablet -------------------------------------------------------------*/
+  /*---------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .about-us-intro-grid-container .about-us-intro-padding .about-us-intro-text-container {
@@ -1108,8 +1130,8 @@ p {
   font-family: "Montserrat";
   font-weight: bold;
   color: #085dac;
-  /* mobile */
-  /* tablet */
+  /* mobile ---------------------------------------------------------*/
+  /* tablet ---------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .about-us-intro-grid-container .about-us-intro-padding .about-us-intro-text-container .about-us-title {
@@ -1124,6 +1146,7 @@ p {
   }
 }
 
+/* --------------------------------------------------------------------------------*/
 .about-us-secondary-grid-container {
   background-color: #e2e3e4;
   display: grid;
@@ -1135,8 +1158,11 @@ p {
   padding-bottom: 150px;
   padding-left: 10%;
   padding-right: 10%;
-  /* mobile */
-  /* tablet */
+  /* mobile ---------------------------------------------------------------------*/
+  /* tablet ---------------------------------------------------------------------*/
+  /* ----------------------------------------------------------------------------*/
+  /* ----------------------------------------------------------------------------*/
+  /* ----------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .about-us-secondary-grid-container {
@@ -1172,8 +1198,9 @@ p {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
-  /* mobile */
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
+  /* ------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .about-us-secondary-grid-container .asociate {
@@ -1189,12 +1216,31 @@ p {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+  }
+}
+.about-us-secondary-grid-container .asociate .about-us-li {
+  font-size: 12pt;
+  font-weight: 600;
+  padding-left: 5%;
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
+}
+@media only screen and (max-width: 450px) {
+  .about-us-secondary-grid-container .asociate .about-us-li {
+    padding-left: 0%;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .about-us-secondary-grid-container .asociate .about-us-li {
+    padding-left: 0%;
+    text-align: left;
   }
 }
 .about-us-secondary-grid-container .about-us-secondary-title {
   text-align: left;
-  /* mobile */
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .about-us-secondary-grid-container .about-us-secondary-title {
@@ -1209,10 +1255,11 @@ p {
   }
 }
 
+/* --------------------------------------------------------------------------------*/
 .about-us-text-align {
   text-align: left;
-  /* mobile */
-  /* tablet */
+  /* mobile ---------------------------------------------------------------------*/
+  /* tablet ---------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .about-us-text-align {
@@ -1225,6 +1272,7 @@ p {
   }
 }
 
+/* --------------------------------------------------------------------------------*/
 /* CLIENTES */
 /* DESKTOP - CLIENTES - SECCION INICIO */
 .clients-grid-container {
