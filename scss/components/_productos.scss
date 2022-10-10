@@ -1,6 +1,5 @@
-/* DESKTOP - PRODUCTOS - SECCION INICIO */
-
-/* grilla/menú de productos */
+/* DESKTOP - PRODUCTOS - SECCION INICIO -------------------------------------------*/
+/* grilla/menú de productos -------------------------------------------------------*/
 .products-grid-container {
     margin-top: 50px;
     padding-left: 10%;
@@ -12,23 +11,23 @@
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 2px;
     column-gap: 4px; 
-    /* mobile */   
+    /* mobile ---------------------------------------------------------------------*/   
     @media only screen and (max-width:450px) {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         row-gap: 3px; 
     }
-    /* tablet */
+    /* tablet ---------------------------------------------------------------------*/
     @media only screen and (min-width:450px) and (max-width:960px) {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         row-gap: 3px; 
     }
-
+/* --------------------------------------------------------------------------------*/ 
     .centered-text {
         text-align: center;
     }
-        
+/* --------------------------------------------------------------------------------*/         
     /* grilla/menú de thinfinity */
     .thinfinity-product {
         grid-column-start: 1;
@@ -40,7 +39,7 @@
         background-repeat: no-repeat;
         background-size: 25%;
         background-position: center center; 
-        /* mobile */   
+        /* mobile -----------------------------------------------------------------*/   
         @media only screen and (max-width:450px) {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -48,7 +47,7 @@
             grid-row-end: 2;
             background-size:40%; 
         }
-        /* tablet */
+        /* tablet -----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) {
             grid-column-start: 1;
         grid-column-end: 2;
@@ -56,7 +55,7 @@
         grid-row-end: 2;
         background-size:25%;
         }
-
+/* --------------------------------------------------------------------------------*/ 
         .thinfinity-text-block {    
             background-color: rgba(0, 125, 193, 0); 
             color:  rgba(255, 255, 255, 0);
@@ -67,30 +66,27 @@
             padding-left: 10%;
             padding-right: 10%;
             padding-bottom: 16%; 
-            /* mobile */   
+            /* mobile -------------------------------------------------------------*/   
             @media only screen and (max-width:450px) {
                 padding-top: 25%;
                 padding-left: 10%;
                 padding-right: 10%; 
             }
-            /* tablet */
+            /* tablet -------------------------------------------------------------*/
             @media only screen and (min-width:450px) and (max-width:960px) {
                 padding-top: 30%;
                 padding-left: 10%;
                 padding-right: 10%;
             }
-
             &:hover {
                 background-color: rgba(0, 125, 193, 1);
                 color:  rgba(255, 255, 255, 1);
             }
         }
     }
-
-/* PRODUCTOS ZSCOPE */
-
-    /* grilla/menú de zscope */
-
+/* --------------------------------------------------------------------------------*/ 
+/* PRODUCTOS ZSCOPE ---------------------------------------------------------------*/
+    /* grilla/menú de zscope ------------------------------------------------------*/
     .zscope-product {
         grid-column-start: 2;
         grid-column-end: 3;
@@ -100,7 +96,7 @@
         background-image: url(../productos/imagenes/isologo-zscope.svg); background-repeat: no-repeat;
         background-size:25%;
         background-position: center center; 
-        /* mobile */   
+        /* mobile -----------------------------------------------------------------*/   
         @media only screen and (max-width:450px) {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -108,7 +104,7 @@
             grid-row-end: 3;
             background-size: 40%; 
         }
-        /* tablet */
+        /* tablet -----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -116,7 +112,7 @@
             grid-row-end: 3;
             background-size: 25%;
         }
-
+/* --------------------------------------------------------------------------------*/ 
         .zscope-text-block {    
             background-color: rgba(146, 129, 102, 0); 
             color:  rgba(255, 255, 255, 0);
@@ -127,28 +123,26 @@
             padding-left: 10%;
             padding-right: 10%;
             padding-bottom: 5%; 
-            /* mobile */   
+            /* mobile -------------------------------------------------------------*/   
             @media only screen and (max-width:450px) {
                 padding-top: 25%;
                 padding-left: 10%;
                 padding-right: 10%;
             }
-            /* tablet */
+            /* tablet -------------------------------------------------------------*/
             @media only screen and (min-width:450px) and (max-width:960px) {
                 padding-top: 35%;
                 padding-left: 10%;
                 padding-right: 10%;
             }
-
             &:hover {
                 background-color: rgba(146, 129, 102, 1);
                 color:  rgba(255, 255, 255, 1);
             }
         }
     }
-        
-    /* grilla/menú de tnbridge */
-
+/* --------------------------------------------------------------------------------*/         
+    /* grilla/menú de tnbridge ----------------------------------------------------*/
     .tnbridge-product {
         grid-column-start: 2;
         grid-column-end: 3;
@@ -159,7 +153,7 @@
         background-repeat: no-repeat;
         background-size:35%;
         background-position: center center; 
-        /* mobile */   
+        /* mobile ----------------------------------------------------------------*/   
         @media only screen and (max-width:450px) {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -167,7 +161,7 @@
             grid-row-end: 4;
             background-size: 60%;
         }
-        /* tablet */
+        /* tablet ----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -175,7 +169,7 @@
             grid-row-end: 4;
             background-size: 40%;
         }
-
+/* --------------------------------------------------------------------------------*/ 
         .tnbridge-text-block {    
             background-color: rgba(225, 150, 52, 0); 
             color:  rgba(255, 255, 255, 0);
@@ -186,19 +180,18 @@
             padding-left: 10%;
             padding-right: 10%;    
             padding-bottom: 5%; 
-            /* mobile */   
+            /* mobile -------------------------------------------------------------*/   
             @media only screen and (max-width:450px) {
                 padding-top: 35%;
                 padding-left: 10%;
                 padding-right: 10%;
             }
-            /* tablet */
+            /* tablet -------------------------------------------------------------*/
             @media only screen and (min-width:450px) and (max-width:960px) {
                 padding-top: 35%;
                 padding-left: 10%;
                 padding-right: 10%;
             }
-
             &:hover {
                 background-color: rgba(225, 150, 52, 1);
                 color:  rgba(255, 255, 255, 1);
@@ -206,9 +199,8 @@
         } 
     } 
 }  
-
-/* DESKTOP - PRODUCTOS - SECCION THINFINITY */
-
+/* --------------------------------------------------------------------------------*/ 
+/* DESKTOP - PRODUCTOS - SECCION THINFINITY ---------------------------------------*/
     .cover-img {
         padding-left: 10%;
         padding-right: 10%;
@@ -220,37 +212,37 @@
         background-position: center center;
         width: 100%;
         color: #ffffff;  
-        /* mobile */   
+        /* mobile ----------------------------------------------------------------*/   
         @media only screen and (max-width:450px) {
             padding-top: 50px; 
         }
-        /* tablet */
+        /* tablet ----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) {
             padding-top: 50px;
         }
-        
+/* --------------------------------------------------------------------------------*/         
         .box-text-inside {
             width: 60%;  
-            /* mobile */   
+            /* mobile -------------------------------------------------------------*/   
             @media only screen and (max-width:450px) {
                 width: 100%;
                 text-align: center;
             }
-            /* tablet */
+            /* tablet -------------------------------------------------------------*/
             @media only screen and (min-width:450px) and (max-width:960px) {
                 width: 70%;
                 text-align: left;
             }
-
+/* --------------------------------------------------------------------------------*/ 
             .product-title {
                 font-weight: 400;  
-                /* mobile */   
+                /* mobile ---------------------------------------------------------*/   
                 @media only screen and (max-width:450px) {
                     font-weight: 400;
                     width: 100%;
                     text-align: center;
                 }
-                /* tablet */
+                /* tablet ---------------------------------------------------------*/
                 @media only screen and (min-width:450px) and (max-width:960px) {
                     font-weight: 400;
                     width: 100%;
@@ -258,37 +250,35 @@
                 }
             }
         }
-
+/* --------------------------------------------------------------------------------*/ 
         .paragraph-block {
             margin-top: 20px;
             margin-bottom: 20px;
         }
     }
-/*tal vez hay que mover y re anidar esta clase porque comparte clases de index*/
+/* --------------------------------------------------------------------------------*/ 
     .three-col-grid-container {
         margin-top: 50px;
     }
-/*
-
-/* DESKTOP - PRODUCTOS - SECCION ZSCOPE */
-
+/* --------------------------------------------------------------------------------*/ 
+/* DESKTOP - PRODUCTOS - SECCION ZSCOPE -------------------------------------------*/
 .two-products-grid-container {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 35px;    
-    /* mobile */   
+    /* mobile ---------------------------------------------------------------------*/   
     @media only screen and (max-width:450px) {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
-    /* tablet */
+    /* tablet ---------------------------------------------------------------------*/
     @media only screen and (min-width:450px) and (max-width:960px) {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         row-gap: 35px;
     }
-    
+/* --------------------------------------------------------------------------------*/     
     .zscope-img-anywhere {
         background-image: url('../productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg');
         background-repeat: no-repeat;
@@ -296,12 +286,12 @@
         min-height: auto;
         background-position: center center;
         width: 100%;
-        /* tablet */
+        /* tablet -----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) {
             min-height: 450px;
         }
     }
-
+/* --------------------------------------------------------------------------------*/ 
     .zscope-img-desktop {
         background-image: url('../productos/imagenes/persona-trabajando-con-emulador-de-terminal-de-escritorio.jpg');
         background-repeat: no-repeat;
@@ -309,23 +299,23 @@
         min-height: auto;
         background-position: center center;
         width: 100%;
-        /* tablet */
+        /* tablet -----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) {
             min-height: 450px;
         }
     }
-
+/* --------------------------------------------------------------------------------*/ 
     .zscope-text-element {
         margin-top: 150px;
         margin-left: 10%;
         margin-right: 10%;
         color: #ffffff;
         text-align: left;    
-        /* mobile */   
+        /* mobile -----------------------------------------------------------------*/   
         @media only screen and (max-width:450px) {
             text-align: center;
         }
-        /* tablet */
+        /* tablet -----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) {
             margin-top: 200px;
             margin-left: 75px;
@@ -333,3 +323,4 @@
         }
     }
 }
+/* --------------------------------------------------------------------------------*/ 

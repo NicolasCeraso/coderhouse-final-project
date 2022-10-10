@@ -1,15 +1,30 @@
-/* DESKTOP - CLIENTES - SECCION INICIO */
+/* DESKTOP - CLIENTES - SECCION INICIO --------------------------------------------*/
+.clients-margin{
+    margin-top: 100px;
+    margin-bottom: 150px;
+    /* mobile ---------------------------------------------------------------------*/
+    @media only screen and (max-width:450px) {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    /* tablet ---------------------------------------------------------------------*/
+    @media only screen and (min-width:450px) and (max-width:960px) { 
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+}
+/* --------------------------------------------------------------------------------*/ 
 .clients-grid-container {
-    margin-top: 50px;
+    margin-top: 25px;
     padding-left: 10%;
     padding-right: 10%;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 35px;  
-    /* mobile */
+    /* mobile ---------------------------------------------------------------------*/
     @media only screen and (max-width:450px) {
         margin-top: 25px;   
         margin-bottom: 25px;
@@ -18,152 +33,152 @@
         column-gap: 35px; 
         row-gap: 35px;
     }
-    /* tablet */
+    /* tablet ---------------------------------------------------------------------*/
     @media only screen and (min-width:450px) and (max-width:960px) { 
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         row-gap: 35px; 
     }
-    
+/* --------------------------------------------------------------------------------*/     
     .clients-grid-shell {
         grid-column-start: 1;
         grid-column-end: 2;  
-
+        /* mobile -----------------------------------------------------------------*/
         @media only screen and (max-width:450px) {
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 1;
             grid-row-end: 2;
         }
-        /* tablet */
+        /* tablet -----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) { 
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 1;
             grid-row-end: 2;
         }
-        
+/* --------------------------------------------------------------------------------*/         
         .shell-logo {
             width: 100%;    
         }
     }
-
+/* --------------------------------------------------------------------------------*/ 
     .clients-grid-visa {
         grid-column-start: 2;
         grid-column-end: 3;  
-
+        /* mobile -----------------------------------------------------------------*/
         @media only screen and (max-width:450px) {
             grid-column-start: 2;
             grid-column-end: 3;
             grid-row-start: 1;
             grid-row-end: 2;
         }
-        /* tablet */
+        /* tablet -----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) { 
             grid-column-start: 2;
             grid-column-end: 3;
             grid-row-start: 1;
             grid-row-end: 2; 
         }   
-
+/* --------------------------------------------------------------------------------*/ 
         .visa-logo {
             width: 100%;    
         }
     }
-
+/* --------------------------------------------------------------------------------*/ 
     .clients-grid-fujifilm {
         grid-column-start: 3;
         grid-column-end: 4;
-        
+        /* mobile -----------------------------------------------------------------*/
         @media only screen and (max-width:450px) {
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 2;
             grid-row-end: 3;
         }
-        /* tablet */
+        /* tablet -----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) { 
             grid-column-start: 3;
             grid-column-end: 4;
             grid-row-start: 1;
             grid-row-end: 2; 
         }    
-
+/* --------------------------------------------------------------------------------*/ 
         .fujifilm-logo {
             width: 100%;    
         }
     }
-
+/* --------------------------------------------------------------------------------*/ 
     .clients-grid-ibm {
         grid-column-start: 4;
         grid-column-end: 5;
-        
+        /* mobile -----------------------------------------------------------------*/
         @media only screen and (max-width:450px) {
             grid-column-start: 2;
             grid-column-end: 3;
             grid-row-start: 2;
             grid-row-end: 3;
         } 
-        /* tablet */
+        /* tablet -----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) { 
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 2;
             grid-row-end: 3; 
         }    
-        
+/* --------------------------------------------------------------------------------*/         
         .ibm-logo {
             width: 100%;    
         }
     }
-
+/* --------------------------------------------------------------------------------*/ 
     .clients-grid-paypal {
         grid-column-start: 5;
         grid-column-end: 6;
-        
+        /* mobile -----------------------------------------------------------------*/
         @media only screen and (max-width:450px) {
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 3;
             grid-row-end: 4;
         }   
-        /* tablet */
+        /* tablet -----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) { 
             grid-column-start: 2;
             grid-column-end: 3;
             grid-row-start: 2;
             grid-row-end: 3; 
         }  
-        
+/* --------------------------------------------------------------------------------*/         
         .paypal-logo {
             width: 100%;    
         }
     }
-
+/* --------------------------------------------------------------------------------*/ 
     .clients-grid-maestro {
         grid-column-start: 6;
         grid-column-end: 7;
-        
+        /* mobile -----------------------------------------------------------------*/
         @media only screen and (max-width:450px) {
             grid-column-start: 2;
             grid-column-end: 3;
             grid-row-start: 3;
             grid-row-end: 4;
         }    
-        /* tablet */
+        /* tablet -----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) { 
             grid-column-start: 3;
             grid-column-end: 4;
             grid-row-start: 2;
             grid-row-end: 3;  
         }  
-
+/* --------------------------------------------------------------------------------*/ 
         .maestro-logo {
             width: 100%;    
         }
     }
 }
-
+/* --------------------------------------------------------------------------------*/ 
 .two-buttons-grid-container {
     margin-top: 50px;
     padding-left: 10%;
@@ -174,7 +189,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 35px; 
-        
+    /* mobile ---------------------------------------------------------------------*/    
     @media only screen and (max-width:450px) {
         margin-top: 50px;
         margin-bottom: 50px;
@@ -183,7 +198,7 @@
         grid-template-rows: 1fr 1fr;
         row-gap: 35px;
     }     
-    /* tablet */
+    /* tablet ---------------------------------------------------------------------*/
     @media only screen and (min-width:450px) and (max-width:960px) { 
         margin-top: 50px;
         padding-left: 10%;
@@ -195,14 +210,14 @@
         grid-template-rows: 1fr;
         column-gap: 35px;  
     }  
-    
+/* --------------------------------------------------------------------------------*/     
     .two-buttons-grid-b1 {
         grid-column-start: 1;
         grid-column-end: 2;
         display: flex;
         flex-direction: row;
         justify-content: end; 
-        
+        /* mobile -----------------------------------------------------------------*/
         @media only screen and (max-width:450px) {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -213,14 +228,14 @@
             padding-right: 20%;
         }  
     }
-    
+/* --------------------------------------------------------------------------------*/     
     .two-buttons-grid-b2 {
         grid-column-start: 2;
         grid-column-end: 3;
         display: flex;
         flex-direction: row;
         justify-content: start; 
-        
+        /* mobile -----------------------------------------------------------------*/
         @media only screen and (max-width:450px) {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -232,4 +247,4 @@
         }  
     }
 }
-
+/* --------------------------------------------------------------------------------*/ 

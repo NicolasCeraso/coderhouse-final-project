@@ -1,7 +1,6 @@
-/* DESKTOP - CONTACTO */
-
-/* GRILLA */
-/* contenedor */
+/* DESKTOP - CONTACTO -------------------------------------------------------------*/
+/* GRILLA -------------------------------------------------------------------------*/
+/* contenedor ---------------------------------------------------------------------*/
 .contact-main-grid {
     margin-top: 150px;
     padding-left: 10%;
@@ -14,8 +13,7 @@
     grid-template-rows: 1fr;
     column-gap: 35px;
     row-gap: 35px;
-
-    /* mobile */
+    /* mobile ---------------------------------------------------------------------*/
     @media only screen and (max-width:450px) {
         margin-top: 50px;
         margin-bottom: 50px;
@@ -24,8 +22,7 @@
         row-gap: 25px;
         justify-content: space-between;
     }
-
-    /* tablet */
+    /* tablet ---------------------------------------------------------------------*/
     @media only screen and (min-width:450px) and (max-width:960px) { 
         margin-top: 100px;
         margin-bottom: 100px;
@@ -34,8 +31,8 @@
         row-gap: 0px;
         height: 1000px;
     }
-
-/* contenido */
+/* --------------------------------------------------------------------------------*/ 
+/* contenido ----------------------------------------------------------------------*/
     .contact-info-grid {
         width: 100%;
         height: fit-content;
@@ -43,59 +40,53 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         row-gap: 5px;
-
-        /* mobile */
+        /* mobile -----------------------------------------------------------------*/
         @media only screen and (max-width:450px) {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
             height: 400px;
             margin-bottom: 50px;;
         }
-
-        /* tablet */
+        /* tablet----------------------------------------------------------------- */
         @media only screen and (min-width:450px) and (max-width:960px) { 
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
             height: 400px;
             margin-bottom: 50px;
         }
-
-/* TELEFONOS */
+/* --------------------------------------------------------------------------------*/ 
+/* TELEFONOS ----------------------------------------------------------------------*/
         .contact-phone {
             grid-column-start: 1;
             grid-column-end: 6;
             grid-row-start: 1;
             grid-row-end: 2;
             height: fit-content;
-
-            /* mobile */
+            /* mobile--------------------------------------------------------------*/
             @media only screen and (max-width:450px) {
                 grid-column-start: 1;
                 grid-column-end: 2;
             }
-
-            /* tablet */
+            /* tablet -------------------------------------------------------------*/
             @media only screen and (min-width:450px) and (max-width:960px) { 
                 grid-column-start: 1;
                  grid-column-end: 3;
             }
         }
-
-/* MAPA */
+/* --------------------------------------------------------------------------------*/ 
+/* MAPA ---------------------------------------------------------------------------*/
         .contact-map {
             grid-column-start: 1;
             grid-column-end: 4;
             grid-row-start: 2;
             grid-row-end: 3;
             height: fit-content;
-
-            /* mobile */
+            /* mobile -------------------------------------------------------------*/
             @media only screen and (max-width:450px) {
                 grid-column-start: 1;
                 grid-column-end: 2;
             }
-
-            /* tablet */
+            /* tablet -------------------------------------------------------------*/
             @media only screen and (min-width:450px) and (max-width:960px) { 
                 grid-column-start: 1;
                 grid-column-end: 2;
@@ -103,56 +94,50 @@
                 grid-row-end: 3;
             }
         }
-
-/* DIRECCION */
+/* --------------------------------------------------------------------------------*/ 
+/* DIRECCION ----------------------------------------------------------------------*/
         .contact-address {
             grid-column-start: 4;
             grid-column-end: 6;
             grid-row-start: 2;
             grid-row-end: 3;
             height: fit-content;
-
-            /* mobile */
+            /* mobile -------------------------------------------------------------*/
             @media only screen and (max-width:450px) {
                 grid-column-start: 1;
                 grid-column-end: 2;
                 grid-row-start: 3;
                 grid-row-end: 4;
             }
-
-            /* tablet */
+            /* tablet -------------------------------------------------------------*/
             @media only screen and (min-width:450px) and (max-width:960px) { 
                 grid-column-start: 2;
                 grid-column-end: 3;
                 grid-row-start: 2;
                 grid-row-end: 3;
             }
-            
+/* --------------------------------------------------------------------------------*/             
             .little-li {
                 font-size: 12pt;
                 font-weight: 300;
             }
         }
-
-        
-
-/* MENSAJE */
+/* --------------------------------------------------------------------------------*/        
+/* MENSAJE ------------------------------------------------------------------------*/
         .contact-message {
             grid-column-start: 1;
             grid-column-end: 6;
             grid-row-start: 3;
             grid-row-end: 4;
             height: fit-content;
-
-            /* mobile */
+            /* mobile -------------------------------------------------------------*/
             @media only screen and (max-width:450px) {
                 grid-column-start: 1;
                 grid-column-end: 2;
                 grid-row-start: 4;
                 grid-row-end: 5
             } 
-
-            /* tablet */
+            /* tablet -------------------------------------------------------------*/
             @media only screen and (min-width:450px) and (max-width:960px) { 
                 grid-column-start: 1;
                 grid-column-end: 3;
@@ -161,21 +146,19 @@
             }
         }
     }
-    
+/* --------------------------------------------------------------------------------*/     
     .contact-form-grid {
         width: 100%;
         height: fit-content;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        
-        /* mobile */
+        grid-template-rows: 1fr;        
+        /* mobile -----------------------------------------------------------------*/
         @media only screen and (max-width:450px) {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
         }
-
-        /* tablet */
+        /* tablet -----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) { 
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
@@ -183,16 +166,14 @@
             margin-top: 450px;
             width: 80%;
         }
-
-/* FORMULARIO */
-
+/* --------------------------------------------------------------------------------*/ 
+/* FORMULARIO ---------------------------------------------------------------------*/
         .contact-form {
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 1;
-            grid-row-end: 2;
-        
-            /* mobile */
+            grid-row-end: 2;        
+            /* mobile -------------------------------------------------------------*/
             @media only screen and (max-width:450px) {
                 grid-column-start: 1;
                 grid-column-end: 2;
@@ -200,7 +181,7 @@
                 grid-row-end: 2;
             }
 
-            /* tablet */
+            /* tablet -------------------------------------------------------------*/
             @media only screen and (min-width:450px) and (max-width:960px) { 
                 grid-column-start: 1;
                 grid-column-end: 2;
@@ -210,3 +191,4 @@
         }
     }
 }
+/* --------------------------------------------------------------------------------*/ 

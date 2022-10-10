@@ -2,7 +2,7 @@
 /* @import */
 /* BASE */
 /* GENERAL */
-/* @import */
+/* @import ------------------------------------------------------------------------*/
 /* RESETEO CSS --------------------------------------------------------------------*/
 * {
   margin: 0px;
@@ -43,6 +43,7 @@ h1 {
   }
 }
 
+/* --------------------------------------------------------------------------------*/
 h2 {
   font-size: 4rem;
   font-family: "Montserrat";
@@ -63,6 +64,7 @@ h2 {
   }
 }
 
+/* --------------------------------------------------------------------------------*/
 h3 {
   font-size: 2rem;
   font-family: "lato";
@@ -82,11 +84,13 @@ h3 {
   }
 }
 
+/* --------------------------------------------------------------------------------*/
 h4 {
   font-size: 12px;
   font-family: "lato";
 }
 
+/* --------------------------------------------------------------------------------*/
 p {
   font-size: 12pt;
   font-family: "lato";
@@ -188,6 +192,7 @@ p {
   margin-top: 20px;
 }
 
+/* --------------------------------------------------------------------------------*/
 .button-in-line {
   display: inline-block;
   margin-bottom: 20px;
@@ -222,6 +227,7 @@ p {
   cursor: pointer;
 }
 
+/* --------------------------------------------------------------------------------*/
 /* VARIABLES */
 /* LISTS */
 /* MAPS */
@@ -230,8 +236,7 @@ p {
 /* CONDITIONALS */
 /* COMPONENTS */
 /* INDEX */
-/* MAIN */
-/* SECCION INICIO */
+/* SECCION INICIO -----------------------------------------------------------------*/
 .index-intro {
   background-image: url("../inicio/imagenes/inicio-background-image.png");
   background-repeat: no-repeat;
@@ -241,11 +246,14 @@ p {
   background-position: center center;
   width: 100%;
   color: #ffffff;
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 .index-intro .text-align {
   padding: 10%;
-  /* mobile */
-  /* tablet */
+  /* mobile -------------------------------------------------------------*/
+  /* tablet -------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .index-intro .text-align {
@@ -263,8 +271,8 @@ p {
   font-weight: 200;
   font-family: "lato";
   padding-left: 25px;
-  /* mobile */
-  /* tablet */
+  /* mobile -------------------------------------------------------------*/
+  /* tablet -------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .index-intro .index-main-list {
@@ -282,7 +290,8 @@ p {
   padding-left: 20%;
 }
 
-/* SECCION PRODUCTOS */
+/* --------------------------------------------------------------------------------*/
+/* SECCION PRODUCTOS --------------------------------------------------------------*/
 .section-title {
   margin-left: 10%;
   margin-right: 10%;
@@ -292,6 +301,7 @@ p {
   margin-top: 100px;
 }
 
+/* --------------------------------------------------------------------------------*/
 .paragraph-align-center {
   text-align: center;
   display: flex;
@@ -301,7 +311,8 @@ p {
   align-self: center;
 }
 
-/* PRODUCTOS GRILLA PRIMARIA */
+/* --------------------------------------------------------------------------------*/
+/* PRODUCTOS GRILLA PRIMARIA ------------------------------------------------------*/
 .two-col-full-grid-container {
   width: 100%;
   display: grid;
@@ -311,8 +322,12 @@ p {
   margin-top: 50px;
   margin-bottom: 50px;
   height: fit-content;
-  /* mobile */
-  /* tablet */
+  /* mobile ---------------------------------------------------------------------*/
+  /* tablet ---------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .two-col-full-grid-container {
@@ -340,8 +355,8 @@ p {
   grid-column-start: 1;
   grid-column-end: 2;
   max-height: 600px;
-  /* mobile */
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .two-col-full-grid-container .trw-full-grid {
@@ -363,8 +378,8 @@ p {
   grid-column-start: 2;
   grid-column-end: 3;
   max-height: 600px;
-  /* mobile */
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .two-col-full-grid-container .trd-full-grid {
@@ -388,8 +403,8 @@ p {
   padding-right: 20%;
   padding-top: 30%;
   padding-bottom: 10%;
-  /* mobile */
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .two-col-full-grid-container .inside-text-box {
@@ -403,8 +418,8 @@ p {
 }
 .two-col-full-grid-container .reduced-title {
   font-size: 20pt;
-  /* mobile */
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .two-col-full-grid-container .reduced-title {
@@ -419,7 +434,8 @@ p {
   }
 }
 
-/* PRODUCTOS GRILLA SECUNDARIA */
+/* --------------------------------------------------------------------------------*/
+/* PRODUCTOS GRILLA SECUNDARIA ----------------------------------------------------*/
 .secondary-products-grid {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -428,8 +444,11 @@ p {
   margin-right: 10%;
   margin-bottom: 100px;
   align-content: center;
-  /* mobile */
-  /* tablet */
+  /* mobile ---------------------------------------------------------------------*/
+  /* tablet ---------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .secondary-products-grid {
@@ -449,8 +468,8 @@ p {
   width: 100%;
   height: auto;
   margin-bottom: 25px;
-  /* mobile */
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .secondary-products-grid .three-col-img {
@@ -469,8 +488,8 @@ p {
   width: 100%;
   text-align: center;
   padding-bottom: 15px;
-  /* mobile */
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .secondary-products-grid .main-title-under-picture {
@@ -485,7 +504,7 @@ p {
 .secondary-products-grid .grid-paragraph {
   text-align: center;
   padding-bottom: 15px;
-  /* mobile */
+  /* mobile -----------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .secondary-products-grid .grid-paragraph {
@@ -493,14 +512,16 @@ p {
   }
 }
 
-/* SECCION NOSOTROS */
+/* --------------------------------------------------------------------------------*/
+/* SECCION NOSOTROS ---------------------------------------------------------------*/
 .gray-container {
   background-color: #e2e3e4;
   padding-top: 100px;
   padding-right: 10%;
   padding-bottom: 100px;
   padding-left: 10%;
-  /* GRILLA NOSOTROS */
+  /* --------------------------------------------------------------------------------*/
+  /* GRILLA NOSOTROS ----------------------------------------------------------------*/
 }
 .gray-container .index-about-us-grid-container {
   width: 100%;
@@ -509,9 +530,13 @@ p {
   grid-template-rows: 1fr;
   row-gap: 0px;
   column-gap: 35px;
-  /* mobile */
-  /* tablet */
-  /* LISTA */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* LISTA --------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .gray-container .index-about-us-grid-container {
@@ -537,8 +562,10 @@ p {
   height: 100%;
   grid-column-start: 1;
   grid-column-end: 4;
-  /* mobile */
-  /* tablet */
+  /* mobile -------------------------------------------------------------*/
+  /* tablet -------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .gray-container .index-about-us-grid-container .index-about-us-img-item {
@@ -563,8 +590,8 @@ p {
   font-family: "Montserrat";
   font-weight: bold;
   color: #085dac;
-  /* mobile */
-  /* tablet */
+  /* mobile ---------------------------------------------------------*/
+  /* tablet ---------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .gray-container .index-about-us-grid-container .index-about-us-img-item .index-about-us-section-title {
@@ -583,8 +610,8 @@ p {
 .gray-container .index-about-us-grid-container .index-about-us-title-item {
   grid-column-start: 4;
   grid-column-end: 8;
-  /* mobile */
-  /* tablet */
+  /* mobile -------------------------------------------------------------*/
+  /* tablet -------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .gray-container .index-about-us-grid-container .index-about-us-title-item {
@@ -601,8 +628,8 @@ p {
 .gray-container .index-about-us-grid-container .index-about-us-li {
   display: flex;
   justify-content: space-around;
-  /* mobile */
-  /* tablet */
+  /* mobile -------------------------------------------------------------*/
+  /* tablet -------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .gray-container .index-about-us-grid-container .index-about-us-li {
@@ -621,8 +648,8 @@ p {
 .gray-container .index-about-us-grid-container .index-about-us-grid-li {
   list-style: none;
   margin-top: 20px;
-  /* mobile */
-  /* tablet */
+  /* mobile ---------------------------------------------------------*/
+  /* tablet ---------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .gray-container .index-about-us-grid-container .index-about-us-grid-li {
@@ -638,9 +665,10 @@ p {
   }
 }
 
+/* --------------------------------------------------------------------------------*/
 /* PRODUCTOS */
-/* DESKTOP - PRODUCTOS - SECCION INICIO */
-/* grilla/menú de productos */
+/* DESKTOP - PRODUCTOS - SECCION INICIO -------------------------------------------*/
+/* grilla/menú de productos -------------------------------------------------------*/
 .products-grid-container {
   margin-top: 50px;
   padding-left: 10%;
@@ -652,12 +680,16 @@ p {
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 2px;
   column-gap: 4px;
-  /* mobile */
-  /* tablet */
+  /* mobile ---------------------------------------------------------------------*/
+  /* tablet ---------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
   /* grilla/menú de thinfinity */
-  /* PRODUCTOS ZSCOPE */
-  /* grilla/menú de zscope */
-  /* grilla/menú de tnbridge */
+  /* --------------------------------------------------------------------------------*/
+  /* PRODUCTOS ZSCOPE ---------------------------------------------------------------*/
+  /* grilla/menú de zscope ------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* grilla/menú de tnbridge ----------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .products-grid-container {
@@ -686,8 +718,9 @@ p {
   background-repeat: no-repeat;
   background-size: 25%;
   background-position: center center;
-  /* mobile */
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .products-grid-container .thinfinity-product {
@@ -717,8 +750,8 @@ p {
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 16%;
-  /* mobile */
-  /* tablet */
+  /* mobile -------------------------------------------------------------*/
+  /* tablet -------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .products-grid-container .thinfinity-product .thinfinity-text-block {
@@ -748,8 +781,9 @@ p {
   background-repeat: no-repeat;
   background-size: 25%;
   background-position: center center;
-  /* mobile */
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .products-grid-container .zscope-product {
@@ -779,8 +813,8 @@ p {
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 5%;
-  /* mobile */
-  /* tablet */
+  /* mobile -------------------------------------------------------------*/
+  /* tablet -------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .products-grid-container .zscope-product .zscope-text-block {
@@ -810,8 +844,9 @@ p {
   background-repeat: no-repeat;
   background-size: 35%;
   background-position: center center;
-  /* mobile */
-  /* tablet */
+  /* mobile ----------------------------------------------------------------*/
+  /* tablet ----------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .products-grid-container .tnbridge-product {
@@ -841,8 +876,8 @@ p {
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 5%;
-  /* mobile */
-  /* tablet */
+  /* mobile -------------------------------------------------------------*/
+  /* tablet -------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .products-grid-container .tnbridge-product .tnbridge-text-block {
@@ -863,7 +898,8 @@ p {
   color: rgb(255, 255, 255);
 }
 
-/* DESKTOP - PRODUCTOS - SECCION THINFINITY */
+/* --------------------------------------------------------------------------------*/
+/* DESKTOP - PRODUCTOS - SECCION THINFINITY ---------------------------------------*/
 .cover-img {
   padding-left: 10%;
   padding-right: 10%;
@@ -875,8 +911,10 @@ p {
   background-position: center center;
   width: 100%;
   color: #ffffff;
-  /* mobile */
-  /* tablet */
+  /* mobile ----------------------------------------------------------------*/
+  /* tablet ----------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .cover-img {
@@ -890,8 +928,9 @@ p {
 }
 .cover-img .box-text-inside {
   width: 60%;
-  /* mobile */
-  /* tablet */
+  /* mobile -------------------------------------------------------------*/
+  /* tablet -------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .cover-img .box-text-inside {
@@ -907,8 +946,8 @@ p {
 }
 .cover-img .box-text-inside .product-title {
   font-weight: 400;
-  /* mobile */
-  /* tablet */
+  /* mobile ---------------------------------------------------------*/
+  /* tablet ---------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .cover-img .box-text-inside .product-title {
@@ -929,21 +968,23 @@ p {
   margin-bottom: 20px;
 }
 
-/*tal vez hay que mover y re anidar esta clase porque comparte clases de index*/
+/* --------------------------------------------------------------------------------*/
 .three-col-grid-container {
   margin-top: 50px;
 }
 
-/*
-
-/* DESKTOP - PRODUCTOS - SECCION ZSCOPE */
+/* --------------------------------------------------------------------------------*/
+/* DESKTOP - PRODUCTOS - SECCION ZSCOPE -------------------------------------------*/
 .two-products-grid-container {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 35px;
-  /* mobile */
-  /* tablet */
+  /* mobile ---------------------------------------------------------------------*/
+  /* tablet ---------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .two-products-grid-container {
@@ -965,7 +1006,7 @@ p {
   min-height: auto;
   background-position: center center;
   width: 100%;
-  /* tablet */
+  /* tablet -----------------------------------------------------------------*/
 }
 @media only screen and (min-width: 450px) and (max-width: 960px) {
   .two-products-grid-container .zscope-img-anywhere {
@@ -979,7 +1020,7 @@ p {
   min-height: auto;
   background-position: center center;
   width: 100%;
-  /* tablet */
+  /* tablet -----------------------------------------------------------------*/
 }
 @media only screen and (min-width: 450px) and (max-width: 960px) {
   .two-products-grid-container .zscope-img-desktop {
@@ -992,8 +1033,8 @@ p {
   margin-right: 10%;
   color: #ffffff;
   text-align: left;
-  /* mobile */
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .two-products-grid-container .zscope-text-element {
@@ -1008,6 +1049,7 @@ p {
   }
 }
 
+/* --------------------------------------------------------------------------------*/
 /* NOSOTROS */
 /* DESKTOP - NOSOTROS - SECCION INICIO --------------------------------------------*/
 .about-us-intro-grid-container {
@@ -1018,8 +1060,8 @@ p {
   margin-top: 150px;
   /* mobile ---------------------------------------------------------------------*/
   /* tablet ---------------------------------------------------------------------*/
-  /* ----------------------------------------------------------------------------*/
-  /* ----------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .about-us-intro-grid-container {
@@ -1045,7 +1087,7 @@ p {
   height: 100%;
   /* mobile -----------------------------------------------------------------*/
   /* tablet -----------------------------------------------------------------*/
-  /*-------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .about-us-intro-grid-container .about-us-img-container {
@@ -1066,7 +1108,7 @@ p {
 .about-us-intro-grid-container .about-us-img-container .about-us-img {
   width: 100%;
   height: auto;
-  /* mobile */
+  /* mobile -------------------------------------------------------------*/
   /* tablet -------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
@@ -1086,7 +1128,7 @@ p {
   height: auto;
   /* mobile -----------------------------------------------------------------*/
   /* tablet -----------------------------------------------------------------*/
-  /*-------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .about-us-intro-grid-container .about-us-intro-padding {
@@ -1108,7 +1150,7 @@ p {
   height: auto;
   /* mobile -------------------------------------------------------------*/
   /* tablet -------------------------------------------------------------*/
-  /*---------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .about-us-intro-grid-container .about-us-intro-padding .about-us-intro-text-container {
@@ -1160,9 +1202,9 @@ p {
   padding-right: 10%;
   /* mobile ---------------------------------------------------------------------*/
   /* tablet ---------------------------------------------------------------------*/
-  /* ----------------------------------------------------------------------------*/
-  /* ----------------------------------------------------------------------------*/
-  /* ----------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .about-us-secondary-grid-container {
@@ -1200,7 +1242,7 @@ p {
   grid-row-end: 2;
   /* mobile -----------------------------------------------------------------*/
   /* tablet -----------------------------------------------------------------*/
-  /* ------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .about-us-secondary-grid-container .asociate {
@@ -1274,19 +1316,45 @@ p {
 
 /* --------------------------------------------------------------------------------*/
 /* CLIENTES */
-/* DESKTOP - CLIENTES - SECCION INICIO */
+/* DESKTOP - CLIENTES - SECCION INICIO --------------------------------------------*/
+.clients-margin {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  /* mobile ---------------------------------------------------------------------*/
+  /* tablet ---------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 450px) {
+  .clients-margin {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .clients-margin {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+}
+
+/* --------------------------------------------------------------------------------*/
 .clients-grid-container {
-  margin-top: 50px;
+  margin-top: 25px;
   padding-left: 10%;
   padding-right: 10%;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   column-gap: 35px;
-  /* mobile */
-  /* tablet */
+  /* mobile ---------------------------------------------------------------------*/
+  /* tablet ---------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .clients-grid-container {
@@ -1308,7 +1376,9 @@ p {
 .clients-grid-container .clients-grid-shell {
   grid-column-start: 1;
   grid-column-end: 2;
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .clients-grid-container .clients-grid-shell {
@@ -1332,7 +1402,9 @@ p {
 .clients-grid-container .clients-grid-visa {
   grid-column-start: 2;
   grid-column-end: 3;
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .clients-grid-container .clients-grid-visa {
@@ -1356,7 +1428,9 @@ p {
 .clients-grid-container .clients-grid-fujifilm {
   grid-column-start: 3;
   grid-column-end: 4;
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .clients-grid-container .clients-grid-fujifilm {
@@ -1380,7 +1454,9 @@ p {
 .clients-grid-container .clients-grid-ibm {
   grid-column-start: 4;
   grid-column-end: 5;
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .clients-grid-container .clients-grid-ibm {
@@ -1404,7 +1480,9 @@ p {
 .clients-grid-container .clients-grid-paypal {
   grid-column-start: 5;
   grid-column-end: 6;
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .clients-grid-container .clients-grid-paypal {
@@ -1428,7 +1506,9 @@ p {
 .clients-grid-container .clients-grid-maestro {
   grid-column-start: 6;
   grid-column-end: 7;
-  /* tablet */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .clients-grid-container .clients-grid-maestro {
@@ -1450,6 +1530,7 @@ p {
   width: 100%;
 }
 
+/* --------------------------------------------------------------------------------*/
 .two-buttons-grid-container {
   margin-top: 50px;
   padding-left: 10%;
@@ -1460,7 +1541,10 @@ p {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   column-gap: 35px;
-  /* tablet */
+  /* mobile ---------------------------------------------------------------------*/
+  /* tablet ---------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .two-buttons-grid-container {
@@ -1491,6 +1575,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: end;
+  /* mobile -----------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .two-buttons-grid-container .two-buttons-grid-b1 {
@@ -1509,6 +1594,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: start;
+  /* mobile -----------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .two-buttons-grid-container .two-buttons-grid-b2 {
@@ -1522,10 +1608,11 @@ p {
   }
 }
 
+/* --------------------------------------------------------------------------------*/
 /* CONTACTO */
-/* DESKTOP - CONTACTO */
-/* GRILLA */
-/* contenedor */
+/* DESKTOP - CONTACTO -------------------------------------------------------------*/
+/* GRILLA -------------------------------------------------------------------------*/
+/* contenedor ---------------------------------------------------------------------*/
 .contact-main-grid {
   margin-top: 150px;
   padding-left: 10%;
@@ -1538,9 +1625,11 @@ p {
   grid-template-rows: 1fr;
   column-gap: 35px;
   row-gap: 35px;
-  /* mobile */
-  /* tablet */
-  /* contenido */
+  /* mobile ---------------------------------------------------------------------*/
+  /* tablet ---------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* contenido ----------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .contact-main-grid {
@@ -1569,12 +1658,16 @@ p {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 5px;
-  /* mobile */
-  /* tablet */
-  /* TELEFONOS */
-  /* MAPA */
-  /* DIRECCION */
-  /* MENSAJE */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet----------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------------*/
+  /* TELEFONOS ----------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* MAPA ---------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* DIRECCION ----------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* MENSAJE ------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .contact-main-grid .contact-info-grid {
@@ -1598,8 +1691,8 @@ p {
   grid-row-start: 1;
   grid-row-end: 2;
   height: fit-content;
-  /* mobile */
-  /* tablet */
+  /* mobile--------------------------------------------------------------*/
+  /* tablet -------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .contact-main-grid .contact-info-grid .contact-phone {
@@ -1619,8 +1712,8 @@ p {
   grid-row-start: 2;
   grid-row-end: 3;
   height: fit-content;
-  /* mobile */
-  /* tablet */
+  /* mobile -------------------------------------------------------------*/
+  /* tablet -------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .contact-main-grid .contact-info-grid .contact-map {
@@ -1642,8 +1735,9 @@ p {
   grid-row-start: 2;
   grid-row-end: 3;
   height: fit-content;
-  /* mobile */
-  /* tablet */
+  /* mobile -------------------------------------------------------------*/
+  /* tablet -------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .contact-main-grid .contact-info-grid .contact-address {
@@ -1671,8 +1765,8 @@ p {
   grid-row-start: 3;
   grid-row-end: 4;
   height: fit-content;
-  /* mobile */
-  /* tablet */
+  /* mobile -------------------------------------------------------------*/
+  /* tablet -------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .contact-main-grid .contact-info-grid .contact-message {
@@ -1696,9 +1790,10 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  /* mobile */
-  /* tablet */
-  /* FORMULARIO */
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
+  /* FORMULARIO ---------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .contact-main-grid .contact-form-grid {
@@ -1720,8 +1815,8 @@ p {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  /* mobile */
-  /* tablet */
+  /* mobile -------------------------------------------------------------*/
+  /* tablet -------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .contact-main-grid .contact-form-grid .contact-form {
@@ -1740,8 +1835,9 @@ p {
   }
 }
 
+/* --------------------------------------------------------------------------------*/
 /* HEADER */
-/* HEADER */
+/* HEADER -------------------------------------------------------------------------*/
 .top-menu {
   font-family: "Montserrat";
   font-size: 2rem;
@@ -1750,13 +1846,17 @@ p {
   padding-bottom: 50px;
 }
 
-/* SECCION MENU */
+/* --------------------------------------------------------------------------------*/
+/* SECCION MENU -------------------------------------------------------------------*/
 .menu-margin {
   margin-left: 9%;
   margin-right: 12%;
+  /* --------------------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 .menu-margin .logo-img-margin {
   margin-right: 5%;
+  /* --------------------------------------------------------------------------------*/
 }
 .menu-margin .logo-img-margin .menu-item {
   width: 150px;
@@ -1766,8 +1866,9 @@ p {
   margin-left: 6%;
 }
 
+/* --------------------------------------------------------------------------------*/
 /* FOOTER */
-/* SECCION FOOTER */
+/* SECCION FOOTER -----------------------------------------------------------------*/
 .footer {
   list-style-type: none;
   font-size: 2rem;
@@ -1776,6 +1877,8 @@ p {
   padding-right: 10%;
   padding-top: 50px;
   padding-bottom: 50px;
+  /* mobile ---------------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .footer {
@@ -1793,6 +1896,8 @@ p {
   flex-direction: row;
   justify-items: center;
   justify-content: space-around;
+  /* mobile -----------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .footer .footer-menu-list {
@@ -1804,6 +1909,7 @@ p {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  /* mobile -------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .footer .footer-menu-list.footer-logo {
@@ -1817,6 +1923,8 @@ p {
   flex-direction: column;
   font-size: 10pt;
   line-height: 25px;
+  /* mobile -------------------------------------------------------------*/
+  /* --------------------------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .footer .footer-menu-list .footer-items-groups {
@@ -1839,6 +1947,7 @@ p {
   width: 150px;
   margin-top: 15px;
   line-height: 5px;
+  /* mobile -------------------------------------------------------------*/
 }
 @media only screen and (max-width: 450px) {
   .footer .footer-menu-list .legal {
@@ -1848,5 +1957,7 @@ p {
     margin-bottom: 20px;
   }
 }
+
+/* --------------------------------------------------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */
