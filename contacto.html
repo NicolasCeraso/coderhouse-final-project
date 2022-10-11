@@ -122,37 +122,65 @@
                             <form>
                                 <div class="mb-3">
                                   <label for="exampleInputNombre1" class="form-label">Nombre*</label>
-                                  <input type="nombre" class="form-control" id="exampleInputNombre1" aria-describedby="emailHelp">                                
+                                  <input type="nombre" class="form-control" id="exampleInputNombre1" required>   
+                                  <div class="valid-feedback"></div>                             
                                 </div>
                                 <div class="mb-3">
                                   <label for="exampleInputApellido1" class="form-label">Apellido*</label>
-                                  <input type="apellido" class="form-control" id="exampleInputApellido1">
+                                  <input type="apellido" class="form-control" id="exampleInputApellido1" required>   
+                                  <div class="valid-feedback"></div>                             
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Correo electrónico*</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1">
+                                    <label for="validationTooltip02" class="form-label">e-mail</label>
+                                    <input type="text" class="form-control" id="validationTooltip02" value="email@sample.com"  required>   
+                                    <div class="valid-feedback"></div> 
                                   </div>
                                 <div class="mb-3">
                                     <label for="exampleInputTelefono1" class="form-label">Número telefónico</label>
-                                    <input type="telefono" class="form-control" id="exampleInputTelefono1">
+                                    <input type="telefono" class="form-control" id="exampleInputTelefono1" required>   
+                                    <div class="valid-feedback"></div>                             
                                   </div>
                                   <div class="mb-3">
                                     <label for="exampleInputEmpresa1" class="form-label">Nombre de la Empresa*</label>
-                                    <input type="empresa" class="form-control" id="exampleInputEmpresa1">
+                                    <input type="empresa" class="form-control" id="exampleInputEmpresa1" required>   
+                                    <div class="valid-feedback"></div>                             
                                   </div>
                                   <div class="mb-3">
                                     <label for="exampleInputPuesto1" class="form-label">Puesto*</label>
-                                    <input type="puesto" class="form-control" id="exampleInputPuesto1">
-                                  </div>
+                                    <input type="puesto" class="form-control" id="exampleInputPuesto1" required>   
+                                    <div class="valid-feedback"></div>                             
+                                  </div>                                  
                                   <div class="mb-3">
                                     <label for="exampleInputPais1" class="form-label">País*</label>
-                                    <input type="pais" class="form-control" id="exampleInputPais1">
+                                    <select class="form-select" required aria-label="select example">
+                                      <option value="">Seleccionar</option>
+                                      <option value="1">Argentina</option>
+                                      <option value="2">Bolivia</option>
+                                      <option value="3">Brasil</option>
+                                      <option value="4">Chile</option>
+                                      <option value="5">Colombia</option>
+                                      <option value="6">Costa Rica</option>
+                                      <option value="7">Cuba</option>
+                                      <option value="8">Ecuador</option>
+                                      <option value="9">El Salvador</option>
+                                      <option value="10">Guatemala</option>
+                                      <option value="11">Haití</option>
+                                      <option value="12">Honduras</option>
+                                      <option value="13">México</option>
+                                      <option value="14">Nicaragua</option>
+                                      <option value="15">Panamá</option>
+                                      <option value="16">Paraguay</option>
+                                      <option value="17">Perú</option>
+                                      <option value="18">República Dominica</option>
+                                      <option value="19">Uruguay</option>
+                                      <option value="20">Venezueala</option>
+                                    </select>
                                   </div>                                
                                   <div class="mb-3">
                                     <label for="validationTextarea" class="form-label">Mensaje*</label>
                                     <textarea class="form-control" id="validationTextarea" placeholder="Escriba su mensaje aquí" required=""></textarea>
                                     <div class="invalid-feedback">
-                                    Please enter a message in the textarea.
+                                    Por favor escriba un mensaje.
                                     </div>
                                     <div id="emailHelp" class="form-text">BA Logic S.A. se compromete a proteger y respetar su privacidad, y solo usaremos su informaciónpersonal para administrar su cuenta y proporcionar los productos y servicios que nos solicitó. De vez en cuando, nos gustaría comunicarnos con usted con noticias acerca de nuestros productos y servicios, así como otros contenidos que puedan ser de su interés. ¿Le interesa recibir estas comunicaciones?.</div>
                                 </div>

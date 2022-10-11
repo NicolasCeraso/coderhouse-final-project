@@ -1,4 +1,6 @@
 /* @import ------------------------------------------------------------------------*/
+@import'../base/maps';
+
 /* RESETEO CSS --------------------------------------------------------------------*/
 * {
     margin:0px;
@@ -87,6 +89,7 @@ p {
     display: inline-block;
     margin: 15px 2px;
     transition-duration: 0.4s;
+    min-width: 200px;
     cursor: pointer;   
     /* mobile ---------------------------------------------------------------------*/
     @media only screen and (max-width:450px) {
@@ -112,26 +115,27 @@ p {
     }
 /* --------------------------------------------------------------------------------*/
 /* BOTON BLANCO -------------------------------------------------------------------*/
+
     &.white-button {
-        background-color: #ffffff; 
-        color: #000000; 
-        border: 2px solid #ffffff;            
+        background-color: map-get($w-bttn , bg-clr ); 
+        color: map-get($w-bttn , txt-clr ); 
+        border: map-get($w-bttn, brdr );            
         &:hover {
-            background-color: rgba(255, 255, 255, 0);
-            color: #ffffff;
-            border: 2px solid #ffffff;
+            background-color: map-get($w-bttn-hover , bg-clr );
+            color: map-get($w-bttn-hover , txt-clr );
+            border: map-get($w-bttn-hover , brdr );
         } 
-    }
+    }    
 /* --------------------------------------------------------------------------------*/   
 /* BOTON AZUL ---------------------------------------------------------------------*/
-    &.blue-button {
-        background-color: #085dac; 
-        color: #ffffff; 
-        border: 2px solid #085dac;            
+     &.blue-button {
+        background-color: map-get($be-bttn , bg-clr );
+        color: map-get($be-bttn , txt-clr ); 
+        border: map-get($be-bttn, brdr );            
         &:hover {
-            background-color: rgba(255, 255, 255, 0);
-            color: #085dac;
-            border: 2px solid #085dac;
+            background-color: map-get($be-bttn-hover , bg-clr );
+            color: map-get($be-bttn-hover , txt-clr );
+            border: map-get($be-bttn-hover , brdr );
         }
     }
 }
@@ -188,7 +192,3 @@ p {
         cursor: pointer;       
     }
 /* --------------------------------------------------------------------------------*/    
-
-
-
-

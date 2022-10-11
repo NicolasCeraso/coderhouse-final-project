@@ -1,0 +1,23 @@
+$w-bttn:(    
+    bg-clr:  rgba(255, 255, 255, 1),
+    txt-clr: #000000, 
+    brdr: 2px solid #ffffff,
+);
+
+$w-bttn-hover:(
+    bg-clr: rgba(255, 255, 255, 0),
+    txt-clr: #ffffff,
+    brdr: 2px solid #ffffff,
+);
+
+$be-bttn:(    
+    bg-clr: rgba(8, 93, 172, 1),
+    txt-clr: #ffffff,
+    brdr: 2px solid #085dac,
+);
+
+$be-bttn-hover:(    
+    bg-clr: rgba(8, 93, 172, 0),
+    txt-clr: #085dac,
+    brdr: 2px solid #085dac,
+);
