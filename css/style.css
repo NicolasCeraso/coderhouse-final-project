@@ -188,6 +188,7 @@ p {
 
 /* --------------------------------------------------------------------------------*/
 .centered-button {
+  display: flex;
   justify-content: center;
   margin-bottom: 10%;
   margin-top: 20px;
@@ -980,6 +981,7 @@ p {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   column-gap: 35px;
   /* mobile ---------------------------------------------------------------------*/
   /* tablet ---------------------------------------------------------------------*/
@@ -1004,7 +1006,8 @@ p {
   background-image: url("../productos/imagenes/persona-accediendo-a-emulador-de-termianles-en-forma-remote.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: auto;
+  padding-top: 20%;
+  padding-bottom: 50px;
   background-position: center center;
   width: 100%;
   /* tablet -----------------------------------------------------------------*/
@@ -1018,7 +1021,8 @@ p {
   background-image: url("../productos/imagenes/persona-trabajando-con-emulador-de-terminal-de-escritorio.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: auto;
+  padding-top: 20%;
+  padding-bottom: 50px;
   background-position: center center;
   width: 100%;
   /* tablet -----------------------------------------------------------------*/
@@ -1047,6 +1051,26 @@ p {
     margin-top: 200px;
     margin-left: 75px;
     margin-right: 75px;
+    text-align: center;
+  }
+}
+.two-products-grid-container .zscope-text-element .zscope-inside-title {
+  width: 100%;
+  text-align: left;
+  padding-bottom: 15px;
+  /* mobile -----------------------------------------------------------------*/
+  /* tablet -----------------------------------------------------------------*/
+}
+@media only screen and (max-width: 450px) {
+  .two-products-grid-container .zscope-text-element .zscope-inside-title {
+    font-size: 18pt;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .two-products-grid-container .zscope-text-element .zscope-inside-title {
+    font-size: 22pt;
+    text-align: center;
   }
 }
 
