@@ -14,13 +14,13 @@
     /* mobile ---------------------------------------------------------------------*/   
     @media only screen and (max-width:450px) {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
         row-gap: 3px; 
     }
     /* tablet ---------------------------------------------------------------------*/
     @media only screen and (min-width:450px) and (max-width:960px) {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
         row-gap: 3px; 
     }
 /* --------------------------------------------------------------------------------*/ 
@@ -53,7 +53,7 @@
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 2;
-        background-size:25%;
+        background-size: 40%;
         }
 /* --------------------------------------------------------------------------------*/ 
         .thinfinity-text-block {    
@@ -110,7 +110,7 @@
             grid-column-end: 2;
             grid-row-start: 2;
             grid-row-end: 3;
-            background-size: 25%;
+            background-size: 40%;
         }
 /* --------------------------------------------------------------------------------*/ 
         .zscope-text-block {    
@@ -159,7 +159,7 @@
             grid-column-end: 2;
             grid-row-start: 3;
             grid-row-end: 4;
-            background-size: 60%;
+            background-size: 70%;
         }
         /* tablet ----------------------------------------------------------------*/
         @media only screen and (min-width:450px) and (max-width:960px) {
@@ -167,7 +167,7 @@
             grid-column-end: 2;
             grid-row-start: 3;
             grid-row-end: 4;
-            background-size: 40%;
+            background-size: 70%;
         }
 /* --------------------------------------------------------------------------------*/ 
         .tnbridge-text-block {    
@@ -198,6 +198,18 @@
             }
         } 
     } 
+    
+/* --------------------------------------------------------------------------------*/             
+    .hide-mobile{
+        /* mobile -------------------------------------------------------------*/   
+        @media only screen and (max-width:450px) {
+            visibility: hidden; 
+        }
+        /* tablet -------------------------------------------------------------*/
+        @media only screen and (min-width:450px) and (max-width:960px) {
+            visibility: hidden;  
+        }   
+    }
 }  
 /* --------------------------------------------------------------------------------*/ 
 /* DESKTOP - PRODUCTOS - SECCION THINFINITY ---------------------------------------*/

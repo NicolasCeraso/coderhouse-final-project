@@ -324,23 +324,25 @@
         .index-about-us-li {    
             display: flex;
             justify-content: space-around; 
+            text-align: left;
             /* mobile -------------------------------------------------------------*/
             @media only screen and (max-width:450px) {
                 display: flex;
                 flex-direction: column;
-                margin-top: 30px; 
+                margin-top: 30px;
+                text-align: center; 
             }
             /* tablet -------------------------------------------------------------*/
             @media only screen and (min-width:450px) and (max-width:960px) { 
                 display: flex;
                 flex-direction: column;
                 margin-top: 30px;
-            }             
-        }
+                text-align: center;
+            }           
 /* --------------------------------------------------------------------------------*/ 
             .index-about-us-grid-li {
                 list-style: none;
-                margin-top: 20px; 
+                margin-top: 20px;
                 /* mobile ---------------------------------------------------------*/
                 @media only screen and (max-width:450px) {
                     margin-top: 20px;   
@@ -351,8 +353,27 @@
                 @media only screen and (min-width:450px) and (max-width:960px) { 
                     grid-column-start: 1;
                     grid-column-end: 2;
-                }             
-            }
+                }
+/* --------------------------------------------------------------------------------*/                 
+                .location-ico{
+                    &::before{
+                        content:'📍';
+                    }
+                }
+                .phone-ico{
+                    &::before{
+                        content:'📞';
+                    }
+                }
+                .facebook-ico{
+                    width: 25px;
+                    height: 25px;
+                }                 
+                .j{
+                    text-decoration: none;
+                }         
+            }           
         }
+    }
 }
 /* --------------------------------------------------------------------------------*/ 
