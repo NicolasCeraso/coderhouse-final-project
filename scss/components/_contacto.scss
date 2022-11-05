@@ -45,7 +45,7 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
             height: 400px;
-            margin-bottom: 50px;;
+            margin-bottom: 50px;
         }
         /* tablet----------------------------------------------------------------- */
         @media only screen and (min-width:450px) and (max-width:960px) { 
@@ -102,12 +102,14 @@
             grid-row-start: 2;
             grid-row-end: 3;
             height: fit-content;
+            margin-left: 20px;
             /* mobile -------------------------------------------------------------*/
             @media only screen and (max-width:450px) {
                 grid-column-start: 1;
                 grid-column-end: 2;
                 grid-row-start: 3;
                 grid-row-end: 4;
+                margin-left: 0px;
             }
             /* tablet -------------------------------------------------------------*/
             @media only screen and (min-width:450px) and (max-width:960px) { 

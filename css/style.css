@@ -1789,6 +1789,7 @@ p {
   grid-row-start: 2;
   grid-row-end: 3;
   height: fit-content;
+  margin-left: 20px;
   /* mobile -------------------------------------------------------------*/
   /* tablet -------------------------------------------------------------*/
   /* --------------------------------------------------------------------------------*/
@@ -1799,6 +1800,7 @@ p {
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
+    margin-left: 0px;
   }
 }
 @media only screen and (min-width: 450px) and (max-width: 960px) {
