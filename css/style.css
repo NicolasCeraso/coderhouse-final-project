@@ -230,12 +230,7 @@ p {
 }
 
 /* --------------------------------------------------------------------------------*/
-/* VARIABLES */
-/* LISTS */
 /* MAPS */
-/* EXTENDS */
-/* MIXIN */
-/* CONDITIONALS */
 /* COMPONENTS */
 /* INDEX */
 /* SECCION INICIO -----------------------------------------------------------------*/
@@ -1022,6 +1017,7 @@ p {
   .two-products-grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    row-gap: 35px;
   }
 }
 @media only screen and (min-width: 450px) and (max-width: 960px) {
@@ -1698,7 +1694,7 @@ p {
 @media only screen and (min-width: 450px) and (max-width: 960px) {
   .contact-main-grid {
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 0px;
@@ -1891,7 +1887,7 @@ p {
   }
 }
 .contact-main-grid .invalid input[type=text]:invalid {
-  border: solid 2px #ec2423;
+  border: solid 2px #eaa9a9;
 }
 
 /* --------------------------------------------------------------------------------*/
